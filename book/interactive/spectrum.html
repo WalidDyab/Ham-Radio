@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الطيف الترددي</title>
+<link rel="stylesheet" href="../styles/interactive.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="../index.html">العودة إلى صفحة الكتاب</a>
+    <span class="badge">محتوى تفاعلي مستوحى من كتاب أساسيات اللاسلكي للمبتدئين</span>
+  </div>
+
+  
+<section class="hero">
+  <h1>الطيف الترددي</h1>
+  <p>اختيار التردد المناسب قد يكون عاملاً حاسماً في نجاح الاتصال، لأن خصائص الإشارة تتغير مع النطاق المستخدم.</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>اختر هدف الاتصال</h2>
+    <select id="goal">
+      <option value="local">اتصال محلي واضح</option>
+      <option value="city">اتصال داخل مدينة أو بين مبانٍ</option>
+      <option value="dx">اتصال بعيد أو دولي</option>
+      <option value="night">اتصال بعيد ليلاً على نطاقات منخفضة</option>
+    </select>
+    <button class="btn gold" onclick="recommend()">اقترح النطاق</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <div class="panel">
+    <h2>ملخص سريع</h2>
+    <table class="table">
+      <tr><th>النطاق</th><th>الفكرة الأساسية</th></tr>
+      <tr><td dir="ltr">HF</td><td>مناسب للاتصالات البعيدة عبر انعكاس الغلاف الأيوني</td></tr>
+      <tr><td dir="ltr">VHF</td><td>مناسب للاتصالات المحلية ويعتمد غالباً على خط الرؤية</td></tr>
+      <tr><td dir="ltr">UHF</td><td>مفيد داخل المدن ومع بعض العوائق، لكن مداه أقصر غالباً</td></tr>
+      <tr><td dir="ltr">MF</td><td>قد يحقق اتصالات بعيدة ليلاً ويتأثر بالضوضاء</td></tr>
+    </table>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p><span dir="ltr">© 2026</span> البوابة التفاعلية لهواة اللاسلكي — محتوى تدريبي مساعد للكتاب.</p>
+  </footer>
+</div>
+
+<script>
+function recommend(){
+ const g=document.getElementById("goal").value;
+ const map={
+  local:["VHF","مناسب غالباً للاتصال المحلي الواضح عندما يكون خط الرؤية جيداً."],
+  city:["UHF","قد يكون أفضل داخل المدن لأنه يتعامل مع بعض العوائق بشكل أفضل."],
+  dx:["HF","مناسب للاتصالات البعيدة والدولية بفضل الانعكاس عبر الغلاف الأيوني."],
+  night:["MF / HF منخفض","قد تساعد النطاقات المنخفضة ليلاً على تحقيق مدى أبعد."]
+ };
+ document.getElementById("result").innerHTML=`النطاق المقترح: <b dir="ltr">${map[g][0]}</b><br>${map[g][1]}`;
+}
+recommend();
+</script>
+
+</body>
+</html>

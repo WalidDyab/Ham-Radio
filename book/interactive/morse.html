@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شفرة مورس</title>
+<link rel="stylesheet" href="../styles/interactive.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="../index.html">العودة إلى صفحة الكتاب</a>
+    <span class="badge">محتوى تفاعلي مستوحى من كتاب أساسيات اللاسلكي للمبتدئين</span>
+  </div>
+
+  
+<section class="hero">
+  <h1>شفرة مورس</h1>
+  <p>تعتمد شفرة مورس على النقطة والشرطة، وما زالت مهمة في هواة اللاسلكي لأنها فعالة في الإشارات الضعيفة والاتصالات بعيدة المدى.</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>بطاقات الحروف</h2>
+    <p>اضغط على الحرف لعرض شفرته.</p>
+    <div class="card-list" id="cards"></div>
+  </div>
+
+  <div class="panel">
+    <h2>حوّل كلمة إلى مورس</h2>
+    <input id="word" value="SOS" dir="ltr">
+    <button class="btn gold" onclick="toMorse()">تحويل</button>
+    <div class="result" id="morseResult" dir="ltr"></div>
+    <p class="note">مثال مهم: SOS تكتب في مورس بالشكل: ... --- ...</p>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p><span dir="ltr">© 2026</span> البوابة التفاعلية لهواة اللاسلكي — محتوى تدريبي مساعد للكتاب.</p>
+  </footer>
+</div>
+
+<script>
+const morse={
+A:".-",B:"-...",C:"-.-.",D:"-..",E:".",F:"..-.",G:"--.",H:"....",I:"..",J:".---",K:"-.-",L:".-..",M:"--",N:"-.",O:"---",P:".--.",Q:"--.-",R:".-.",S:"...",T:"-",U:"..-",V:"...-",W:".--",X:"-..-",Y:"-.--",Z:"--..",
+"1":".----","2":"..---","3":"...--","4":"....-","5":".....","6":"-....","7":"--...","8":"---..","9":"----.","0":"-----"
+};
+const target=document.getElementById("cards");
+Object.entries(morse).forEach(([k,v])=>{
+  const div=document.createElement("div");
+  div.className="flip-card";
+  div.innerHTML=`<div class="big">${k}</div><div class="answer" dir="ltr">${v}</div>`;
+  div.onclick=()=>{const a=div.querySelector(".answer"); a.style.display=a.style.display==="block"?"none":"block";}
+  target.appendChild(div);
+});
+function toMorse(){
+  const val=document.getElementById("word").value.toUpperCase();
+  const out=[...val].map(ch=>ch===" " ? "/" : (morse[ch]||"?")).join(" ");
+  document.getElementById("morseResult").textContent=out;
+}
+toMorse();
+</script>
+
+</body>
+</html>

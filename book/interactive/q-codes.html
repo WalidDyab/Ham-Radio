@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رموز Q</title>
+<link rel="stylesheet" href="../styles/interactive.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="../index.html">العودة إلى صفحة الكتاب</a>
+    <span class="badge">محتوى تفاعلي مستوحى من كتاب أساسيات اللاسلكي للمبتدئين</span>
+  </div>
+
+  
+<section class="hero">
+  <h1>رموز Q</h1>
+  <p>رموز مختصرة تساعد على إيصال المعنى بسرعة، خصوصاً في ظروف الإشارة الضعيفة أو الاتصالات السريعة.</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>بطاقات سريعة</h2>
+    <div class="card-list" id="cards"></div>
+  </div>
+
+  <div class="panel">
+    <h2>اختبار سريع</h2>
+    <div id="quiz"></div>
+    <button class="btn gold" onclick="newQuestion()">سؤال جديد</button>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p><span dir="ltr">© 2026</span> البوابة التفاعلية لهواة اللاسلكي — محتوى تدريبي مساعد للكتاب.</p>
+  </footer>
+</div>
+
+<script>
+const codes=[
+ ["QTH","الموقع الجغرافي للمحطة"],
+ ["QSL","تأكيد الاستلام أو تأكيد الاتصال"],
+ ["QRP","إرسال بقدرة منخفضة"],
+ ["QRG","التردد المستخدم"],
+ ["QRM","تداخل من مصدر بشري"],
+ ["QRN","تداخل طبيعي أو ضوضاء جوية"]
+];
+const cards=document.getElementById("cards");
+codes.forEach(([c,m])=>{
+ const div=document.createElement("div");
+ div.className="flip-card";
+ div.innerHTML=`<div class="big" dir="ltr">${c}</div><div class="answer">${m}</div>`;
+ div.onclick=()=>{const a=div.querySelector(".answer"); a.style.display=a.style.display==="block"?"none":"block";}
+ cards.appendChild(div);
+});
+function newQuestion(){
+ const q=codes[Math.floor(Math.random()*codes.length)];
+ const wrong=codes.filter(x=>x[0]!==q[0]).sort(()=>Math.random()-0.5).slice(0,3);
+ const opts=[q,...wrong].sort(()=>Math.random()-0.5);
+ document.getElementById("quiz").innerHTML=`<p>ما معنى الرمز <b dir="ltr">${q[0]}</b>؟</p>`+
+ opts.map(o=>`<div class="choice" onclick="check(this,'${o[0]}','${q[0]}')">${o[1]}</div>`).join("")+
+ `<div class="result" id="result"></div>`;
+}
+function check(el,choice,answer){
+ document.querySelectorAll(".choice").forEach(c=>c.classList.remove("correct","wrong"));
+ el.classList.add(choice===answer?"correct":"wrong");
+ document.getElementById("result").textContent=choice===answer?"إجابة صحيحة":"حاول مرة أخرى";
+}
+newQuestion();
+</script>
+
+</body>
+</html>

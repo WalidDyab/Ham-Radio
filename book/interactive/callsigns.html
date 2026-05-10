@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>علامات النداء</title>
+<link rel="stylesheet" href="../styles/interactive.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="../index.html">العودة إلى صفحة الكتاب</a>
+    <span class="badge">محتوى تفاعلي مستوحى من كتاب أساسيات اللاسلكي للمبتدئين</span>
+  </div>
+
+  
+<section class="hero">
+  <h1>علامات النداء</h1>
+  <p>علامة النداء هي الهوية الرسمية للمحطة. تتكون غالباً من بادئة تدل على الدولة، ورقم، ولاحقة تميز المحطة.</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>تحليل علامة نداء</h2>
+    <input id="call" value="HZ1MW" dir="ltr">
+    <button class="btn gold" onclick="analyze()">تحليل</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <div class="panel">
+    <h2>بادئات شائعة</h2>
+    <table class="table">
+      <tr><th>البادئة</th><th>الدولة</th></tr>
+      <tr><td dir="ltr">HZ / 7Z / 8Z</td><td>المملكة العربية السعودية</td></tr>
+      <tr><td dir="ltr">K / W / N</td><td>الولايات المتحدة الأمريكية</td></tr>
+      <tr><td dir="ltr">G</td><td>المملكة المتحدة</td></tr>
+      <tr><td dir="ltr">JA</td><td>اليابان</td></tr>
+      <tr><td dir="ltr">9K</td><td>الكويت</td></tr>
+    </table>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p><span dir="ltr">© 2026</span> البوابة التفاعلية لهواة اللاسلكي — محتوى تدريبي مساعد للكتاب.</p>
+  </footer>
+</div>
+
+<script>
+function analyze(){
+ const c=document.getElementById("call").value.toUpperCase().trim();
+ const match=c.match(/^([A-Z0-9]+?)(\d)([A-Z]+)$/);
+ let prefix="غير واضح", num="غير واضح", suffix="غير واضح", country="غير محددة";
+ if(match){ prefix=match[1]; num=match[2]; suffix=match[3]; }
+ if(c.startsWith("HZ")||c.startsWith("7Z")||c.startsWith("8Z")) country="المملكة العربية السعودية";
+ else if(c.startsWith("9K")) country="الكويت";
+ else if(c.startsWith("JA")) country="اليابان";
+ else if(c.startsWith("G")) country="المملكة المتحدة";
+ else if(["K","W","N"].some(p=>c.startsWith(p))) country="الولايات المتحدة الأمريكية";
+ document.getElementById("result").innerHTML=
+ `الدولة المتوقعة: <b>${country}</b><br>البادئة: <b dir="ltr">${prefix}</b><br>الرقم: <b dir="ltr">${num}</b><br>اللاحقة: <b dir="ltr">${suffix}</b>`;
+}
+analyze();
+</script>
+
+</body>
+</html>

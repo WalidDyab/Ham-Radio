@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الأبجدية الدولية المنطوقة</title>
+<link rel="stylesheet" href="../styles/interactive.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="../index.html">العودة إلى صفحة الكتاب</a>
+    <span class="badge">محتوى تفاعلي مستوحى من كتاب أساسيات اللاسلكي للمبتدئين</span>
+  </div>
+
+  
+<section class="hero">
+  <h1>الأبجدية الدولية المنطوقة</h1>
+  <p>تُستخدم لتهجئة علامات النداء والأسماء بوضوح أثناء الاتصال، خصوصاً عند وجود تشويش أو ضعف في الإشارة.</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>بطاقات تدريبية</h2>
+    <p>اضغط على البطاقة لعرض الكلمة الدولية المقابلة للحرف.</p>
+    <div class="card-list" id="cards"></div>
+  </div>
+
+  <div class="panel">
+    <h2>تدريب على علامة النداء</h2>
+    <p>اكتب علامة نداء، وسيتم تحويل الحروف إلى الأبجدية الدولية.</p>
+    <input id="callsign" value="HZ1MW" dir="ltr">
+    <button class="btn gold" onclick="spellCall()">تهجئة علامة النداء</button>
+    <div class="result" id="spellResult"></div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p><span dir="ltr">© 2026</span> البوابة التفاعلية لهواة اللاسلكي — محتوى تدريبي مساعد للكتاب.</p>
+  </footer>
+</div>
+
+<script>
+const phonetic = {
+A:"Alpha",B:"Bravo",C:"Charlie",D:"Delta",E:"Echo",F:"Foxtrot",G:"Golf",H:"Hotel",I:"India",J:"Juliett",K:"Kilo",L:"Lima",M:"Mike",
+N:"November",O:"Oscar",P:"Papa",Q:"Quebec",R:"Romeo",S:"Sierra",T:"Tango",U:"Uniform",V:"Victor",W:"Whiskey",X:"X-ray",Y:"Yankee",Z:"Zulu"
+};
+const target = document.getElementById("cards");
+Object.entries(phonetic).forEach(([k,v])=>{
+  const div=document.createElement("div");
+  div.className="flip-card";
+  div.innerHTML=`<div class="big">${k}</div><div class="answer">${v}</div>`;
+  div.onclick=()=>{const a=div.querySelector(".answer"); a.style.display=a.style.display==="block"?"none":"block";}
+  target.appendChild(div);
+});
+function spellCall(){
+  const val=document.getElementById("callsign").value.toUpperCase().replace(/\s+/g,"");
+  const out=[...val].map(ch=>phonetic[ch] || ch).join(" · ");
+  document.getElementById("spellResult").textContent=out;
+}
+spellCall();
+</script>
+
+</body>
+</html>

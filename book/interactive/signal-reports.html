@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تقارير الإشارة</title>
+<link rel="stylesheet" href="../styles/interactive.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="../index.html">العودة إلى صفحة الكتاب</a>
+    <span class="badge">محتوى تفاعلي مستوحى من كتاب أساسيات اللاسلكي للمبتدئين</span>
+  </div>
+
+  
+<section class="hero">
+  <h1>تقارير الإشارة</h1>
+  <p>تستخدم لتقييم وضوح وقوة الإشارة أثناء الاتصال. في الاتصال الصوتي نستخدم غالباً تقريراً من رقمين مثل 59.</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>محاكي التقرير الصوتي</h2>
+    <label>درجة وضوح الصوت</label>
+    <select id="r">
+      <option value="1">1 - غير مفهوم إطلاقاً</option>
+      <option value="2">2 - مفهوم بشكل متقطع</option>
+      <option value="3">3 - مفهوم بصعوبة</option>
+      <option value="4">4 - مفهوم مع بعض الصعوبة</option>
+      <option value="5" selected>5 - مفهوم تماماً</option>
+    </select>
+    <br><br>
+    <label>درجة قوة الإشارة</label>
+    <select id="s">
+      <option value="1">1 - ضعيف جداً</option>
+      <option value="3">3 - ضعيف إلى متوسط</option>
+      <option value="5">5 - جيد</option>
+      <option value="7">7 - قوي</option>
+      <option value="9" selected>9 - قوي جداً</option>
+    </select>
+    <button class="btn gold" onclick="report()">اعرض التقرير</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <div class="panel">
+    <h2>أمثلة مهمة</h2>
+    <table class="table">
+      <tr><th>التقرير</th><th>المعنى</th></tr>
+      <tr><td dir="ltr">59</td><td>صوت واضح وإشارة قوية جداً</td></tr>
+      <tr><td dir="ltr">33</td><td>إشارة ضعيفة وصوت غير واضح</td></tr>
+      <tr><td dir="ltr">599</td><td>يستخدم غالباً في مورس/الرقمي ويضيف جودة النغمة</td></tr>
+    </table>
+    <p class="note">الدقة في تقرير الإشارة تساعد الطرف الآخر على تحسين الإرسال.</p>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p><span dir="ltr">© 2026</span> البوابة التفاعلية لهواة اللاسلكي — محتوى تدريبي مساعد للكتاب.</p>
+  </footer>
+</div>
+
+<script>
+function report(){
+ const r=document.getElementById("r").value;
+ const s=document.getElementById("s").value;
+ document.getElementById("result").innerHTML=`تقريرك هو: <b dir="ltr">${r}${s}</b>`;
+}
+report();
+</script>
+
+</body>
+</html>
