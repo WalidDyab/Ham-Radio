@@ -1,0 +1,1781 @@
+[
+  {
+    "id": 4,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "من يقوم بتنظيم لاسلكي الهواة عالميا ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "ITU الاتحاد العالمي للاتصالات"
+      },
+      {
+        "id": "B",
+        "text": "الاتحاد العالمي للهاتف والبريد"
+      },
+      {
+        "id": "C",
+        "text": "منظمة الثقافة العالمية"
+      },
+      {
+        "id": "D",
+        "text": "الجمعية الدولية لهواة اللاسلكي"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 5,
+    "category": null,
+    "points": 3,
+    "type": "single_choice",
+    "question": "ماهي خدمه لاسلكي الهواة",
+    "options": [
+      {
+        "id": "A",
+        "text": "هي خدمة الاتصالات اللاسلكية الأرضية أو عن طريق الأقمار الصناعية التي يستخدم فيها جهاز لاسلكي الاتصال أو البحث الفني من قبل الأفراد المهتمين بعائد مادي كاهتمام شخصي فقط ويستهدف تحقيق منافع مالية"
+      },
+      {
+        "id": "B",
+        "text": "خدمة الاتصالات لغرض التدريب الذاتي، والتواصل والبحث الفني بين محترفين اللاسلكي، وهم الأشخاص المرخص لهم فقط ولديهم اهتمام بتقنية اللاسلكي وذلك بهدف شخصي فقط، وبدون تحقيق فائدة أو منافع مالية"
+      },
+      {
+        "id": "C",
+        "text": "هي خدمة الاتصالات اللاسلكية الأرضية أو عن طريق الأقمار الصناعية التي يستخدم فيها جهاز لاسلكي بغية التدريب الذاتي، أو الاتصال أو البحث الفني من قبل الأفراد المهتمين بتقنية اللاسلكي، كاهتمام شخصي فقط، ولا يستهدف تحقيق منافع مالية"
+      },
+      {
+        "id": "D",
+        "text": "خدمة الاتصالات لغرض التدريب الذاتي والتواصل والبحث الفني بين هواة اللاسلكي، وهم الأشخاص المرخص لهم فقط ولديهم اهتمام بتقنية اللاسلكي وذلك بهدف تحقيق فائدة أو منافع مالية"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 6,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "المملكة العربية السعودية تقع في أي منطقة (Region) حسب تقسيم الإتحاد الدولي للاتصالات ITU ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "Region3"
+      },
+      {
+        "id": "B",
+        "text": "Region1"
+      },
+      {
+        "id": "C",
+        "text": "Region4"
+      },
+      {
+        "id": "D",
+        "text": "Region2"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 7,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "في ضوء قانون أوم : كم تبلغ قيمة الجهد في دائرة كهربائية إذا كانت المقاومة قدرها 10 أوم و شدة التيار 1.38 أمبير ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 فولت"
+      },
+      {
+        "id": "B",
+        "text": "13.8 فولت"
+      },
+      {
+        "id": "C",
+        "text": "8.31 فولت"
+      },
+      {
+        "id": "D",
+        "text": "3.81 فولت"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 8,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "في أي دولة يكون هاوي اللاسلكي حاصل على إشارة النداء SAR1HZ ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "أوكرانيا"
+      },
+      {
+        "id": "B",
+        "text": "المملكة العربية السعودية"
+      },
+      {
+        "id": "C",
+        "text": "الجزائر"
+      },
+      {
+        "id": "D",
+        "text": "الإمارات العربية المتحدة"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 9,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "إذا أتت بعد إشارة النداء /P على ماذا تدل اللاحقة الآتية ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "تدل على أن الهاوي يعمل خارج محطته"
+      },
+      {
+        "id": "B",
+        "text": "تدل على أن الهاوي يعمل من سيارته"
+      },
+      {
+        "id": "C",
+        "text": "تدل فقط على أن المحطة في موقع غير المذكور في الرخصة بشكل مؤقت"
+      },
+      {
+        "id": "D",
+        "text": "تدل على أن الهاوي في سفينة وسط البحر"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 10,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "إذا أتت بعد إشارة النداء /M على ماذا تدل اللاحقة الآتية ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "تدل على إن الهاوي يعمل خارج محطته"
+      },
+      {
+        "id": "B",
+        "text": "تدل على إن الهاوي يعمل من سيارته"
+      },
+      {
+        "id": "C",
+        "text": "تدل فقط على مكان خارج المدن"
+      },
+      {
+        "id": "D",
+        "text": "تدل على إن الهاوي في سفينة وسط البحر"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 11,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "إذا أتت بعد إشارة النداء /QRP على ماذا تدل اللاحقة الآتية ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "تدل على إن الهاوي يعمل خارج محطته"
+      },
+      {
+        "id": "B",
+        "text": "تدل على إن الهاوي يعمل من سيارته"
+      },
+      {
+        "id": "C",
+        "text": "تدل فقط على مكان خارج المدن"
+      },
+      {
+        "id": "D",
+        "text": "تدل على إن الهاوي يراسل بقدرة 10 وات أو أقل"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 12,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو الدليل الذي يثبت حدوث اتصال لاسلكي بين الهواة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "التسجيل الصوتي"
+      },
+      {
+        "id": "B",
+        "text": "التسجيل الحاسوبي"
+      },
+      {
+        "id": "C",
+        "text": "التسجيل الكتابي مع التسجيل الحاسوبي"
+      },
+      {
+        "id": "D",
+        "text": "بطاقة الاتصال QSL Card أو التأكيد الإلكتروني"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 13,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "في المقطع المرفق هل قام الهاوي النداء بشكل صحيح ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "لا"
+      },
+      {
+        "id": "B",
+        "text": "نعم"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iOGEUSrcSC4"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 14,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو النمط الأكثر استخداما في اتصالات الهواة على التردد 144 MHZ ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "USB"
+      },
+      {
+        "id": "B",
+        "text": "LSB"
+      },
+      {
+        "id": "C",
+        "text": "FM"
+      },
+      {
+        "id": "D",
+        "text": "AM"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 15,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "أي من التالي بث صوتي يستخدم أضيق عرض نطاق ترددي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "Single Sideband emission"
+      },
+      {
+        "id": "B",
+        "text": "Double Sideband emission"
+      },
+      {
+        "id": "C",
+        "text": "Phase Modulation emission"
+      },
+      {
+        "id": "D",
+        "text": "Frequency Modulated emission"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 16,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو النمط الأكثر استخداما في اتصالات الهواة على التردد 14 MHZ ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "USB"
+      },
+      {
+        "id": "B",
+        "text": "LSB"
+      },
+      {
+        "id": "C",
+        "text": "FM"
+      },
+      {
+        "id": "D",
+        "text": "AM"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 17,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ماذا يعني رمز QRM ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "تداخلات وتشويش بسبب الطبيعة"
+      },
+      {
+        "id": "B",
+        "text": "تداخلات وتشويش بسبب تدخل بشري"
+      },
+      {
+        "id": "C",
+        "text": "سرعة الإرسال"
+      },
+      {
+        "id": "D",
+        "text": "تقرير الإشارة"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 18,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ماذا يعني الاختصار WX ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "أجمل الأمنيات"
+      },
+      {
+        "id": "B",
+        "text": "من يناديني"
+      },
+      {
+        "id": "C",
+        "text": "إلى اللقاء"
+      },
+      {
+        "id": "D",
+        "text": "الأحوال الجوية"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 19,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هي الطريقة المتبعة لتقييم الاتصال RST ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "درجة الوضوح - قوة الإشارة - النغمة"
+      },
+      {
+        "id": "B",
+        "text": "قوة الإشارة - صفاء الإشارة من التداخلات – جمال الصوت"
+      },
+      {
+        "id": "C",
+        "text": "قوة الإشارة - النغمة – حدة الصوت"
+      },
+      {
+        "id": "D",
+        "text": "كل ما ذكر غير صحيح"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 20,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ماذا يعنى تقرير 5-11 لتقييم اتصال صوتي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "إشارة غير واضحة ذات قوة جيدة"
+      },
+      {
+        "id": "B",
+        "text": "إشارة واضحة جدا - جيدة القوة"
+      },
+      {
+        "id": "C",
+        "text": "إشارة ممتازة"
+      },
+      {
+        "id": "D",
+        "text": "لا علاقة لها بهواية الراديو"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 21,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "على ماذا يدل الرقم 4 في هذا التقرير 5-7-4 ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "Strength قوة الإشارة"
+      },
+      {
+        "id": "B",
+        "text": "Readability وضوح الإشارة"
+      },
+      {
+        "id": "C",
+        "text": "propagation RF انتشار الإشارة"
+      },
+      {
+        "id": "D",
+        "text": "Tone نغمة الإشارة"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 22,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "نستخدم التقرير ذو الثلاثة أرقام لتقييم إشارة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "الصوت"
+      },
+      {
+        "id": "B",
+        "text": "إشارة مورس والاتصال الرقمي"
+      },
+      {
+        "id": "C",
+        "text": "الضوضاء"
+      },
+      {
+        "id": "D",
+        "text": "إشارة الصوت والنغمة"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 23,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو أفضل تقرير إشارة من الآتي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "5-7"
+      },
+      {
+        "id": "B",
+        "text": "5-9"
+      },
+      {
+        "id": "C",
+        "text": "2-1"
+      },
+      {
+        "id": "D",
+        "text": "4-4"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 24,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "لماذا نرسل تقييم الإشارة بالأرقام و ليس بالكلمات؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "يمكن أن تقيم الإشارة بكلمات دون استخدام الارقام"
+      },
+      {
+        "id": "B",
+        "text": "لا حاجة لمعرفة تقييم الاتصال"
+      },
+      {
+        "id": "C",
+        "text": "لتوحيد النظام وسهولة الاستخدام"
+      },
+      {
+        "id": "D",
+        "text": "لا شيء مما سبق"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 25,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هي مقاومة السلك المحوري الذي يستخدمه الهواة بكثرة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "100Ω"
+      },
+      {
+        "id": "B",
+        "text": "75Ω"
+      },
+      {
+        "id": "C",
+        "text": "25Ω"
+      },
+      {
+        "id": "D",
+        "text": "50Ω"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 26,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "الهوائي الرأسي يمتاز بالتالي :",
+    "options": [
+      {
+        "id": "A",
+        "text": "له زاوية انتشار منخفضة"
+      },
+      {
+        "id": "B",
+        "text": "له زاوية انتشار دائرية"
+      },
+      {
+        "id": "C",
+        "text": "لا يعمل جيدا على الموجات العالية"
+      },
+      {
+        "id": "D",
+        "text": "له زاوية انتشار رأسية"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 27,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "كلما استخدمنا تردد أعلى يصبح طول الهوائي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "أطول"
+      },
+      {
+        "id": "B",
+        "text": "لا يتغير"
+      },
+      {
+        "id": "C",
+        "text": "لا علاقة له بالتردد"
+      },
+      {
+        "id": "D",
+        "text": "أقصر"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 28,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "إذا فحصت الكابلات المحورية و وجدت SWR عالي دل ذلك على؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "توافق الكيبل المحوري"
+      },
+      {
+        "id": "B",
+        "text": "عدم توافق مقاومات الهوائي أو الكيبل المحوري تالف"
+      },
+      {
+        "id": "C",
+        "text": "اتزان الهوائي"
+      },
+      {
+        "id": "D",
+        "text": "الهوائي قديم"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 29,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بماذا نقيس الأمواج المرتدة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "VOLTMETER"
+      },
+      {
+        "id": "B",
+        "text": "DIPMETER"
+      },
+      {
+        "id": "C",
+        "text": "SWR METER"
+      },
+      {
+        "id": "D",
+        "text": "AMPEREMETER"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 30,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما نتيجة وجود أمواج مرتدة عالية ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "قد تتسبب في تلف الهوائي"
+      },
+      {
+        "id": "B",
+        "text": "قد تتلف الراديو"
+      },
+      {
+        "id": "C",
+        "text": "قد تذيب الكيبل المحوري في أغلب الحالات"
+      },
+      {
+        "id": "D",
+        "text": "لا علاقة له بالجهاز"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 31,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما الذي يسبب تغير في الحد الأعلى للتردد القابل للاستخدام MUF ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ionosphere درجة حرارة الغلاف الأيوني"
+      },
+      {
+        "id": "B",
+        "text": "سرعة الرياح في طبقات الجو العليا"
+      },
+      {
+        "id": "C",
+        "text": "كمية الأشعة المستقبلة من الشمس, خاصة الأشعة فوق البنفسجية"
+      },
+      {
+        "id": "D",
+        "text": "نوعية الطقس تحت طبقة الغلاف الأيوني"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 32,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو الحيز الترددي الموزع حاليا للهواة في المملكة في نطاق 80m ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "4000-3000 Khz"
+      },
+      {
+        "id": "B",
+        "text": "3800-3500 Khz"
+      },
+      {
+        "id": "C",
+        "text": "3635-3620 Khz"
+      },
+      {
+        "id": "D",
+        "text": "هذا النطاق غير مخصص حاليا بالمملكة لخدمة هواة اللاسلكي"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 33,
+    "category": null,
+    "points": 3,
+    "type": "single_choice",
+    "question": "أي من النطاقات الترددية أقل من (30) ميجاهرتز محدد حاليا لخدمة لاسلكي الهواة في المملكة العربية السعودية ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.81-1.85mhz , 7.0-7.3mhz , 14.0-14.35mhz , 18.068-18.168mhz , 21.0-21.45mhz , 24.89-24.99mhz , 28.0-29.7mhz"
+      },
+      {
+        "id": "B",
+        "text": "1.81-1.85mhz , 7.0-7.2mhz , 14.0-14.35mhz , 18.068-18.168mhz , 21.0-21.45mhz , 24.89-24.99mhz , 28.0-29.7mhz"
+      },
+      {
+        "id": "C",
+        "text": "1.81-1.85mhz , 3.0-3.2mhz , 14.0-14.35mhz , 18.068-18.168mhz , 21.0-21.45mhz , 24.89-24.99mhz , 28.0-29.7mhz"
+      },
+      {
+        "id": "D",
+        "text": "1.80-1.85mhz , 7.0-7.2mhz , 14.0-14.35mhz , 18.068-18.168mhz , 21.0-21.45mhz , 24.89-24.99mhz , 28.0"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 34,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "إشارة النداء الخاصة بك SAR1HZ هل يجب عليك الإجابة على نداء CQ الذي سمعته على هذا الشكل CQ SA CQ SA DE A41RS ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "لا لأن RS41A يوضح أنه يريد الاتصال فقط بإشارة نداء لا تحتوي على SA"
+      },
+      {
+        "id": "B",
+        "text": "نعم لأن SA Saudi Arabia المملكة العربية السعودية يوضح أنه يريد الاتصال فقط بشخص"
+      },
+      {
+        "id": "C",
+        "text": "لا لأن RS41A يوضح أنه يريد الاتصال بشخص في أمريكا الجنوبية فقط South America"
+      },
+      {
+        "id": "D",
+        "text": "جميع ما ذكر غير صحيح"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 35,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هي قدرة الخرج المسموح بها لهواة اللاسلكي في المملكة العربية السعودية؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "VHF 100 watts . HF 100 watts . UHF 100 watts"
+      },
+      {
+        "id": "B",
+        "text": "VHF 50 watts . HF 200 watts"
+      },
+      {
+        "id": "C",
+        "text": "VHF 50 watts . HF 200 watts . UHF 75watts"
+      },
+      {
+        "id": "D",
+        "text": "VHF 200 watts . HF 50 watts"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 36,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو اسم العنصر رقم (2) في الهوائي التوجيهي Yagi التالي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "Director الموجه"
+      },
+      {
+        "id": "B",
+        "text": "Boom الحامل"
+      },
+      {
+        "id": "C",
+        "text": "Reflector العاكس"
+      },
+      {
+        "id": "D",
+        "text": "Driven Element المشع"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Q36.jpg"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 37,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو اسم العنصر رقم 3 ؟ النموذج يبين مخطط لدائرة استقبال Superheterodyne Radio Receiver",
+    "options": [
+      {
+        "id": "A",
+        "text": "Detector كاشف"
+      },
+      {
+        "id": "B",
+        "text": "Variable Frequency Oscillator مذبذب التردد المتغير"
+      },
+      {
+        "id": "C",
+        "text": "Mixer مازج"
+      },
+      {
+        "id": "D",
+        "text": "RF Amplifier مضخم الترددات اللاسلكية"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Q37.png"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 38,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "في الدائرة أدناه ماهي المقاومة الكلية R A-B ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "250kΩ"
+      },
+      {
+        "id": "B",
+        "text": "0.25kΩ"
+      },
+      {
+        "id": "C",
+        "text": "200kΩ"
+      },
+      {
+        "id": "D",
+        "text": "400kΩ"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Q38.jpg"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 39,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "أي من النطاقات التالية مسموح العمل عليها من قبل هواة اللاسلكي في المملكة العربية السعودية ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "MW"
+      },
+      {
+        "id": "B",
+        "text": "LF"
+      },
+      {
+        "id": "C",
+        "text": "SHF"
+      },
+      {
+        "id": "D",
+        "text": "لاشي مما ذكر"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 40,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "في مجموعة Code-Q إلى ماذا يرمز YL ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "دولة لاتفيا"
+      },
+      {
+        "id": "B",
+        "text": "شابة"
+      },
+      {
+        "id": "C",
+        "text": "زوجة"
+      },
+      {
+        "id": "D",
+        "text": "لا شيء مما ذكر"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 41,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "ما هو هذا القانون ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "قانون تيسلا"
+      },
+      {
+        "id": "B",
+        "text": "قانون أمبير"
+      },
+      {
+        "id": "C",
+        "text": "قانون الديسيبل"
+      },
+      {
+        "id": "D",
+        "text": "قانون أوم"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Q41.jpg"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 42,
+    "category": null,
+    "points": 3,
+    "type": "single_choice",
+    "question": "ما تعريف هاوي اللاسلكي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "هو شخص محترف ولديه اهتمامات بتقنيات اللاسلكي"
+      },
+      {
+        "id": "B",
+        "text": "هو شخص مرخص له ولديه اهتمامات بتقنيات الإلكترونيات"
+      },
+      {
+        "id": "C",
+        "text": "هو شخص مرخص له ولديه اهتمامات بتقنيات اللاسلكي"
+      },
+      {
+        "id": "D",
+        "text": "هو شخص غير مرخص له ولديه اهتمامات بتقنيات اللاسلكي"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 43,
+    "category": null,
+    "points": 3,
+    "type": "single_choice",
+    "question": "ما تعريف محطة لاسلكي الهواة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "هي جهاز سلكي يعمل وفق معايير فنية وإجراءات خاصة بهذه الخدمة محددة في أنظمة الراديو الصادرة عن الاتحاد الدولي للاتصالات ونظام الاتصالات ولائحته التنفيذية وتنظيم هيئة الاتصالات وتقنية المعلومات"
+      },
+      {
+        "id": "B",
+        "text": "هي جهاز لاسلكي يعمل وفق معايير فنية وإجراءات خاصة بهذه الخدمة محددة في أنظمة الراديو الصادرة عن الاتحاد الدولي للاتصالات ونظام الاتصالات ولائحته التنفيذية وتنظيم هيئة الاتصالات وتقنية المعلومات"
+      },
+      {
+        "id": "C",
+        "text": "هي جهاز لاسلكي يعمل وفق معايير فنية وإجراءات خاصة بهذه الخدمة غير محددة في أنظمة الراديو الصادرة عن الاتحاد الدولي للاتصالات ونظام الاتصالات ولائحته التنفيذية وتنظيم هيئة الاتصالات وتقنية المعلومات"
+      },
+      {
+        "id": "D",
+        "text": "هي جهاز لاسلكي يعمل وفق معايير فنية وإجراءات خاصة بهذه الخدمة محددة في أنظمة الراديو الصادرة عن الاتحاد الدولي للهواة ونظام الاتصالات"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 44,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (● ▬) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "B"
+      },
+      {
+        "id": "C",
+        "text": "N"
+      },
+      {
+        "id": "D",
+        "text": "O"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 45,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (▬ ●) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "L"
+      },
+      {
+        "id": "B",
+        "text": "A"
+      },
+      {
+        "id": "C",
+        "text": "E"
+      },
+      {
+        "id": "D",
+        "text": "T"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 46,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (▬ ▬ ▬) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "W"
+      },
+      {
+        "id": "B",
+        "text": "Q"
+      },
+      {
+        "id": "C",
+        "text": "G"
+      },
+      {
+        "id": "D",
+        "text": "O"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 47,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (● ▬ ▬ ●) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "X"
+      },
+      {
+        "id": "B",
+        "text": "M"
+      },
+      {
+        "id": "C",
+        "text": "J"
+      },
+      {
+        "id": "D",
+        "text": "P"
+      }
+    ],
+    "correctOptionId": "D",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 48,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (● ● ●) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "S"
+      },
+      {
+        "id": "B",
+        "text": "M"
+      },
+      {
+        "id": "C",
+        "text": "I"
+      },
+      {
+        "id": "D",
+        "text": "V"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 49,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (▬ ● ● ▬) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "K"
+      },
+      {
+        "id": "B",
+        "text": "F"
+      },
+      {
+        "id": "C",
+        "text": "X"
+      },
+      {
+        "id": "D",
+        "text": "R"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 50,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (▬ ▬) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "A"
+      },
+      {
+        "id": "B",
+        "text": "M"
+      },
+      {
+        "id": "C",
+        "text": "S"
+      },
+      {
+        "id": "D",
+        "text": "D"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 51,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (● ▬ ▬ ▬ ▬) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 52,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (▬ ▬ ▬ ▬ ▬) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "0"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 53,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (● ● ● ● ●) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 54,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (▬ ● ● ● ●) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 55,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "احسب قيمة المقاومة في الصورة",
+    "options": [
+      {
+        "id": "A",
+        "text": "56KΩ"
+      },
+      {
+        "id": "B",
+        "text": "65KΩ"
+      },
+      {
+        "id": "C",
+        "text": "45KΩ"
+      },
+      {
+        "id": "D",
+        "text": "25KΩ"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Q55.jpg"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 56,
+    "category": "Morse Code",
+    "points": 0.5,
+    "type": "single_choice",
+    "question": "في شفرة مورس ماذا يعني الرمز (● ▬ ●) ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "W"
+      },
+      {
+        "id": "B",
+        "text": "E"
+      },
+      {
+        "id": "C",
+        "text": "R"
+      },
+      {
+        "id": "D",
+        "text": "T"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 57,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بادئة النداء (HZ) ترمز لدولة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "الإمارات العربية المتحدة"
+      },
+      {
+        "id": "B",
+        "text": "البحرين"
+      },
+      {
+        "id": "C",
+        "text": "المملكة العربية السعودية"
+      },
+      {
+        "id": "D",
+        "text": "مصر"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 58,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بادئة النداء (K9) ترمز لدولة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "قطر"
+      },
+      {
+        "id": "B",
+        "text": "الكويت"
+      },
+      {
+        "id": "C",
+        "text": "العراق"
+      },
+      {
+        "id": "D",
+        "text": "الأردن"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 59,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بادئة النداء (F) ترمز لدولة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "فرنسا"
+      },
+      {
+        "id": "B",
+        "text": "أمريكا"
+      },
+      {
+        "id": "C",
+        "text": "إيطاليا"
+      },
+      {
+        "id": "D",
+        "text": "أسبانيا"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 60,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "أي من بادئات النداء التالية خارج أوربا ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "OD-A7-JY"
+      },
+      {
+        "id": "B",
+        "text": "K-DL-PA"
+      },
+      {
+        "id": "C",
+        "text": "SM-EA-G"
+      },
+      {
+        "id": "D",
+        "text": "OE-ON-5B"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 61,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بادئة النداء (4A) ترمز لدولة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "البحرين"
+      },
+      {
+        "id": "B",
+        "text": "سلطنة عمان"
+      },
+      {
+        "id": "C",
+        "text": "اليمن"
+      },
+      {
+        "id": "D",
+        "text": "السودان"
+      }
+    ],
+    "correctOptionId": "B",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 62,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بادئة النداء (SU) ترمز لدولة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "مصر"
+      },
+      {
+        "id": "B",
+        "text": "سوريا"
+      },
+      {
+        "id": "C",
+        "text": "تركيا"
+      },
+      {
+        "id": "D",
+        "text": "اليابان"
+      }
+    ],
+    "correctOptionId": "A",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 63,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "بادئة النداء (YB) ترمز لدولة ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "اليابان"
+      },
+      {
+        "id": "B",
+        "text": "الصين"
+      },
+      {
+        "id": "C",
+        "text": "اندونيسيا"
+      },
+      {
+        "id": "D",
+        "text": "روسيا البيضاء"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  },
+  {
+    "id": 64,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "في الدائرة الكهربائية التالية احسب الامبير بناء على المعطيات في الصورة",
+    "options": [
+      {
+        "id": "A",
+        "text": "1amp"
+      },
+      {
+        "id": "B",
+        "text": "6.5amp"
+      },
+      {
+        "id": "C",
+        "text": "5.41amp"
+      },
+      {
+        "id": "D",
+        "text": "3.33amp"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Q64.jpg"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 65,
+    "category": null,
+    "points": 1,
+    "type": "short_answer",
+    "question": "في المقطع المرفق ماهي إشارة نداء الهاوي ؟",
+    "options": ["VK7HH", "vk7hh"],
+    "correctOptionId": "",
+    "media": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iOGEUSrcSC4"
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "id": 66,
+    "category": null,
+    "points": 1,
+    "type": "single_choice",
+    "question": "تريد أن تحدد موقعك على الخريطة ، ما الحل المناسب لاستخدامه كهاوي لاسلكي ؟",
+    "options": [
+      {
+        "id": "A",
+        "text": "GPS نظام"
+      },
+      {
+        "id": "B",
+        "text": "خرائط قوقل"
+      },
+      {
+        "id": "C",
+        "text": "Locator Grid معين مواقع الشبكة"
+      },
+      {
+        "id": "D",
+        "text": "خطوط الطول و دوائر العرض"
+      }
+    ],
+    "correctOptionId": "C",
+    "media": [],
+    "metadata": null
+  }
+]
