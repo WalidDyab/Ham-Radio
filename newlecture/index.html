@@ -1,0 +1,2709 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>دورة مرشحي اختبار رخصة هواة اللاسلكي 2026</title>
+  <style>
+    :root {
+      --navy: #071d49;
+      --blue: #16d7ff;
+      --purple: #6d3df2;
+      --gold: #f6c453;
+      --bg: #f6f8fc;
+      --card: #fff;
+      --text: #12213a;
+      --line: #dbe2ef
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      direction: rtl
+    }
+
+    header {
+      background: radial-gradient(circle at 16% 15%, rgba(22, 215, 255, .24), transparent 26%), radial-gradient(circle at 86% 18%, rgba(246, 196, 83, .18), transparent 28%), linear-gradient(135deg, var(--navy), var(--purple));
+      color: white;
+      padding: 56px 6vw 44px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .kicker {
+      display: inline-block;
+      border: 1px solid rgba(246, 196, 83, .55);
+      background: rgba(246, 196, 83, .1);
+      color: #ffe4a3;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 16px
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      line-height: 1.16;
+      margin: 0 0 12px;
+      font-weight: 900
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      max-width: 980px;
+      margin: 0;
+      color: #eaf0ff
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      padding: 12px 6vw;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .toolbar input {
+      width: min(460px, 58vw);
+      padding: 10px 14px;
+      border: 1px solid #ccd6ea;
+      border-radius: 999px;
+      text-align: right;
+      font-family: inherit
+    }
+
+    .toolbar a.button {
+      text-decoration: none;
+      background: var(--navy);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 700;
+      white-space: nowrap
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 26px;
+      padding: 26px 6vw
+    }
+
+    nav {
+      position: sticky;
+      top: 74px;
+      align-self: start;
+      max-height: calc(100vh - 92px);
+      overflow: auto;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 8px 24px rgba(7, 29, 73, .06)
+    }
+
+    nav h3 {
+      margin: 4px 8px 10px;
+      color: var(--navy)
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: #243653;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: .86rem;
+      line-height: 1.45
+    }
+
+    nav a:hover {
+      background: #eef3ff;
+      color: #0b5ed7
+    }
+
+    nav .chapter {
+      margin: 0 0 10px;
+      border: 1px solid #e6edf8;
+      border-radius: 14px;
+      background: #fbfdff;
+      overflow: hidden
+    }
+
+    nav .chapter summary {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      font-weight: 900;
+      color: var(--navy);
+      list-style: none;
+      line-height: 1.45
+    }
+
+    nav .chapter summary::-webkit-details-marker {
+      display: none
+    }
+
+    nav .chapter summary::before {
+      content: "›";
+      font-size: .78rem;
+      color: #0b5ed7;
+      margin-left: 6px
+    }
+
+    nav .chapter[open] summary::before {
+      content: "⌄";
+      color: var(--gold)
+    }
+
+    nav .chapter .range {
+      direction: ltr;
+      white-space: nowrap;
+      font-size: .74rem;
+      color: #526985;
+      background: #eef3ff;
+      border: 1px solid #dbe7ff;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-weight: 800
+    }
+
+    nav .chapter-links {
+      padding: 0 8px 8px
+    }
+
+    main {
+      min-width: 0
+    }
+
+    .intro,
+    .slide {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 28px rgba(7, 29, 73, .08)
+    }
+
+    .intro {
+      padding: 28px
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: var(--navy)
+    }
+
+    .pillrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px
+    }
+
+    .pill {
+      background: #edf3ff;
+      color: #0b3b82;
+      border: 1px solid #cdddfa;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .9rem
+    }
+
+    .slide {
+      padding: 20px;
+      scroll-margin-top: 88px
+    }
+
+    .slide-meta {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 16px
+    }
+
+    .badge {
+      flex: 0 0 auto;
+      display: inline-grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      background: linear-gradient(135deg, var(--purple), #0b5ed7);
+      color: #fff;
+      border-radius: 16px;
+      font-weight: 900;
+      font-size: 1.1rem
+    }
+
+    .slide h2 {
+      margin: 0;
+      font-size: clamp(1.35rem, 2.4vw, 2.15rem);
+      color: var(--navy)
+    }
+
+    figure {
+      margin: 0
+    }
+
+    img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #d6deef;
+      display: block;
+      background: #fff
+    }
+
+    .summary {
+      margin-top: 12px;
+      background: #fff8e1;
+      border: 1px solid #ffe08a;
+      border-radius: 14px;
+      padding: 14px;
+      color: #3d3000
+    }
+
+    .summary h3 {
+      margin: 0 0 6px;
+      color: #3d3000;
+      font-size: 1rem
+    }
+
+    .summary p {
+      margin: 0
+    }
+
+    .hidden {
+      display: none !important
+    }
+
+    footer {
+      padding: 34px 6vw;
+      color: white;
+      background: var(--navy);
+      text-align: center;
+      margin-top: 30px
+    }
+
+    @media(max-width:980px) {
+      .layout {
+        grid-template-columns: 1fr;
+        padding: 16px 4vw
+      }
+
+      nav {
+        position: relative;
+        top: auto;
+        max-height: none
+      }
+
+      .toolbar {
+        flex-wrap: wrap
+      }
+
+      header {
+        padding: 30px 4vw 24px
+      }
+
+      h1 {
+        font-size: 2rem
+      }
+
+      .slide {
+        padding: 16px
+      }
+
+      .badge {
+        width: 44px;
+        height: 44px;
+        font-size: .92rem;
+        border-radius: 12px
+      }
+
+      .slide h2 {
+        font-size: 1.25rem
+      }
+
+      .toolbar input {
+        width: 100%
+      }
+
+      .toolbar a.button {
+        flex: 1 1 auto
+      }
+    }
+
+    @media print {
+
+      .toolbar,
+      nav {
+        display: none
+      }
+
+      .layout {
+        display: block;
+        padding: 0
+      }
+
+      .slide {
+        break-inside: avoid;
+        box-shadow: none
+      }
+
+      header {
+        padding: 22px;
+        color: #111;
+        background: white
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>دورة مرشحي اختبار رخصة هواة اللاسلكي</h1>
+  </header>
+  <div class="toolbar"><input id="search" placeholder="ابحث في محتوى الدورة..." /><a class="button"
+      href="../index.html">الرئيسية</a><a class="button" href="../exam/index.html">الاختبار</a><a class="button"
+      href="#" onclick="window.print();return false;">طباعة / حفظ PDF</a></div>
+  <div class="layout">
+    <nav aria-label="محتويات الدورة">
+      <h3>محتويات الدورة</h3>
+      <div class="nav-content">
+        <details class="chapter" open>
+          <summary>المقدمة واستخدام الدورة<span class="range">001-004</span></summary>
+          <div class="chapter-links"><a href="#slide-001">001. غلاف الدورة</a><a href="#slide-002">002. كيفية استخدام
+              الدورة</a><a href="#slide-003">003. جدول المحتويات</a><a href="#slide-004">004. دليل الرموز والألوان</a>
+          </div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 1: مقدمة عن هواية اللاسلكي<span class="range">005-014</span></summary>
+          <div class="chapter-links"><a href="#slide-005">005. الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 005</a><a
+              href="#slide-006">006. الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 006</a><a href="#slide-007">007. الفصل
+              1: مقدمة عن هواية اللاسلكي - الشريحة 007</a><a href="#slide-008">008. الفصل 1: مقدمة عن هواية اللاسلكي -
+              الشريحة 008</a><a href="#slide-009">009. الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 009</a><a
+              href="#slide-010">010. الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 010</a><a href="#slide-011">011. الفصل
+              1: مقدمة عن هواية اللاسلكي - الشريحة 011</a><a href="#slide-012">012. الفصل 1: مقدمة عن هواية اللاسلكي -
+              الشريحة 012</a><a href="#slide-013">013. الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 013</a><a
+              href="#slide-014">014. الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 014</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 2: التراخيص والشروط القانونية<span class="range">015-026</span></summary>
+          <div class="chapter-links"><a href="#slide-015">015. الفصل 2: التراخيص والشروط القانونية - الشريحة 015</a><a
+              href="#slide-016">016. الفصل 2: التراخيص والشروط القانونية - الشريحة 016</a><a href="#slide-017">017.
+              الفصل 2: التراخيص والشروط القانونية - الشريحة 017</a><a href="#slide-018">018. الفصل 2: التراخيص والشروط
+              القانونية - الشريحة 018</a><a href="#slide-019">019. الفصل 2: التراخيص والشروط القانونية - الشريحة
+              019</a><a href="#slide-020">020. الفصل 2: التراخيص والشروط القانونية - الشريحة 020</a><a
+              href="#slide-021">021. الفصل 2: التراخيص والشروط القانونية - الشريحة 021</a><a href="#slide-022">022.
+              الفصل 2: التراخيص والشروط القانونية - الشريحة 022</a><a href="#slide-023">023. الفصل 2: التراخيص والشروط
+              القانونية - الشريحة 023</a><a href="#slide-024">024. الفصل 2: التراخيص والشروط القانونية - الشريحة
+              024</a><a href="#slide-025">025. الفصل 2: التراخيص والشروط القانونية - الشريحة 025</a><a
+              href="#slide-026">026. الفصل 2: التراخيص والشروط القانونية - الشريحة 026</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 3: إشارات النداء والاتحاد الدولي<span class="range">027-040</span></summary>
+          <div class="chapter-links"><a href="#slide-027">027. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة
+              027</a><a href="#slide-028">028. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 028</a><a
+              href="#slide-029">029. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 029</a><a href="#slide-030">030.
+              الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 030</a><a href="#slide-031">031. الفصل 3: إشارات النداء
+              والاتحاد الدولي - الشريحة 031</a><a href="#slide-032">032. الفصل 3: إشارات النداء والاتحاد الدولي -
+              الشريحة 032</a><a href="#slide-033">033. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 033</a><a
+              href="#slide-034">034. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 034</a><a href="#slide-035">035.
+              الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 035</a><a href="#slide-036">036. الفصل 3: إشارات النداء
+              والاتحاد الدولي - الشريحة 036</a><a href="#slide-037">037. الفصل 3: إشارات النداء والاتحاد الدولي -
+              الشريحة 037</a><a href="#slide-038">038. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 038</a><a
+              href="#slide-039">039. الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 039</a><a href="#slide-040">040.
+              الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 040</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 4: فيزياء الموجات والانتشار<span class="range">041-066</span></summary>
+          <div class="chapter-links"><a href="#slide-041">041. الفصل 4: فيزياء الموجات والانتشار - الشريحة 041</a><a
+              href="#slide-042">042. الفصل 4: فيزياء الموجات والانتشار - الشريحة 042</a><a href="#slide-043">043. الفصل
+              4: فيزياء الموجات والانتشار - الشريحة 043</a><a href="#slide-044">044. الفصل 4: فيزياء الموجات والانتشار -
+              الشريحة 044</a><a href="#slide-045">045. الفصل 4: فيزياء الموجات والانتشار - الشريحة 045</a><a
+              href="#slide-046">046. الفصل 4: فيزياء الموجات والانتشار - الشريحة 046</a><a href="#slide-047">047. الفصل
+              4: فيزياء الموجات والانتشار - الشريحة 047</a><a href="#slide-048">048. الفصل 4: فيزياء الموجات والانتشار -
+              الشريحة 048</a><a href="#slide-049">049. الفصل 4: فيزياء الموجات والانتشار - الشريحة 049</a><a
+              href="#slide-050">050. الفصل 4: فيزياء الموجات والانتشار - الشريحة 050</a><a href="#slide-051">051. الفصل
+              4: فيزياء الموجات والانتشار - الشريحة 051</a><a href="#slide-052">052. الفصل 4: فيزياء الموجات والانتشار -
+              الشريحة 052</a><a href="#slide-053">053. الفصل 4: فيزياء الموجات والانتشار - الشريحة 053</a><a
+              href="#slide-054">054. الفصل 4: فيزياء الموجات والانتشار - الشريحة 054</a><a href="#slide-055">055. الفصل
+              4: فيزياء الموجات والانتشار - الشريحة 055</a><a href="#slide-056">056. الفصل 4: فيزياء الموجات والانتشار -
+              الشريحة 056</a><a href="#slide-057">057. الفصل 4: فيزياء الموجات والانتشار - الشريحة 057</a><a
+              href="#slide-058">058. الفصل 4: فيزياء الموجات والانتشار - الشريحة 058</a><a href="#slide-059">059. الفصل
+              4: فيزياء الموجات والانتشار - الشريحة 059</a><a href="#slide-060">060. الفصل 4: فيزياء الموجات والانتشار -
+              الشريحة 060</a><a href="#slide-061">061. الفصل 4: فيزياء الموجات والانتشار - الشريحة 061</a><a
+              href="#slide-062">062. الفصل 4: فيزياء الموجات والانتشار - الشريحة 062</a><a href="#slide-063">063. الفصل
+              4: فيزياء الموجات والانتشار - الشريحة 063</a><a href="#slide-064">064. الفصل 4: فيزياء الموجات والانتشار -
+              الشريحة 064</a><a href="#slide-065">065. الفصل 4: فيزياء الموجات والانتشار - الشريحة 065</a><a
+              href="#slide-066">066. الفصل 4: فيزياء الموجات والانتشار - الشريحة 066</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 5: النطاقات الترددية والتشغيل<span class="range">067-083</span></summary>
+          <div class="chapter-links"><a href="#slide-067">067. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 067</a><a
+              href="#slide-068">068. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 068</a><a href="#slide-069">069.
+              الفصل 5: النطاقات الترددية والتشغيل - الشريحة 069</a><a href="#slide-070">070. الفصل 5: النطاقات الترددية
+              والتشغيل - الشريحة 070</a><a href="#slide-071">071. الفصل 5: النطاقات الترددية والتشغيل - الشريحة
+              071</a><a href="#slide-072">072. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 072</a><a
+              href="#slide-073">073. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 073</a><a href="#slide-074">074.
+              الفصل 5: النطاقات الترددية والتشغيل - الشريحة 074</a><a href="#slide-075">075. الفصل 5: النطاقات الترددية
+              والتشغيل - الشريحة 075</a><a href="#slide-076">076. الفصل 5: النطاقات الترددية والتشغيل - الشريحة
+              076</a><a href="#slide-077">077. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 077</a><a
+              href="#slide-078">078. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 078</a><a href="#slide-079">079.
+              الفصل 5: النطاقات الترددية والتشغيل - الشريحة 079</a><a href="#slide-080">080. الفصل 5: النطاقات الترددية
+              والتشغيل - الشريحة 080</a><a href="#slide-081">081. الفصل 5: النطاقات الترددية والتشغيل - الشريحة
+              081</a><a href="#slide-082">082. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 082</a><a
+              href="#slide-083">083. الفصل 5: النطاقات الترددية والتشغيل - الشريحة 083</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 6: أنماط الاتصال والإجراءات<span class="range">084-098</span></summary>
+          <div class="chapter-links"><a href="#slide-084">084. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 084</a><a
+              href="#slide-085">085. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 085</a><a href="#slide-086">086. الفصل
+              6: أنماط الاتصال والإجراءات - الشريحة 086</a><a href="#slide-087">087. الفصل 6: أنماط الاتصال والإجراءات -
+              الشريحة 087</a><a href="#slide-088">088. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 088</a><a
+              href="#slide-089">089. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 089</a><a href="#slide-090">090. الفصل
+              6: أنماط الاتصال والإجراءات - الشريحة 090</a><a href="#slide-091">091. الفصل 6: أنماط الاتصال والإجراءات -
+              الشريحة 091</a><a href="#slide-092">092. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 092</a><a
+              href="#slide-093">093. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 093</a><a href="#slide-094">094. الفصل
+              6: أنماط الاتصال والإجراءات - الشريحة 094</a><a href="#slide-095">095. الفصل 6: أنماط الاتصال والإجراءات -
+              الشريحة 095</a><a href="#slide-096">096. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 096</a><a
+              href="#slide-097">097. الفصل 6: أنماط الاتصال والإجراءات - الشريحة 097</a><a href="#slide-098">098. الفصل
+              6: أنماط الاتصال والإجراءات - الشريحة 098</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 7: الكهرباء والإلكترونيات<span class="range">099-124</span></summary>
+          <div class="chapter-links"><a href="#slide-099">099. الفصل 7: الكهرباء والإلكترونيات - الشريحة 099</a><a
+              href="#slide-100">100. الفصل 7: الكهرباء والإلكترونيات - الشريحة 100</a><a href="#slide-101">101. الفصل 7:
+              الكهرباء والإلكترونيات - الشريحة 101</a><a href="#slide-102">102. الفصل 7: الكهرباء والإلكترونيات -
+              الشريحة 102</a><a href="#slide-103">103. الفصل 7: الكهرباء والإلكترونيات - الشريحة 103</a><a
+              href="#slide-104">104. الفصل 7: الكهرباء والإلكترونيات - الشريحة 104</a><a href="#slide-105">105. الفصل 7:
+              الكهرباء والإلكترونيات - الشريحة 105</a><a href="#slide-106">106. الفصل 7: الكهرباء والإلكترونيات -
+              الشريحة 106</a><a href="#slide-107">107. الفصل 7: الكهرباء والإلكترونيات - الشريحة 107</a><a
+              href="#slide-108">108. الفصل 7: الكهرباء والإلكترونيات - الشريحة 108</a><a href="#slide-109">109. الفصل 7:
+              الكهرباء والإلكترونيات - الشريحة 109</a><a href="#slide-110">110. الفصل 7: الكهرباء والإلكترونيات -
+              الشريحة 110</a><a href="#slide-111">111. الفصل 7: الكهرباء والإلكترونيات - الشريحة 111</a><a
+              href="#slide-112">112. الفصل 7: الكهرباء والإلكترونيات - الشريحة 112</a><a href="#slide-113">113. الفصل 7:
+              الكهرباء والإلكترونيات - الشريحة 113</a><a href="#slide-114">114. الفصل 7: الكهرباء والإلكترونيات -
+              الشريحة 114</a><a href="#slide-115">115. الفصل 7: الكهرباء والإلكترونيات - الشريحة 115</a><a
+              href="#slide-116">116. الفصل 7: الكهرباء والإلكترونيات - الشريحة 116</a><a href="#slide-117">117. الفصل 7:
+              الكهرباء والإلكترونيات - الشريحة 117</a><a href="#slide-118">118. الفصل 7: الكهرباء والإلكترونيات -
+              الشريحة 118</a><a href="#slide-119">119. الفصل 7: الكهرباء والإلكترونيات - الشريحة 119</a><a
+              href="#slide-120">120. الفصل 7: الكهرباء والإلكترونيات - الشريحة 120</a><a href="#slide-121">121. الفصل 7:
+              الكهرباء والإلكترونيات - الشريحة 121</a><a href="#slide-122">122. الفصل 7: الكهرباء والإلكترونيات -
+              الشريحة 122</a><a href="#slide-123">123. الفصل 7: الكهرباء والإلكترونيات - الشريحة 123</a><a
+              href="#slide-124">124. الفصل 7: الكهرباء والإلكترونيات - الشريحة 124</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 8: الهوائيات ونظم التغذية<span class="range">125-140</span></summary>
+          <div class="chapter-links"><a href="#slide-125">125. الفصل 8: الهوائيات ونظم التغذية - الشريحة 125</a><a
+              href="#slide-126">126. الفصل 8: الهوائيات ونظم التغذية - الشريحة 126</a><a href="#slide-127">127. الفصل 8:
+              الهوائيات ونظم التغذية - الشريحة 127</a><a href="#slide-128">128. الفصل 8: الهوائيات ونظم التغذية -
+              الشريحة 128</a><a href="#slide-129">129. الفصل 8: الهوائيات ونظم التغذية - الشريحة 129</a><a
+              href="#slide-130">130. الفصل 8: الهوائيات ونظم التغذية - الشريحة 130</a><a href="#slide-131">131. الفصل 8:
+              الهوائيات ونظم التغذية - الشريحة 131</a><a href="#slide-132">132. الفصل 8: الهوائيات ونظم التغذية -
+              الشريحة 132</a><a href="#slide-133">133. الفصل 8: الهوائيات ونظم التغذية - الشريحة 133</a><a
+              href="#slide-134">134. الفصل 8: الهوائيات ونظم التغذية - الشريحة 134</a><a href="#slide-135">135. الفصل 8:
+              الهوائيات ونظم التغذية - الشريحة 135</a><a href="#slide-136">136. الفصل 8: الهوائيات ونظم التغذية -
+              الشريحة 136</a><a href="#slide-137">137. الفصل 8: الهوائيات ونظم التغذية - الشريحة 137</a><a
+              href="#slide-138">138. الفصل 8: الهوائيات ونظم التغذية - الشريحة 138</a><a href="#slide-139">139. الفصل 8:
+              الهوائيات ونظم التغذية - الشريحة 139</a><a href="#slide-140">140. الفصل 8: الهوائيات ونظم التغذية -
+              الشريحة 140</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الفصل 9: أجهزة الراديو ومكوناتها<span class="range">141-159</span></summary>
+          <div class="chapter-links"><a href="#slide-141">141. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 141</a><a
+              href="#slide-142">142. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 142</a><a href="#slide-143">143. الفصل
+              9: أجهزة الراديو ومكوناتها - الشريحة 143</a><a href="#slide-144">144. الفصل 9: أجهزة الراديو ومكوناتها -
+              الشريحة 144</a><a href="#slide-145">145. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 145</a><a
+              href="#slide-146">146. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 146</a><a href="#slide-147">147. الفصل
+              9: أجهزة الراديو ومكوناتها - الشريحة 147</a><a href="#slide-148">148. الفصل 9: أجهزة الراديو ومكوناتها -
+              الشريحة 148</a><a href="#slide-149">149. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 149</a><a
+              href="#slide-150">150. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 150</a><a href="#slide-151">151. الفصل
+              9: أجهزة الراديو ومكوناتها - الشريحة 151</a><a href="#slide-152">152. الفصل 9: أجهزة الراديو ومكوناتها -
+              الشريحة 152</a><a href="#slide-153">153. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 153</a><a
+              href="#slide-154">154. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 154</a><a href="#slide-155">155. الفصل
+              9: أجهزة الراديو ومكوناتها - الشريحة 155</a><a href="#slide-156">156. الفصل 9: أجهزة الراديو ومكوناتها -
+              الشريحة 156</a><a href="#slide-157">157. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 157</a><a
+              href="#slide-158">158. الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 158</a><a href="#slide-159">159. الفصل
+              9: أجهزة الراديو ومكوناتها - الشريحة 159</a></div>
+        </details>
+        <details class="chapter">
+          <summary>الختام والتحضير للاختبار<span class="range">160-162</span></summary>
+          <div class="chapter-links"><a href="#slide-160">160. فحص المعرفة</a><a href="#slide-161">161. التحضير النهائي
+              للاختبار</a><a href="#slide-162">162. فريق العمل والمراجع</a></div>
+        </details>
+      </div>
+    </nav>
+    <main>
+      <section class="intro searchable" id="intro">
+        <h2>محتويات الدورة</h2>
+
+        <p>
+          تغطي هذه الدورة جميع الموضوعات المطلوبة لاجتياز اختبار رخصة هواة اللاسلكي
+          في المملكة العربية السعودية. تبدأ الدورة بالتعريف بالهواية وأهدافها،
+          ثم تنتقل إلى الأنظمة والتراخيص وإشارات النداء، قبل التعمق في
+          انتشار الموجات الراديوية والنطاقات الترددية وإجراءات التشغيل.
+          كما تشمل أساسيات الكهرباء والإلكترونيات والهوائيات وأجهزة الراديو
+          المستخدمة في محطات هواة اللاسلكي.
+        </p>
+        <p>
+          الفصول: مقدمة عن هواية اللاسلكي • التراخيص والشروط القانونية •
+          إشارات النداء والاتحاد الدولي • فيزياء الموجات والانتشار •
+          النطاقات الترددية والتشغيل • أنماط الاتصال والإجراءات •
+          الكهرباء والإلكترونيات • الهوائيات ونظم التغذية • أجهزة الراديو.
+        </p>
+        <div class="pillrow"><span class="pill">عدد الشرائح: 162 </span><span class="pill">عدد الفصول: 9</span></div>
+      </section>
+
+      <section class="slide searchable" id="slide-001">
+        <div class="slide-meta"><span class="badge">001</span>
+          <div>
+            <h2>غلاف الدورة</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-001.png" alt="الشريحة 001: غلاف الدورة" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-002">
+        <div class="slide-meta"><span class="badge">002</span>
+          <div>
+            <h2>كيفية استخدام الدورة</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-002.png" alt="الشريحة 002: كيفية استخدام الدورة" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-003">
+        <div class="slide-meta"><span class="badge">003</span>
+          <div>
+            <h2>جدول المحتويات</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-003.png" alt="الشريحة 003: جدول المحتويات" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-004">
+        <div class="slide-meta"><span class="badge">004</span>
+          <div>
+            <h2>دليل الرموز والألوان</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-004.png" alt="الشريحة 004: دليل الرموز والألوان" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-005">
+        <div class="slide-meta"><span class="badge">005</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 005</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-005.png" alt="الشريحة 005: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 005"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-006">
+        <div class="slide-meta"><span class="badge">006</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 006</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-006.png" alt="الشريحة 006: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 006"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-007">
+        <div class="slide-meta"><span class="badge">007</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 007</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-007.png" alt="الشريحة 007: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 007"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-008">
+        <div class="slide-meta"><span class="badge">008</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 008</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-008.png" alt="الشريحة 008: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 008"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-009">
+        <div class="slide-meta"><span class="badge">009</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 009</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-009.png" alt="الشريحة 009: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 009"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-010">
+        <div class="slide-meta"><span class="badge">010</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 010</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-010.png" alt="الشريحة 010: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 010"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-011">
+        <div class="slide-meta"><span class="badge">011</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 011</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-011.png" alt="الشريحة 011: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 011"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-012">
+        <div class="slide-meta"><span class="badge">012</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 012</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-012.png" alt="الشريحة 012: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 012"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-013">
+        <div class="slide-meta"><span class="badge">013</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 013</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-013.png" alt="الشريحة 013: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 013"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-014">
+        <div class="slide-meta"><span class="badge">014</span>
+          <div>
+            <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 014</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-014.png" alt="الشريحة 014: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 014"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
+          </p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-015">
+        <div class="slide-meta"><span class="badge">015</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 015</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-015.png" alt="الشريحة 015: الفصل 2: التراخيص والشروط القانونية - الشريحة 015"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-016">
+        <div class="slide-meta"><span class="badge">016</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 016</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-016.png" alt="الشريحة 016: الفصل 2: التراخيص والشروط القانونية - الشريحة 016"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-017">
+        <div class="slide-meta"><span class="badge">017</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 017</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-017.png" alt="الشريحة 017: الفصل 2: التراخيص والشروط القانونية - الشريحة 017"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-018">
+        <div class="slide-meta"><span class="badge">018</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 018</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-018.png" alt="الشريحة 018: الفصل 2: التراخيص والشروط القانونية - الشريحة 018"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-019">
+        <div class="slide-meta"><span class="badge">019</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 019</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-019.png" alt="الشريحة 019: الفصل 2: التراخيص والشروط القانونية - الشريحة 019"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-020">
+        <div class="slide-meta"><span class="badge">020</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 020</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-020.png" alt="الشريحة 020: الفصل 2: التراخيص والشروط القانونية - الشريحة 020"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-021">
+        <div class="slide-meta"><span class="badge">021</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 021</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-021.png" alt="الشريحة 021: الفصل 2: التراخيص والشروط القانونية - الشريحة 021"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-022">
+        <div class="slide-meta"><span class="badge">022</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 022</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-022.png" alt="الشريحة 022: الفصل 2: التراخيص والشروط القانونية - الشريحة 022"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-023">
+        <div class="slide-meta"><span class="badge">023</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 023</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-023.png" alt="الشريحة 023: الفصل 2: التراخيص والشروط القانونية - الشريحة 023"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-024">
+        <div class="slide-meta"><span class="badge">024</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 024</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-024.png" alt="الشريحة 024: الفصل 2: التراخيص والشروط القانونية - الشريحة 024"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-025">
+        <div class="slide-meta"><span class="badge">025</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 025</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-025.png" alt="الشريحة 025: الفصل 2: التراخيص والشروط القانونية - الشريحة 025"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-026">
+        <div class="slide-meta"><span class="badge">026</span>
+          <div>
+            <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 026</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-026.png" alt="الشريحة 026: الفصل 2: التراخيص والشروط القانونية - الشريحة 026"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-027">
+        <div class="slide-meta"><span class="badge">027</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 027</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-027.png" alt="الشريحة 027: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 027"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-028">
+        <div class="slide-meta"><span class="badge">028</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 028</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-028.png" alt="الشريحة 028: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 028"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-029">
+        <div class="slide-meta"><span class="badge">029</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 029</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-029.png" alt="الشريحة 029: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 029"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-030">
+        <div class="slide-meta"><span class="badge">030</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 030</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-030.png" alt="الشريحة 030: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 030"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-031">
+        <div class="slide-meta"><span class="badge">031</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 031</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-031.png" alt="الشريحة 031: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 031"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-032">
+        <div class="slide-meta"><span class="badge">032</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 032</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-032.png" alt="الشريحة 032: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 032"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-033">
+        <div class="slide-meta"><span class="badge">033</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 033</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-033.png" alt="الشريحة 033: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 033"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-034">
+        <div class="slide-meta"><span class="badge">034</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 034</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-034.png" alt="الشريحة 034: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 034"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-035">
+        <div class="slide-meta"><span class="badge">035</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 035</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-035.png" alt="الشريحة 035: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 035"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-036">
+        <div class="slide-meta"><span class="badge">036</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 036</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-036.png" alt="الشريحة 036: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 036"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-037">
+        <div class="slide-meta"><span class="badge">037</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 037</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-037.png" alt="الشريحة 037: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 037"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-038">
+        <div class="slide-meta"><span class="badge">038</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 038</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-038.png" alt="الشريحة 038: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 038"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-039">
+        <div class="slide-meta"><span class="badge">039</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 039</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-039.png" alt="الشريحة 039: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 039"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-040">
+        <div class="slide-meta"><span class="badge">040</span>
+          <div>
+            <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 040</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-040.png" alt="الشريحة 040: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 040"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-041">
+        <div class="slide-meta"><span class="badge">041</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 041</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-041.png" alt="الشريحة 041: الفصل 4: فيزياء الموجات والانتشار - الشريحة 041"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-042">
+        <div class="slide-meta"><span class="badge">042</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 042</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-042.png" alt="الشريحة 042: الفصل 4: فيزياء الموجات والانتشار - الشريحة 042"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-043">
+        <div class="slide-meta"><span class="badge">043</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 043</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-043.png" alt="الشريحة 043: الفصل 4: فيزياء الموجات والانتشار - الشريحة 043"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-044">
+        <div class="slide-meta"><span class="badge">044</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 044</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-044.png" alt="الشريحة 044: الفصل 4: فيزياء الموجات والانتشار - الشريحة 044"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-045">
+        <div class="slide-meta"><span class="badge">045</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 045</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-045.png" alt="الشريحة 045: الفصل 4: فيزياء الموجات والانتشار - الشريحة 045"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-046">
+        <div class="slide-meta"><span class="badge">046</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 046</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-046.png" alt="الشريحة 046: الفصل 4: فيزياء الموجات والانتشار - الشريحة 046"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-047">
+        <div class="slide-meta"><span class="badge">047</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 047</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-047.png" alt="الشريحة 047: الفصل 4: فيزياء الموجات والانتشار - الشريحة 047"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-048">
+        <div class="slide-meta"><span class="badge">048</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 048</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-048.png" alt="الشريحة 048: الفصل 4: فيزياء الموجات والانتشار - الشريحة 048"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-049">
+        <div class="slide-meta"><span class="badge">049</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 049</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-049.png" alt="الشريحة 049: الفصل 4: فيزياء الموجات والانتشار - الشريحة 049"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-050">
+        <div class="slide-meta"><span class="badge">050</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 050</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-050.png" alt="الشريحة 050: الفصل 4: فيزياء الموجات والانتشار - الشريحة 050"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-051">
+        <div class="slide-meta"><span class="badge">051</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 051</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-051.png" alt="الشريحة 051: الفصل 4: فيزياء الموجات والانتشار - الشريحة 051"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-052">
+        <div class="slide-meta"><span class="badge">052</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 052</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-052.png" alt="الشريحة 052: الفصل 4: فيزياء الموجات والانتشار - الشريحة 052"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-053">
+        <div class="slide-meta"><span class="badge">053</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 053</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-053.png" alt="الشريحة 053: الفصل 4: فيزياء الموجات والانتشار - الشريحة 053"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-054">
+        <div class="slide-meta"><span class="badge">054</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 054</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-054.png" alt="الشريحة 054: الفصل 4: فيزياء الموجات والانتشار - الشريحة 054"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-055">
+        <div class="slide-meta"><span class="badge">055</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 055</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-055.png" alt="الشريحة 055: الفصل 4: فيزياء الموجات والانتشار - الشريحة 055"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-056">
+        <div class="slide-meta"><span class="badge">056</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 056</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-056.png" alt="الشريحة 056: الفصل 4: فيزياء الموجات والانتشار - الشريحة 056"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-057">
+        <div class="slide-meta"><span class="badge">057</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 057</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-057.png" alt="الشريحة 057: الفصل 4: فيزياء الموجات والانتشار - الشريحة 057"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-058">
+        <div class="slide-meta"><span class="badge">058</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 058</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-058.png" alt="الشريحة 058: الفصل 4: فيزياء الموجات والانتشار - الشريحة 058"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-059">
+        <div class="slide-meta"><span class="badge">059</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 059</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-059.png" alt="الشريحة 059: الفصل 4: فيزياء الموجات والانتشار - الشريحة 059"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-060">
+        <div class="slide-meta"><span class="badge">060</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 060</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-060.png" alt="الشريحة 060: الفصل 4: فيزياء الموجات والانتشار - الشريحة 060"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-061">
+        <div class="slide-meta"><span class="badge">061</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 061</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-061.png" alt="الشريحة 061: الفصل 4: فيزياء الموجات والانتشار - الشريحة 061"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-062">
+        <div class="slide-meta"><span class="badge">062</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 062</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-062.png" alt="الشريحة 062: الفصل 4: فيزياء الموجات والانتشار - الشريحة 062"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-063">
+        <div class="slide-meta"><span class="badge">063</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 063</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-063.png" alt="الشريحة 063: الفصل 4: فيزياء الموجات والانتشار - الشريحة 063"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-064">
+        <div class="slide-meta"><span class="badge">064</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 064</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-064.png" alt="الشريحة 064: الفصل 4: فيزياء الموجات والانتشار - الشريحة 064"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-065">
+        <div class="slide-meta"><span class="badge">065</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 065</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-065.png" alt="الشريحة 065: الفصل 4: فيزياء الموجات والانتشار - الشريحة 065"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-066">
+        <div class="slide-meta"><span class="badge">066</span>
+          <div>
+            <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 066</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-066.png" alt="الشريحة 066: الفصل 4: فيزياء الموجات والانتشار - الشريحة 066"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-067">
+        <div class="slide-meta"><span class="badge">067</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 067</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-067.png" alt="الشريحة 067: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 067"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-068">
+        <div class="slide-meta"><span class="badge">068</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 068</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-068.png" alt="الشريحة 068: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 068"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-069">
+        <div class="slide-meta"><span class="badge">069</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 069</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-069.png" alt="الشريحة 069: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 069"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-070">
+        <div class="slide-meta"><span class="badge">070</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 070</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-070.png" alt="الشريحة 070: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 070"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-071">
+        <div class="slide-meta"><span class="badge">071</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 071</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-071.png" alt="الشريحة 071: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 071"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-072">
+        <div class="slide-meta"><span class="badge">072</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 072</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-072.png" alt="الشريحة 072: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 072"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-073">
+        <div class="slide-meta"><span class="badge">073</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 073</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-073.png" alt="الشريحة 073: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 073"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-074">
+        <div class="slide-meta"><span class="badge">074</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 074</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-074.png" alt="الشريحة 074: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 074"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-075">
+        <div class="slide-meta"><span class="badge">075</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 075</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-075.png" alt="الشريحة 075: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 075"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-076">
+        <div class="slide-meta"><span class="badge">076</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 076</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-076.png" alt="الشريحة 076: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 076"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-077">
+        <div class="slide-meta"><span class="badge">077</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 077</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-077.png" alt="الشريحة 077: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 077"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-078">
+        <div class="slide-meta"><span class="badge">078</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 078</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-078.png" alt="الشريحة 078: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 078"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-079">
+        <div class="slide-meta"><span class="badge">079</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 079</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-079.png" alt="الشريحة 079: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 079"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-080">
+        <div class="slide-meta"><span class="badge">080</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 080</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-080.png" alt="الشريحة 080: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 080"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-081">
+        <div class="slide-meta"><span class="badge">081</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 081</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-081.png" alt="الشريحة 081: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 081"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-082">
+        <div class="slide-meta"><span class="badge">082</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 082</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-082.png" alt="الشريحة 082: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 082"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-083">
+        <div class="slide-meta"><span class="badge">083</span>
+          <div>
+            <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 083</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-083.png" alt="الشريحة 083: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 083"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-084">
+        <div class="slide-meta"><span class="badge">084</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 084</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-084.png" alt="الشريحة 084: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 084"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-085">
+        <div class="slide-meta"><span class="badge">085</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 085</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-085.png" alt="الشريحة 085: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 085"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-086">
+        <div class="slide-meta"><span class="badge">086</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 086</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-086.png" alt="الشريحة 086: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 086"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-087">
+        <div class="slide-meta"><span class="badge">087</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 087</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-087.png" alt="الشريحة 087: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 087"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-088">
+        <div class="slide-meta"><span class="badge">088</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 088</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-088.png" alt="الشريحة 088: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 088"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-089">
+        <div class="slide-meta"><span class="badge">089</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 089</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-089.png" alt="الشريحة 089: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 089"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-090">
+        <div class="slide-meta"><span class="badge">090</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 090</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-090.png" alt="الشريحة 090: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 090"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-091">
+        <div class="slide-meta"><span class="badge">091</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 091</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-091.png" alt="الشريحة 091: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 091"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-092">
+        <div class="slide-meta"><span class="badge">092</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 092</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-092.png" alt="الشريحة 092: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 092"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-093">
+        <div class="slide-meta"><span class="badge">093</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 093</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-093.png" alt="الشريحة 093: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 093"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-094">
+        <div class="slide-meta"><span class="badge">094</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 094</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-094.png" alt="الشريحة 094: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 094"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-095">
+        <div class="slide-meta"><span class="badge">095</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 095</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-095.png" alt="الشريحة 095: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 095"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-096">
+        <div class="slide-meta"><span class="badge">096</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 096</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-096.png" alt="الشريحة 096: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 096"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-097">
+        <div class="slide-meta"><span class="badge">097</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 097</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-097.png" alt="الشريحة 097: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 097"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-098">
+        <div class="slide-meta"><span class="badge">098</span>
+          <div>
+            <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 098</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-098.png" alt="الشريحة 098: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 098"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-099">
+        <div class="slide-meta"><span class="badge">099</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 099</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-099.png" alt="الشريحة 099: الفصل 7: الكهرباء والإلكترونيات - الشريحة 099"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-100">
+        <div class="slide-meta"><span class="badge">100</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 100</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-100.png" alt="الشريحة 100: الفصل 7: الكهرباء والإلكترونيات - الشريحة 100"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-101">
+        <div class="slide-meta"><span class="badge">101</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 101</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-101.png" alt="الشريحة 101: الفصل 7: الكهرباء والإلكترونيات - الشريحة 101"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-102">
+        <div class="slide-meta"><span class="badge">102</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 102</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-102.png" alt="الشريحة 102: الفصل 7: الكهرباء والإلكترونيات - الشريحة 102"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-103">
+        <div class="slide-meta"><span class="badge">103</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 103</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-103.png" alt="الشريحة 103: الفصل 7: الكهرباء والإلكترونيات - الشريحة 103"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-104">
+        <div class="slide-meta"><span class="badge">104</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 104</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-104.png" alt="الشريحة 104: الفصل 7: الكهرباء والإلكترونيات - الشريحة 104"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-105">
+        <div class="slide-meta"><span class="badge">105</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 105</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-105.png" alt="الشريحة 105: الفصل 7: الكهرباء والإلكترونيات - الشريحة 105"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-106">
+        <div class="slide-meta"><span class="badge">106</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 106</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-106.png" alt="الشريحة 106: الفصل 7: الكهرباء والإلكترونيات - الشريحة 106"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-107">
+        <div class="slide-meta"><span class="badge">107</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 107</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-107.png" alt="الشريحة 107: الفصل 7: الكهرباء والإلكترونيات - الشريحة 107"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-108">
+        <div class="slide-meta"><span class="badge">108</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 108</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-108.png" alt="الشريحة 108: الفصل 7: الكهرباء والإلكترونيات - الشريحة 108"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-109">
+        <div class="slide-meta"><span class="badge">109</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 109</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-109.png" alt="الشريحة 109: الفصل 7: الكهرباء والإلكترونيات - الشريحة 109"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-110">
+        <div class="slide-meta"><span class="badge">110</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 110</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-110.png" alt="الشريحة 110: الفصل 7: الكهرباء والإلكترونيات - الشريحة 110"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-111">
+        <div class="slide-meta"><span class="badge">111</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 111</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-111.png" alt="الشريحة 111: الفصل 7: الكهرباء والإلكترونيات - الشريحة 111"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-112">
+        <div class="slide-meta"><span class="badge">112</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 112</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-112.png" alt="الشريحة 112: الفصل 7: الكهرباء والإلكترونيات - الشريحة 112"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-113">
+        <div class="slide-meta"><span class="badge">113</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 113</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-113.png" alt="الشريحة 113: الفصل 7: الكهرباء والإلكترونيات - الشريحة 113"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-114">
+        <div class="slide-meta"><span class="badge">114</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 114</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-114.png" alt="الشريحة 114: الفصل 7: الكهرباء والإلكترونيات - الشريحة 114"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-115">
+        <div class="slide-meta"><span class="badge">115</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 115</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-115.png" alt="الشريحة 115: الفصل 7: الكهرباء والإلكترونيات - الشريحة 115"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-116">
+        <div class="slide-meta"><span class="badge">116</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 116</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-116.png" alt="الشريحة 116: الفصل 7: الكهرباء والإلكترونيات - الشريحة 116"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-117">
+        <div class="slide-meta"><span class="badge">117</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 117</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-117.png" alt="الشريحة 117: الفصل 7: الكهرباء والإلكترونيات - الشريحة 117"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-118">
+        <div class="slide-meta"><span class="badge">118</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 118</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-118.png" alt="الشريحة 118: الفصل 7: الكهرباء والإلكترونيات - الشريحة 118"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-119">
+        <div class="slide-meta"><span class="badge">119</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 119</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-119.png" alt="الشريحة 119: الفصل 7: الكهرباء والإلكترونيات - الشريحة 119"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-120">
+        <div class="slide-meta"><span class="badge">120</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 120</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-120.png" alt="الشريحة 120: الفصل 7: الكهرباء والإلكترونيات - الشريحة 120"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-121">
+        <div class="slide-meta"><span class="badge">121</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 121</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-121.png" alt="الشريحة 121: الفصل 7: الكهرباء والإلكترونيات - الشريحة 121"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-122">
+        <div class="slide-meta"><span class="badge">122</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 122</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-122.png" alt="الشريحة 122: الفصل 7: الكهرباء والإلكترونيات - الشريحة 122"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-123">
+        <div class="slide-meta"><span class="badge">123</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 123</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-123.png" alt="الشريحة 123: الفصل 7: الكهرباء والإلكترونيات - الشريحة 123"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-124">
+        <div class="slide-meta"><span class="badge">124</span>
+          <div>
+            <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 124</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-124.png" alt="الشريحة 124: الفصل 7: الكهرباء والإلكترونيات - الشريحة 124"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-125">
+        <div class="slide-meta"><span class="badge">125</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 125</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-125.png" alt="الشريحة 125: الفصل 8: الهوائيات ونظم التغذية - الشريحة 125"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-126">
+        <div class="slide-meta"><span class="badge">126</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 126</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-126.png" alt="الشريحة 126: الفصل 8: الهوائيات ونظم التغذية - الشريحة 126"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-127">
+        <div class="slide-meta"><span class="badge">127</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 127</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-127.png" alt="الشريحة 127: الفصل 8: الهوائيات ونظم التغذية - الشريحة 127"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-128">
+        <div class="slide-meta"><span class="badge">128</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 128</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-128.png" alt="الشريحة 128: الفصل 8: الهوائيات ونظم التغذية - الشريحة 128"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-129">
+        <div class="slide-meta"><span class="badge">129</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 129</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-129.png" alt="الشريحة 129: الفصل 8: الهوائيات ونظم التغذية - الشريحة 129"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-130">
+        <div class="slide-meta"><span class="badge">130</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 130</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-130.png" alt="الشريحة 130: الفصل 8: الهوائيات ونظم التغذية - الشريحة 130"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-131">
+        <div class="slide-meta"><span class="badge">131</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 131</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-131.png" alt="الشريحة 131: الفصل 8: الهوائيات ونظم التغذية - الشريحة 131"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-132">
+        <div class="slide-meta"><span class="badge">132</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 132</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-132.png" alt="الشريحة 132: الفصل 8: الهوائيات ونظم التغذية - الشريحة 132"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-133">
+        <div class="slide-meta"><span class="badge">133</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 133</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-133.png" alt="الشريحة 133: الفصل 8: الهوائيات ونظم التغذية - الشريحة 133"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-134">
+        <div class="slide-meta"><span class="badge">134</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 134</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-134.png" alt="الشريحة 134: الفصل 8: الهوائيات ونظم التغذية - الشريحة 134"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-135">
+        <div class="slide-meta"><span class="badge">135</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 135</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-135.png" alt="الشريحة 135: الفصل 8: الهوائيات ونظم التغذية - الشريحة 135"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-136">
+        <div class="slide-meta"><span class="badge">136</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 136</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-136.png" alt="الشريحة 136: الفصل 8: الهوائيات ونظم التغذية - الشريحة 136"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-137">
+        <div class="slide-meta"><span class="badge">137</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 137</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-137.png" alt="الشريحة 137: الفصل 8: الهوائيات ونظم التغذية - الشريحة 137"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-138">
+        <div class="slide-meta"><span class="badge">138</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 138</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-138.png" alt="الشريحة 138: الفصل 8: الهوائيات ونظم التغذية - الشريحة 138"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-139">
+        <div class="slide-meta"><span class="badge">139</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 139</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-139.png" alt="الشريحة 139: الفصل 8: الهوائيات ونظم التغذية - الشريحة 139"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-140">
+        <div class="slide-meta"><span class="badge">140</span>
+          <div>
+            <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 140</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-140.png" alt="الشريحة 140: الفصل 8: الهوائيات ونظم التغذية - الشريحة 140"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-141">
+        <div class="slide-meta"><span class="badge">141</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 141</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-141.png" alt="الشريحة 141: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 141"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-142">
+        <div class="slide-meta"><span class="badge">142</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 142</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-142.png" alt="الشريحة 142: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 142"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-143">
+        <div class="slide-meta"><span class="badge">143</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 143</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-143.png" alt="الشريحة 143: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 143"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-144">
+        <div class="slide-meta"><span class="badge">144</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 144</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-144.png" alt="الشريحة 144: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 144"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-145">
+        <div class="slide-meta"><span class="badge">145</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 145</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-145.png" alt="الشريحة 145: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 145"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-146">
+        <div class="slide-meta"><span class="badge">146</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 146</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-146.png" alt="الشريحة 146: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 146"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-147">
+        <div class="slide-meta"><span class="badge">147</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 147</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-147.png" alt="الشريحة 147: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 147"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-148">
+        <div class="slide-meta"><span class="badge">148</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 148</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-148.png" alt="الشريحة 148: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 148"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-149">
+        <div class="slide-meta"><span class="badge">149</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 149</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-149.png" alt="الشريحة 149: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 149"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-150">
+        <div class="slide-meta"><span class="badge">150</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 150</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-150.png" alt="الشريحة 150: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 150"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-151">
+        <div class="slide-meta"><span class="badge">151</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 151</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-151.png" alt="الشريحة 151: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 151"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-152">
+        <div class="slide-meta"><span class="badge">152</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 152</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-152.png" alt="الشريحة 152: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 152"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-153">
+        <div class="slide-meta"><span class="badge">153</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 153</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-153.png" alt="الشريحة 153: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 153"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-154">
+        <div class="slide-meta"><span class="badge">154</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 154</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-154.png" alt="الشريحة 154: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 154"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-155">
+        <div class="slide-meta"><span class="badge">155</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 155</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-155.png" alt="الشريحة 155: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 155"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-156">
+        <div class="slide-meta"><span class="badge">156</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 156</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-156.png" alt="الشريحة 156: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 156"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-157">
+        <div class="slide-meta"><span class="badge">157</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 157</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-157.png" alt="الشريحة 157: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 157"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-158">
+        <div class="slide-meta"><span class="badge">158</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 158</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-158.png" alt="الشريحة 158: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 158"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-159">
+        <div class="slide-meta"><span class="badge">159</span>
+          <div>
+            <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 159</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-159.png" alt="الشريحة 159: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 159"
+            loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-160">
+        <div class="slide-meta"><span class="badge">160</span>
+          <div>
+            <h2>فحص المعرفة</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-160.png" alt="الشريحة 160: فحص المعرفة" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تساعد هذه الشريحة على المراجعة النهائية والتحضير للاختبار. استخدمها لتحديد نقاط الضعف قبل الاختبار.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-161">
+        <div class="slide-meta"><span class="badge">161</span>
+          <div>
+            <h2>التحضير النهائي للاختبار</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-161.png" alt="الشريحة 161: التحضير النهائي للاختبار" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تساعد هذه الشريحة على المراجعة النهائية والتحضير للاختبار. استخدمها لتحديد نقاط الضعف قبل الاختبار.</p>
+        </div>
+      </section>
+      <section class="slide searchable" id="slide-162">
+        <div class="slide-meta"><span class="badge">162</span>
+          <div>
+            <h2>فريق العمل والمراجع</h2>
+          </div>
+        </div>
+        <figure><img src="slides/slide-162.png" alt="الشريحة 162: فريق العمل والمراجع" loading="lazy"></figure>
+        <div class="summary">
+          <h3>شرح مختصر</h3>
+          <p>تساعد هذه الشريحة على المراجعة النهائية والتحضير للاختبار. استخدمها لتحديد نقاط الضعف قبل الاختبار.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>دورة مرشحي اختبار رخصة هواة اللاسلكي — نسخة HTML تفاعلية للمراجعة والتدريب</footer>
+  <script>
+    const search = document.getElementById('search');
+    const slides = Array.from(document.querySelectorAll('.searchable'));
+    search.addEventListener('input', () => {
+      const q = search.value.trim().toLowerCase();
+      slides.forEach(slide => {
+        const text = slide.innerText.toLowerCase();
+        slide.classList.toggle('hidden', q && !text.includes(q));
+      });
+    });
+  </script>
+</body>
+
+</html>
