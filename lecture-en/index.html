@@ -1,0 +1,2187 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Course for Radio Amateur License Test Candidates</title>
+  <style>
+    :root {
+      --navy: #071d49;
+      --blue: #16d7ff;
+      --purple: #6d3df2;
+      --gold: #f6c453;
+      --bg: #f6f8fc;
+      --card: #fff;
+      --text: #12213a;
+      --line: #dbe2ef
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      direction: ltr
+    }
+
+    header {
+      background: radial-gradient(circle at 16% 15%, rgba(22, 215, 255, .24), transparent 26%), radial-gradient(circle at 86% 18%, rgba(246, 196, 83, .18), transparent 28%), linear-gradient(135deg, var(--navy), var(--purple));
+      color: white;
+      padding: 56px 6vw 44px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .kicker {
+      display: inline-block;
+      border: 1px solid rgba(246, 196, 83, .55);
+      background: rgba(246, 196, 83, .1);
+      color: #ffe4a3;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 16px
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      line-height: 1.16;
+      margin: 0 0 12px;
+      font-weight: 900
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      max-width: 980px;
+      margin: 0;
+      color: #eaf0ff
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      padding: 12px 6vw;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .toolbar input {
+      width: min(460px, 58vw);
+      padding: 10px 14px;
+      border: 1px solid #ccd6ea;
+      border-radius: 999px;
+      text-align: left;
+      font-family: inherit
+    }
+
+    .toolbar a.button {
+      text-decoration: none;
+      background: var(--navy);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 700;
+      white-space: nowrap
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 26px;
+      padding: 26px 6vw
+    }
+
+    nav {
+      position: sticky;
+      top: 74px;
+      align-self: start;
+      max-height: calc(100vh - 92px);
+      overflow: auto;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 8px 24px rgba(7, 29, 73, .06)
+    }
+
+    nav h3 {
+      margin: 4px 8px 10px;
+      color: var(--navy)
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: #243653;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: .86rem;
+      line-height: 1.45
+    }
+
+    nav a:hover {
+      background: #eef3ff;
+      color: #0b5ed7
+    }
+
+    nav .chapter {
+      margin: 0 0 10px;
+      border: 1px solid #e6edf8;
+      border-radius: 14px;
+      background: #fbfdff;
+      overflow: hidden
+    }
+
+    nav .chapter summary {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      font-weight: 900;
+      color: var(--navy);
+      list-style: none;
+      line-height: 1.45
+    }
+
+    nav .chapter summary::-webkit-details-marker {
+      display: none
+    }
+
+    nav .chapter summary::before {
+      content: "▶";
+      font-size: .78rem;
+      color: #0b5ed7;
+      margin-right: 6px
+    }
+
+    nav .chapter[open] summary::before {
+      content: "▼";
+      color: var(--gold)
+    }
+
+    nav .chapter .range {
+      direction: ltr;
+      white-space: nowrap;
+      font-size: .74rem;
+      color: #526985;
+      background: #eef3ff;
+      border: 1px solid #dbe7ff;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-weight: 800
+    }
+
+    nav .chapter-links {
+      padding: 0 8px 8px
+    }
+
+    nav .chapter-links a {
+      font-size: .82rem;
+      padding: 7px 10px 7px 8px;
+      margin: 2px 0;
+      border-radius: 9px
+    }
+
+    main {
+      min-width: 0
+    }
+
+    .intro,
+    .slide {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 28px rgba(7, 29, 73, .08)
+    }
+
+    .intro {
+      padding: 28px
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: var(--navy)
+    }
+
+    .pillrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px
+    }
+
+    .pill {
+      background: #edf3ff;
+      color: #0b3b82;
+      border: 1px solid #cdddfa;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .9rem
+    }
+
+    .slide {
+      padding: 20px;
+      scroll-margin-top: 88px
+    }
+
+    .slide-meta {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 16px
+    }
+
+    .badge {
+      flex: 0 0 auto;
+      display: inline-grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      background: linear-gradient(135deg, var(--purple), #0b5ed7);
+      color: #fff;
+      border-radius: 16px;
+      font-weight: 900;
+      font-size: 1.1rem
+    }
+
+    .slide h2 {
+      margin: 0;
+      font-size: clamp(1.35rem, 2.4vw, 2.15rem);
+      color: var(--navy)
+    }
+
+    figure {
+      margin: 0
+    }
+
+    img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #d6deef;
+      display: block;
+      background: #fff
+    }
+
+    .transcript {
+      margin-top: 12px;
+      background: #fff8e1;
+      border: 1px solid #ffe08a;
+      border-radius: 14px;
+      padding: 0;
+      overflow: hidden
+    }
+
+    .transcript summary {
+      cursor: pointer;
+      padding: 12px 14px;
+      color: #3d3000;
+      font-weight: 800
+    }
+
+    .slide-text {
+      white-space: pre-wrap;
+      padding: 0 14px 14px;
+      color: #3d3000;
+      font-size: .98rem
+    }
+/* Footer */
+
+.footer {
+  margin-top: 50px;
+  padding: 28px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  color: #b9c7dd;
+  line-height: 2;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px 24px 0 0;
+  backdrop-filter: blur(10px);
+}
+
+.footer p {
+  margin: 6px 0;
+}
+
+.footer a {
+  color: #dff8ff;
+}
+
+.hidden {
+      display: none !important
+    }
+
+    @media(max-width:980px) {
+      .layout {
+        grid-template-columns: 1fr;
+        padding: 16px 4vw
+      }
+
+      nav {
+        position: relative;
+        top: auto;
+        max-height: none
+      }
+
+      .toolbar {
+        flex-wrap: wrap
+      }
+
+      header {
+        padding: 30px 4vw 24px
+      }
+
+      h1 {
+        font-size: 2rem
+      }
+
+      .slide {
+        padding: 16px
+      }
+
+      .badge {
+        width: 44px;
+        height: 44px;
+        font-size: .92rem;
+        border-radius: 12px
+      }
+
+      .slide h2 {
+        font-size: 1.25rem
+      }
+
+      nav h3 {
+        display: inline-block;
+        margin: 0
+      }
+
+      nav summary {
+        cursor: pointer;
+        padding: 4px;
+        font-weight: bold;
+        color: var(--navy)
+      }
+
+      .nav-content {
+        margin-top: 10px
+      }
+    }
+
+    @media(min-width:981px) {
+      nav .chapter summary {
+        pointer-events: auto;
+        list-style: none
+      }
+
+      nav .chapter summary::-webkit-details-marker {
+        display: none
+      }
+    }
+
+    @media print {
+
+      .toolbar,
+      nav {
+        display: none
+      }
+
+      .layout {
+        display: block;
+        padding: 0
+      }
+
+      .slide {
+        break-inside: avoid;
+        box-shadow: none
+      }
+
+      header {
+        padding: 22px;
+        color: #111;
+        background: white
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+    <h1>Course for Radio Amateur License Test Candidates</h1>
+  </header>
+  <div class="toolbar"><input id="search" placeholder="Search the course content..." /><a class="button"
+      href="../index.html">Home</a><a class="button" href="../exam/index.html">Exam</a><a class="button"
+      href="#" onclick="window.print();return false;">Print / Save PDF</a></div>
+  <div class="layout">
+    <nav>
+      <h3>Course Contents</h3>
+      <div class="nav-content">
+        <details class="chapter" open>
+          <summary>Course Introduction<span class="range">001–001</span></summary>
+          <div class="chapter-links"><a href="#slide-001">001. Course For Radio Amateur License Test Candidates 2024</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Amateur Radio Definitions and Terms<span class="range">002–007</span></summary>
+          <div class="chapter-links"><a href="#slide-002">002. Definitions And Terms</a><a href="#slide-003">003. Definitions And Terms</a><a href="#slide-004">004. Definitions And Terms</a><a href="#slide-005">005. Definitions And Terms</a><a href="#slide-006">006. Definitions And Terms</a><a href="#slide-007">007. Definitions And Terms</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Licenses, Callsigns, and Their Additions<span class="range">008–018</span></summary>
+          <div class="chapter-links"><a href="#slide-008">008. Licenses In The Kingdom Of Saudi Arabia And Their Categories</a><a href="#slide-009">009. Conditions for obtaining an Amateur Radio license in the Kingdom of Saudi Arabia</a><a href="#slide-010">010. Callsign</a><a href="#slide-011">011. Callsign</a><a href="#slide-012">012. Callsign</a><a href="#slide-013">013. Callsign</a><a href="#slide-014">014. Callsign</a><a href="#slide-015">015. Callsign</a><a href="#slide-016">016. Callsign</a><a href="#slide-017">017. callsign</a><a href="#slide-018">018. Callsign</a></div>
+        </details>
+        <details class="chapter">
+          <summary>IARU Amateur Radio Regions<span class="range">019–023</span></summary>
+          <div class="chapter-links"><a href="#slide-019">019. Division of the International Federation of Radio Amateurs</a><a href="#slide-020">020. Division of the International Federation of Radio Amateurs</a><a href="#slide-021">021. Division of the International Federation of Radio Amateurs</a><a href="#slide-022">022. Division of the International Federation of Radio Amateurs</a><a href="#slide-023">023. Division of the International Federation of Radio Amateurs</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Atmosphere and Wave Propagation<span class="range">024–034</span></summary>
+          <div class="chapter-links"><a href="#slide-024">024. Ethics and basics</a><a href="#slide-025">025. Atmosphere and its relationship to amateur radio</a><a href="#slide-026">026. Atmosphere and its relationship to amateur radio</a><a href="#slide-027">027. Atmosphere and its relationship to amateur radio</a><a href="#slide-028">028. Atmosphere and its relationship to amateur radio</a><a href="#slide-029">029. Atmosphere and its relationship to amateur radio</a><a href="#slide-030">030. Atmosphere and its relationship to amateur radio</a><a href="#slide-031">031. Atmosphere and its relationship to amateur radio</a><a href="#slide-032">032. Atmosphere and its relationship to amateur radio</a><a href="#slide-033">033. Atmosphere and its relationship to amateur radio</a><a href="#slide-034">034. Atmosphere and its relationship to amateur radio</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Permitted Bands and Frequencies<span class="range">035–046</span></summary>
+          <div class="chapter-links"><a href="#slide-035">035. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-036">036. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-037">037. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-038">038. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-039">039. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-040">040. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-041">041. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-042">042. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-043">043. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-044">044. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-045">045. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a><a href="#slide-046">046. Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Communication Modes and Practical Operation<span class="range">047–066</span></summary>
+          <div class="chapter-links"><a href="#slide-047">047. MODES OF COMMUNICATION</a><a href="#slide-048">048. RST system</a><a href="#slide-049">049. RST system</a><a href="#slide-050">050. RST system</a><a href="#slide-051">051. RST system</a><a href="#slide-052">052. RST system</a><a href="#slide-053">053. Alphabet</a><a href="#slide-054">054. Alphabet</a><a href="#slide-055">055. Q Code</a><a href="#slide-056">056. Q Code</a><a href="#slide-057">057. Q Code</a><a href="#slide-058">058. Q Code</a><a href="#slide-059">059. M</a><a href="#slide-060">060. Morse Code</a><a href="#slide-061">061. How do Amateurs define themselves?</a><a href="#slide-062">062. How do Amateurs define themselves?</a><a href="#slide-063">063. Ways to connect the radio in the shack</a><a href="#slide-064">064. How to fix radio frequency interference ?</a><a href="#slide-065">065. QRP</a><a href="#slide-066">066. Logbook</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Electricity, Radio, and Electronics<span class="range">067–091</span></summary>
+          <div class="chapter-links"><a href="#slide-067">067. Electricity and radio</a><a href="#slide-068">068. Electricity and radio</a><a href="#slide-069">069. Electricity and radio</a><a href="#slide-070">070. Electricity and radio</a><a href="#slide-071">071. Electricity and radio</a><a href="#slide-072">072. Ohm's law exercises</a><a href="#slide-073">073. Electricity and radio</a><a href="#slide-074">074. Resistance calculation</a><a href="#slide-075">075. Electricity and radio</a><a href="#slide-076">076. Electricity and radio</a><a href="#slide-077">077. Electricity and radio</a><a href="#slide-078">078. Capacitors and resistors</a><a href="#slide-079">079. Capacitors and resistors</a><a href="#slide-080">080. Electricity and radio</a><a href="#slide-081">081. Electricity and radio</a><a href="#slide-082">082. Electricity and radio</a><a href="#slide-083">083. Electricity and Radio</a><a href="#slide-084">084. Electricity and radio</a><a href="#slide-085">085. Electricity and radio</a><a href="#slide-086">086. Electricity and radio</a><a href="#slide-087">087. Electricity and radio</a><a href="#slide-088">088. Electricity and radio</a><a href="#slide-089">089. Electricity and radio</a><a href="#slide-090">090. Antennas</a><a href="#slide-091">091. Antennas</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Antennas, Feed Lines, and Matching<span class="range">092–107</span></summary>
+          <div class="chapter-links"><a href="#slide-092">092. Antennas</a><a href="#slide-093">093. Beamwidth Of An Antenna</a><a href="#slide-094">094. Antennas</a><a href="#slide-095">095. Antennas</a><a href="#slide-096">096. Antennas</a><a href="#slide-097">097. Antennas</a><a href="#slide-098">098. Antennas</a><a href="#slide-099">099. Antennas</a><a href="#slide-100">100. Antennas</a><a href="#slide-101">101. Antennas</a><a href="#slide-102">102. Coaxial Cable</a><a href="#slide-103">103. Antenna tuning</a><a href="#slide-104">104. Dummy Load</a><a href="#slide-105">105. Antenna Tuner</a><a href="#slide-106">106. Transceiver</a><a href="#slide-107">107. Radio components</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Radio Equipment and Transmit/Receive Components<span class="range">108–127</span></summary>
+          <div class="chapter-links"><a href="#slide-108">108. Radio components</a><a href="#slide-109">109. Radio components</a><a href="#slide-110">110. Balanced modulator</a><a href="#slide-111">111. Radio components</a><a href="#slide-112">112. Radio components</a><a href="#slide-113">113. Radio components</a><a href="#slide-114">114. Radio components</a><a href="#slide-115">115. Radio components</a><a href="#slide-116">116. Radio components</a><a href="#slide-117">117. Radio components</a><a href="#slide-118">118. Radio components</a><a href="#slide-119">119. Radio components</a><a href="#slide-120">120. Radio components</a><a href="#slide-121">121. Radio components</a><a href="#slide-122">122. Radio components</a><a href="#slide-123">123. Radio components</a><a href="#slide-124">124. Radio components</a><a href="#slide-125">125. Radio components</a><a href="#slide-126">126. This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society</a><a href="#slide-127">127. The Reviewer</a></div>
+        </details>
+        <details class="chapter">
+          <summary>Conclusion and References<span class="range">128–129</span></summary>
+          <div class="chapter-links"><a href="#slide-128">128. This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society</a><a href="#slide-129">129. The Reviewer</a></div>
+        </details>
+      </div>
+    </nav>
+    <main>
+            <section class="intro">
+        <h2>Course Path</h2>
+        <p>This page brings together the slides for the Radio Amateur License Test Candidates course in one digital experience. The slide text has been preserved as provided, with each slide shown as a separate visual that can be reviewed and searched.</p>
+        <div class="pillrow"><span class="pill">Definitions and Terms</span><span class="pill">Licenses and Callsigns</span><span class="pill">Atmosphere and Propagation</span><span class="pill">Bands and Frequencies</span><span class="pill">Communication Modes</span><span class="pill">Electricity and Radio</span><span class="pill">Antennas and Equipment</span></div>
+      </section>
+      <section class="slide" id="slide-001">
+        <div class="slide-meta"><span class="badge">01</span>
+          <div>
+            <h2>Course For Radio Amateur License Test Candidates 2024</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_001.png" alt="Slide 1: Course For Radio Amateur License Test Candidates 2024" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Course For Radio Amateur License Test Candidates 2024<br>Auditor : HZ1SK</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-002">
+        <div class="slide-meta"><span class="badge">02</span>
+          <div>
+            <h2>Definitions And Terms</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_002.png" alt="Slide 2: Definitions And Terms" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Definitions And Terms<br>Amateur Radio Concept:<br>Amateur radio, the hobby of communicating using radio equipment among enthusiasts, has gained remarkable popularity worldwide, with over four million practitioners. This hobby has been organized through the establishment of regional and international associations, federations, and regulatory bodies, each with its own set of rules and frequency allocation.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-003">
+        <div class="slide-meta"><span class="badge">03</span>
+          <div>
+            <h2>Definitions And Terms</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_003.png" alt="Slide 3: Definitions And Terms" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Definitions And Terms<br>Amateur Radio Service :<br>The Amateur Radio Service is an earth-based wireless communication service or a satellite-rendered service that utilizes radio equipment for the purposes of self-training, communication, or technical research. This service is exclusively for individuals who have a personal interest in Radio Technology, with no intention of deriving financial benefits.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-004">
+        <div class="slide-meta"><span class="badge">04</span>
+          <div>
+            <h2>Definitions And Terms</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_004.png" alt="Slide 4: Definitions And Terms" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Definitions And Terms<br>Radio Amateur:<br>He is a licensed individual with a keen interest in Radio Technology.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-005">
+        <div class="slide-meta"><span class="badge">05</span>
+          <div>
+            <h2>Definitions And Terms</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_005.png" alt="Slide 5: Definitions And Terms" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Definitions And Terms<br>Amateur Radio Station:<br> Radio equipment utilized in the Amateur Radio Service must comply with the technical standards and procedures outlined in the Radio Regulations issued by the International Telecommunication Union (ITU), the Telecommunication Act and its By-Laws, and the Ordinance of the Communication, Space and Technology Commission CST .</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-006">
+        <div class="slide-meta"><span class="badge">06</span>
+          <div>
+            <h2>Definitions And Terms</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_006.png" alt="Slide 6: Definitions And Terms" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Definitions And Terms<br>Radio Amateur License:<br>The license issued by <br>the CST <br>enables the holder to establish and operate an Amateur Radio Station, allowing them to engage in the hobby of radio service within the Kingdom in compliance with the provisions of the Telecommunication Act, its By-Laws, and this Regulation.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-007">
+        <div class="slide-meta"><span class="badge">07</span>
+          <div>
+            <h2>Definitions And Terms</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_007.png" alt="Slide 7: Definitions And Terms" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Definitions And Terms<br>Amateur Radio Station License:<br>The license issued by the CST in the name of the amateur authorizes the establishment and operation of an Amateur Radio Station. This license encompasses the technical specifications of the station, ensuring compliance with regulatory standards and facilitating safe and efficient radio communication activities.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-008">
+        <div class="slide-meta"><span class="badge">08</span>
+          <div>
+            <h2>Licenses In The Kingdom Of Saudi Arabia And Their Categories</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_008.png" alt="Slide 8: Licenses In The Kingdom Of Saudi Arabia And Their Categories" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Licenses In The Kingdom Of Saudi Arabia And Their Categories<br>Amateur Radio Licenses Are Classified Into Two Classes:<br>  Class one:<br>The amateur is authorized to transmit and receive on all frequency bands permitted within the Kingdom, including both High Frequency (HF) and Very High Frequency (VHF) bands. This authorization enables the amateur to engage in a wide range of radio communication activities, fostering technical skills and contributing to the development of radio technology.<br>Class two:<br>The amateur is authorized to receive on all permitted frequency bands within the Kingdom, including both High Frequency (HF) and Very High Frequency (VHF) bands. Additionally, the amateur is permitted to transmit on the Very High Frequency (VHF) band</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-009">
+        <div class="slide-meta"><span class="badge">09</span>
+          <div>
+            <h2>Conditions for obtaining an Amateur Radio license in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_009.png" alt="Slide 9: Conditions for obtaining an Amateur Radio license in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Conditions for obtaining an Amateur Radio license in the Kingdom of Saudi Arabia<br>To obtain a Radio Amateur License, applicants must meet the following conditions: <br>A) The applicant must be a Saudi national or an official resident of the Kingdom. <br>B) The applicant's age must be at least 18 years. <br>C) The applicant must have good moral conduct, with no convictions under codified Islamic law or crimes related to honesty and honor, unless proven otherwise and defamation legally removed. <br>D) The applicant must have successfully passed the Radio Amateur Test.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-010">
+        <div class="slide-meta"><span class="badge">10</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_010.png" alt="Slide 10: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>A call sign is defined as a unique combination of letters and numbers that distinguishes one amateur or radio station from another. It provides information about the identity of the amateur or station, including:<br> The country of origin, such as Saudi Arabia, which can be identified by call sign prefixes like HZ, 7Z, or 8Z.<br> The territory or amateur category within the country, providing additional context about the station or amateur's location or classification.<br>The amateur's identity, as the call sign can be used to identify the individual operator.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-011">
+        <div class="slide-meta"><span class="badge">11</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_011.png" alt="Slide 11: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-012">
+        <div class="slide-meta"><span class="badge">12</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_012.png" alt="Slide 12: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>Countries in Asia<br>callsign<br>Other <br>callsign<br> Saudi Arabia<br>HZ<br>7Z-8Z<br>Kuwait<br>9<br>K<br>Bahrain<br>A9<br>The United Arab Emirates<br>A6<br>Qatar<br>A7<br>Oman<br>A4<br>For instance, but not limited to</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-013">
+        <div class="slide-meta"><span class="badge">13</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_013.png" alt="Slide 13: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>Countries from Europe<br>callsign<br>other<br>Germany<br>DL<br>United kingdom<br>G<br>Sweden<br>SM<br>Italy<br>I</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-014">
+        <div class="slide-meta"><span class="badge">14</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_014.png" alt="Slide 14: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>Countries from north America<br>callsign<br>other<br>United State<br>K<br>Canada<br>VE<br>Mexico<br>EX</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-015">
+        <div class="slide-meta"><span class="badge">15</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_015.png" alt="Slide 15: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>The radio amateur is required to append the following characters to the end of their assigned call sign: <br>A) The character (/M) for telegraphy or digital mode, and the word &quot;Mobile&quot; for telephony, when operating a mobile, vehicle-mounted radio amateur station.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-016">
+        <div class="slide-meta"><span class="badge">16</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_016.png" alt="Slide 16: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>B) The two-character (/MM) for telegraphy or digital mode, and the two-words (Maritime Mobile) for telephony, when operating a radio amateur station on board a ship or a boat in high seas.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-017">
+        <div class="slide-meta"><span class="badge">17</span>
+          <div>
+            <h2>callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_017.png" alt="Slide 17: callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">callsign<br>C) The character (/A) for telegraphy or digital mode , and the words (Stroke A) for telephony, when operating a radio amateur station in a fixed location different from that specified in the license.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-018">
+        <div class="slide-meta"><span class="badge">18</span>
+          <div>
+            <h2>Callsign</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_018.png" alt="Slide 18: Callsign" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Callsign<br>D) The character (/P) for telegraphy or digital mode , and the word (Portable) for telephony, when operating a radio amateur station in any place other than that specified in the license for a temporary period.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-019">
+        <div class="slide-meta"><span class="badge">19</span>
+          <div>
+            <h2>Division of the International Federation of Radio Amateurs</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_019.png" alt="Slide 19: Division of the International Federation of Radio Amateurs" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Division of the International Federation of Radio Amateurs<br>The International Amateur Radio Union is divided into three regions:<br>1- Region 1 was established in 1950 AD:<br>Region 1 consists of several regions:<br>•Europe.<br>•Africa.<br>•The Middle East.<br>• North Asia.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-020">
+        <div class="slide-meta"><span class="badge">20</span>
+          <div>
+            <h2>Division of the International Federation of Radio Amateurs</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_020.png" alt="Slide 20: Division of the International Federation of Radio Amateurs" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Division of the International Federation of Radio Amateurs<br>2- Region 2, established in 1964:<br>The second region consists of several regions:<br>•North America.<br>•South America.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-021">
+        <div class="slide-meta"><span class="badge">21</span>
+          <div>
+            <h2>Division of the International Federation of Radio Amateurs</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_021.png" alt="Slide 21: Division of the International Federation of Radio Amateurs" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Division of the International Federation of Radio Amateurs<br>3- Region 3, established in 1950:<br>The third region consists of several regions:<br>• Asia except North Asia.<br>• Pacific Ocean and neighboring islands.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-022">
+        <div class="slide-meta"><span class="badge">22</span>
+          <div>
+            <h2>Division of the International Federation of Radio Amateurs</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_022.png" alt="Slide 22: Division of the International Federation of Radio Amateurs" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Division of the International Federation of Radio Amateurs<br>Map showing the three regions:</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-023">
+        <div class="slide-meta"><span class="badge">23</span>
+          <div>
+            <h2>Division of the International Federation of Radio Amateurs</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_023.png" alt="Slide 23: Division of the International Federation of Radio Amateurs" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Division of the International Federation of Radio Amateurs<br>Map showing the three regions:</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-024">
+        <div class="slide-meta"><span class="badge">24</span>
+          <div>
+            <h2>Ethics and basics</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_024.png" alt="Slide 24: Ethics and basics" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Ethics and basics<br>The relationship between radio waves and the atmosphere is crucial for the propagation and impact of radio waves. To better understand this relationship, consider the following key points:<br> Solar radiation, particularly ultraviolet radiation, affects the maximum usable frequency (MUF) in radio transmission. MUF is the highest radio frequency that can be used for transmission between two Earth points via ionosphere reflection (sky wave or skip) at a given time, regardless of transmitter power. This index is particularly useful for shortwave transmissions.<br> Sunspots have a direct correlation with ionization levels. A higher number of sunspots leads to increased ionization, which is valid for correspondence from 40MHz and above. However, a solar storm can negatively impact this relationship</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-025">
+        <div class="slide-meta"><span class="badge">25</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_025.png" alt="Slide 25: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>Layers of the atmosphere:<br>troposphere<br>stratosphere<br>mesosphere<br>thermosphere</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-026">
+        <div class="slide-meta"><span class="badge">26</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_026.png" alt="Slide 26: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>Ionized Layer <br>:<br>This layer extends from a height of 50 km to approximately 400 km, and it was named by this name because it is the starting point in which the ionization of the gases surrounding the earth takes place, due to the absorption of these gases of large amounts of energy that they derive from the ultraviolet solar radiation.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-027">
+        <div class="slide-meta"><span class="badge">27</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_027.png" alt="Slide 27: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>The ionized zone consists of four main layers:<br>Layer D:<br>Layer D is considered to be very attenuating to the waves passing through it, and the level of attenuation in it has a relationship with the frequency of the wave, so the lower its frequency, the greater the attenuation rate for it in this layer. ionic layers.<br>  This layer is at an altitude of approximately 50-90 km from the surface of the earth. This layer does not appear except during the day, when it begins to fade and disappear with the onset of night darkness. One of its most important characteristics is that it reflects very low-frequency (VLF) waves, which provides the possibility of communication using antennas. With large dimensions and high transmission capacity, it absorbs low frequency (LF) and medium (MF) waves, reflects waves with a frequency of less than 3 MHz and affects waves with a frequency of more than 3 MHz, and this effect decreases with increasing frequency.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-028">
+        <div class="slide-meta"><span class="badge">28</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_028.png" alt="Slide 28: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>E layer:<br>It arises from the ionization of particles of oxygen O2 and is located at an altitude of 100 km from the earth’s surface, with a thickness of approximately 25 km. It disappears (almost) during the night, and one of its most important characteristics is that it reflects waves up to 20 MHz, and thus allows medium-range communications 1900 km, and affects waves whose frequency exceeds 20 <br>MHz.<br> This effect decreases with increasing frequency.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-029">
+        <div class="slide-meta"><span class="badge">29</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_029.png" alt="Slide 29: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>F1 layer:<br>It arises from the ionization of nitrogen molecules, and is located at an altitude of 200 km with a thickness of approximately 20 km. Its most important characteristics are:<br>It absorbs some HF waves and attenuates others, and usually the frequencies that penetrate the E layer also pass through the F1 layer and are reflected by the F2 layer.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-030">
+        <div class="slide-meta"><span class="badge">30</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_030.png" alt="Slide 30: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>F2 layer:<br>It arises from the ionization of many atoms of gases such as oxygen, helium and hydrogen. The F2 layer is located at an altitude of approximately 400 km from the Earth's surface, and it is the densest layer of ions and the most effective, so it is the most important layer in long-distance communications, especially in the high frequency range HF (up to 30 megahertz) as it propagates high-frequency waves over long distances. It is worth mentioning that the layers F1 and F2 merge at night to form one layer called F, and therefore the reflection and reception of waves at night is better than during the day.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-031">
+        <div class="slide-meta"><span class="badge">31</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_031.png" alt="Slide 31: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>Skip Distance and Skip Zone:<br>The hop distance can be defined as the distance from the transmitter to the first point at which the bouncing skywave returns to the earth.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-032">
+        <div class="slide-meta"><span class="badge">32</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_032.png" alt="Slide 32: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>Waves definition and methods of propagation:<br>Wave:<br>In physics, it is a disturbance, vibration, or vibration that travels in matter or space and energy moves alongside it, or transfers energy from one place to another without permanently displacing the particles of the medium.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-033">
+        <div class="slide-meta"><span class="badge">33</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_033.png" alt="Slide 33: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>WAVE VELOCITY<br>:<br>The magnetic wave moves at a characteristic speed whose value depends on the nature and type of the medium in which the wave propagates, as this value changes according to the electrical properties of the medium. The highest speed of these waves is the speed of light (300,000,000m/s) when these waves propagate in a vacuum. In other media, this speed is less than the speed of light. Noting that the average speed of electromagnetic waves in minerals is less than that in a vacuum by an average of 5%.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-034">
+        <div class="slide-meta"><span class="badge">34</span>
+          <div>
+            <h2>Atmosphere and its relationship to amateur radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_034.png" alt="Slide 34: Atmosphere and its relationship to amateur radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Atmosphere and its relationship to amateur radio<br>The influence of electromagnetic waves:<br>When electromagnetic waves are transmitted and propagated through a number of mediums, they may be subject to refraction, reflection, or diffraction. They may also suffer from interference or fading, which can be defined as follows:<br>Refraction:<br>It means the change of the electromagnetic wave beam when it moves from one medium to another medium that has different electrical properties or is distorted or inclined.<br>Reflection:<br>It is the change of the electromagnetic wave in its direction in the same medium as a result of its falling on a barrier that separates this medium from another medium with which it differs in electrical properties.<br>Diffraction:<br>It is the ability of an electromagnetic wave to deflect at sharp angles and deflect from the obstacles it encounters.<br>Interference:<br>It is the mixing of two or more waves when they are present in the same place and time and when the frequencies of these waves are close.<br>Fading:<br>It is the change in the intensity of the electromagnetic wave, so that it weakens when it is transmitted in space from the transmitter to the receiver. This happens as a result of various factors such as reflection from the earth’s surface or refraction in the upper layers of the atmosphere, and due to the influence of weather factors as well.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-035">
+        <div class="slide-meta"><span class="badge">35</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_035.png" alt="Slide 35: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>The amateur radio operator is permitted to transmit with an output power of up to 200 watts on HF frequencies and 50 watts on VHF frequencies. It is important to note that communication on HF frequencies for the audio mode of 10MHz and below is Lower Sideband (LSB), while frequencies above that are Upper Sideband (USB).</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-036">
+        <div class="slide-meta"><span class="badge">36</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_036.png" alt="Slide 36: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>160m band from 1810 to 1850 kHz:<br>Note that the recommended modulation for ssb with this frequency is: LSB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-037">
+        <div class="slide-meta"><span class="badge">37</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_037.png" alt="Slide 37: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>80m band from 3620 to 3635 kHz:<br>Note that the recommended modulation for ssb with this frequency is: LSB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-038">
+        <div class="slide-meta"><span class="badge">38</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_038.png" alt="Slide 38: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>40m band from 7000 to 7200 kHz:<br>Note that the recommended modulation for ssb with this frequency is: LSB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-039">
+        <div class="slide-meta"><span class="badge">39</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_039.png" alt="Slide 39: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>30m band from 10100 to 10150 kHz:<br>Note that it is not currently allowed to work in the Kingdom of Saudi Arabia.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-040">
+        <div class="slide-meta"><span class="badge">40</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_040.png" alt="Slide 40: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>20m band from 14000 to 14350 kHz:<br>(the band of all seasons)<br> Among amateurs, it is called the king of Bands.<br>Note that the recommended modulation for ssb with this frequency is: USB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-041">
+        <div class="slide-meta"><span class="badge">41</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_041.png" alt="Slide 41: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>17m band from 18068 to 18168kHz:<br>Note that the recommended modulation for ssb with this frequency is: USB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-042">
+        <div class="slide-meta"><span class="badge">42</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_042.png" alt="Slide 42: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>15m band from 21000 to 21450 kHz:<br>Note that the recommended modulation for ssb with this frequency is: USB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-043">
+        <div class="slide-meta"><span class="badge">43</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_043.png" alt="Slide 43: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>12m band from 24890 to 24990 kHz:<br>Note that the recommended modulation for ssb with this frequency is: USB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-044">
+        <div class="slide-meta"><span class="badge">44</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_044.png" alt="Slide 44: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>10m band from 28000 to 29700 kHz:<br>Note that the recommended modulation for ssb with this frequency is: USB</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-045">
+        <div class="slide-meta"><span class="badge">45</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_045.png" alt="Slide 45: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>Very high frequencies and ultra-high frequencies VHF :<br>6m band from 50020 to 52000 kHz:<br>The 6 meter range is very popular with radio enthusiasts and is known to them as the &quot;magic band&quot;.<br>It is called the magic zone because it is unpredictable when a wave propagates over it.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-046">
+        <div class="slide-meta"><span class="badge">46</span>
+          <div>
+            <h2>Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_046.png" alt="Slide 46: Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Bands and frequencies allowed to operate in the Kingdom of Saudi Arabia<br>Very high frequencies and ultra-high frequencies VHF :<br>2m band from 144000 to 146000 kHz:<br>Note that the pattern used for this frequency is FM<br>.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-047">
+        <div class="slide-meta"><span class="badge">47</span>
+          <div>
+            <h2>MODES OF COMMUNICATION</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_047.png" alt="Slide 47: MODES OF COMMUNICATION" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">MODES OF COMMUNICATION<br>The pattern is how we send and receive the wireless signal, by combining and shaping the audio or digital information with the carrier frequency in the transmitter. The opposite happens in the receiver device, where we retrieve the audio or digital information again.<br>Amateurs use all the patterns known today in their communications, such as:<br>(Amplitude Modulation) -1 Amplitude modulation (AM).<br>(Frequency Modulation) -2 Frequency Modulation (FM).<br>(Single Side Band) -3 Single Side Band (SSB) (USB) or (LSB) modification.*<br>DIGITAL -4 such as RTTY, PSK, SSTV-FT8-FT4).<br>  RTTY is frequency shift telegraphy. Frequency-shift-keyed telegraphy*<br>(Continuous Wave) -5 The continuous wave formed in Morse code (CW).</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-048">
+        <div class="slide-meta"><span class="badge">48</span>
+          <div>
+            <h2>RST system</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_048.png" alt="Slide 48: RST system" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">RST system<br>The RST <br>system<br> is used by radio amateurs, radio listeners, and all radio users, through which the evaluation of the received signal is exchanged, and the signal strength indicator in the receiver is used to evaluate this process. This symbol was developed at the beginning of the twentieth century and was widely spread, specifically in 1912 AD.<br>The RST <br>system<br> consists of three parts:<br>Readability<br>Strength<br>Tone</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-049">
+        <div class="slide-meta"><span class="badge">49</span>
+          <div>
+            <h2>RST system</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_049.png" alt="Slide 49: RST system" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">RST system<br>Readability<br>:<br>It is symbolized by the letter R, which means the degree of clarity, and it is a numerical assessment of how easy or difficult it is to receive the signal during the reception process. The degree of clarity is measured on a scale of 1 out of 5.<br>Readability<br>No<br>Unreadable<br>1<br>Barely Readable<br>2<br>Readable With Difficulty<br>3<br>Readable With NO Difficulty<br>4<br>Perfectly<br>readable<br>5</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-050">
+        <div class="slide-meta"><span class="badge">50</span>
+          <div>
+            <h2>RST system</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_050.png" alt="Slide 50: RST system" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">RST system<br>Strength:<br>It is symbolized by the letter S, which means signal strength, and it is a numerical assessment of the strength of the received signal. The signal strength is measured on a scale from 1 to 9 on the signal strength indicator of the receiver.<br>Strength<br>evaluation number<br>Signal Faint<br>1<br>Very Weak<br>2<br>Weak<br>3<br>Fair<br>4<br>Fair Good<br>5<br>Good<br>6<br>Modernity Strong<br>7<br>Strong<br>8<br>Very Strong<br>9</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-051">
+        <div class="slide-meta"><span class="badge">51</span>
+          <div>
+            <h2>RST system</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_051.png" alt="Slide 51: RST system" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">RST system<br>Tone:<br>It is symbolized by the letter T, which means tone. Tone evaluation is used in the Morse code transmission and digital transmission, so it is not used in the audio transmission process. Tone is measured on a scale from 1 to 9.<br>Tone<br>evaluation number<br>Sixty cycle <br>a.c<br> or less, very rough and broad<br>1<br>Very rough <br>a.c.<br>, very harsh and broad<br>2<br>Rough <br>a.c.<br> tone, rectified but not filtered<br>3<br>Rough note, some trace of filtering<br>4<br>Filtered rectified <br>a.c.<br> but strongly ripple-modulated<br>5<br>Filtered tone, definite trace of ripple modulation<br>6<br>Near pure tone, trace of ripple modulation<br>7<br>Near perfect tone, slight trace of modulation<br>8<br>Perfect tone, no trace of ripple or modulation of any kind<br>9</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-052">
+        <div class="slide-meta"><span class="badge">52</span>
+          <div>
+            <h2>RST system</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_052.png" alt="Slide 52: RST system" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">RST system<br>Evaluation number<br>Readability<br>Strength<br>Tone<br>1<br>Unreadable<br>Signal Faint<br>Sixty cycle <br>a.c<br> or less, very rough and broad<br>2<br>Barely Readable<br>Very Weak<br>Very rough <br>a.c.<br>, very harsh and broad<br>3<br>Readable With Difficulty<br>Weak<br>Rough <br>a.c.<br> tone, rectified but not filtered<br>4<br>Readable With NO Difficulty<br>Fair<br>Rough note, some trace of filtering<br>5<br>Perfectly<br>readable<br>Fair Good<br>Filtered rectified <br>a.c.<br> but strongly ripple-modulated<br>6<br>Good<br>Filtered tone, definite trace of ripple modulation<br>7<br>Modernity Strong<br>Near pure tone, trace of ripple modulation<br>8<br>Strong<br>Near perfect tone, slight trace of modulation<br>9<br>Very Strong<br>Perfect tone, no trace of ripple or modulation of any kind</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-053">
+        <div class="slide-meta"><span class="badge">53</span>
+          <div>
+            <h2>Alphabet</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_053.png" alt="Slide 53: Alphabet" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Alphabet<br>The spoken alphabet, which replaces letters with words to denote them in radio messages, has a history dating back to 1913 when it was used by naval units, air navigation, and radio amateurs. The purpose of using the spoken alphabet is to avoid confusion between similar-sounding letters and reduce the impact of accents or dialects. The spoken alphabet has undergone several revisions and forms, with an international agreement on March 1, 1956, to unify the words representing letters. The International Telecommunication Union adopted this standard, which is recognized by the International Civil Aviation Organization, the International Telecommunication Union, and NATO. Despite the international agreement, many radio amateurs worldwide do not adhere to the standard spoken alphabet. The following table shows the standard spoken alphabet:</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-054">
+        <div class="slide-meta"><span class="badge">54</span>
+          <div>
+            <h2>Alphabet</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_054.png" alt="Slide 54: Alphabet" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Alphabet</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-055">
+        <div class="slide-meta"><span class="badge">55</span>
+          <div>
+            <h2>Q Code</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_055.png" alt="Slide 55: Q Code" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Q Code<br>Q coding is an international system used for abbreviating transmitted information in the communication process between radio amateurs. It consists of a series of three-letter groups, each with a specific meaning. This coding system facilitates efficient and clear communication by providing a standardized set of abbreviations that can be used to convey common messages and requests. By using Q coding, radio amateurs can quickly and accurately communicate with each other, reducing the need for lengthy or ambiguous transmissions.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-056">
+        <div class="slide-meta"><span class="badge">56</span>
+          <div>
+            <h2>Q Code</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_056.png" alt="Slide 56: Q Code" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Q Code<br>Q Code<br>M<br>eaning<br>QRG<br>Frequency<br>QRM<br>Interference<br>QRN<br>Noise<br>QRO<br>High power<br>QRP<br>Low power</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-057">
+        <div class="slide-meta"><span class="badge">57</span>
+          <div>
+            <h2>Q Code</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_057.png" alt="Slide 57: Q Code" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Q Code<br>Q Code<br>M<br>eaning<br>QRT<br>Shut down the station<br>QRV<br>Ready<br>QRX<br>Stand by<br>QRZ<br>Who is calling me?<br>QSB<br>Fading<br>QSL<br>Confirmation <br>or<br> card to confirm contact</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-058">
+        <div class="slide-meta"><span class="badge">58</span>
+          <div>
+            <h2>Q Code</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_058.png" alt="Slide 58: Q Code" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Q Code<br>Q Code<br>M<br>eaning<br>QSO<br>Radio contact<br>QSY<br>Change frequency<br>QTH<br>Location</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-059">
+        <div class="slide-meta"><span class="badge">59</span>
+          <div>
+            <h2>M</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_059.png" alt="Slide 59: M" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">M<br>orse Code <br>An old system of encoding messages that is used to send telegraphic information using signals and rhythm</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-060">
+        <div class="slide-meta"><span class="badge">60</span>
+          <div>
+            <h2>Morse Code</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_060.png" alt="Slide 60: Morse Code" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Morse Code</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-061">
+        <div class="slide-meta"><span class="badge">61</span>
+          <div>
+            <h2>How do Amateurs define themselves?</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_061.png" alt="Slide 61: How do Amateurs define themselves?" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">How do Amateurs define themselves?<br>Each radio station has a unique identifier called a call sign, which consists of a combination of letters and numbers to distinguish it from other stations. The call sign includes fixed symbols that indicate the country where the station's license is held, such as HZ for Saudi Arabia, 9K for Kuwait, or SU for Egypt. To ensure clear identification, the amateur must use their call sign at the beginning and end of each communication, as well as every 10 minutes during ongoing conversations. This practice helps maintain order and clarity in radio communication, allowing for efficient and accurate exchanges between stations.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-062">
+        <div class="slide-meta"><span class="badge">62</span>
+          <div>
+            <h2>How do Amateurs define themselves?</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_062.png" alt="Slide 62: How do Amateurs define themselves?" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">How do Amateurs define themselves?<br>By calling CQ you only wish to chat with DX stations. Example:<br>     ‘CQ DX, outside Europe, this is…’<br>Always be committed to responding to some stations for which you are a new country or the first time you have spoken to them.<br>For example, if you hear an amateur calling CQ SA CQ SA THIS IS….<br>     The Amateur  radio operation is calling stations from South America.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-063">
+        <div class="slide-meta"><span class="badge">63</span>
+          <div>
+            <h2>Ways to connect the radio in the shack</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_063.png" alt="Slide 63: Ways to connect the radio in the shack" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Ways to connect the radio in the shack</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-064">
+        <div class="slide-meta"><span class="badge">64</span>
+          <div>
+            <h2>How to fix radio frequency interference ?</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_064.png" alt="Slide 64: How to fix radio frequency interference ?" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">How to fix radio frequency interference ?<br>To minimize interference in other devices such as television and telephone, radio amateurs can take several steps to detect and address potential issues. By ensuring proper balance in the antenna and eliminating returning waves (Standing Wave Ratio or SWR), radio amateurs can maintain efficient and clear communication. An SWR Meter can be used to detect any imbalance in the antenna or poor connections, as it measures the impedance mismatch between the antenna and the transmitter. A well-balanced antenna should have an impedance of 50 ohms, and any deviation from this value may indicate an imbalance or poor connections. For example, if the SWR measurement reading at the lowest frequency value for a band designated for amateurs is 2.5:1, and it is also 5:1 at the highest frequency in the same band, this indicates that the antenna may be too long to work effectively in this range. Here are some tips to help minimize interference and improve antenna performance:<br>Ensure proper antenna balance and eliminate returning waves (SWR)<br>Use an SWR Meter to detect any imbalance or poor connections<br>Maintain a well-balanced antenna with an impedance of 50 ohms<br>Adjust the antenna length to work effectively within the designated band.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-065">
+        <div class="slide-meta"><span class="badge">65</span>
+          <div>
+            <h2>QRP</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_065.png" alt="Slide 65: QRP" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">QRP<br>Most amateur equipment has a transmitting power of up to 100 watts, which is sufficient to communicate with all parts of the world. However, there are many amateur radio operators who have formed international clubs, competitions, and associations that focus on operating with a low power output of 5-10 watts, known as QRP. This practice is popular among amateur radio enthusiasts who enjoy building and creating their own devices. The permissible limit for the highest amount of broadcast power varies from country to country, with the Kingdom of Saudi Arabia allowing up to 200 watts and the global limit set at 1500 watts. Power amplifiers are available in various types and power capacities, but working with them can be challenging due to the risk of wireless interference and health hazards to the user. If an amateur radio operator uses the term &quot;QRP&quot; as a question or request, it typically indicates a request to reduce the transmission output power. This term is commonly used in the amateur radio community to communicate a request for reduced power output during communication.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-066">
+        <div class="slide-meta"><span class="badge">66</span>
+          <div>
+            <h2>Logbook</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_066.png" alt="Slide 66: Logbook" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Logbook<br>Permanent recording of all communications is a crucial aspect of amateur radio operation, as it serves as documentation of the amateur's work. This documentation can be useful in several ways, including:<br>Serving as a record of call confirmation cards sent or received.<br> Maintaining a history of the station's work. (Amateur radio operators are required to keep a log of their communications for at least the past year.)<br>Providing a record of the places and distances that the amateur has contacted, as well as identifying the places that still need to be contacted in the future.<br>A simple notebook layout can be used for recording communications, as shown in the following figure: There are currently several computer programs available for amateur radio operators to assist with documentation, such as DX4WIN, LOG32, LOG4OM, and N1MM. These programs can help automate the logging process and provide additional features for tracking and analyzing communication data.<br>NOTE<br>MODE<br>RST<br>station call sign<br>frequencies<br>UTC<br>DAY and DATE</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-067">
+        <div class="slide-meta"><span class="badge">67</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_067.png" alt="Slide 67: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>E<br>lectric current:<br>The flow of electrons in an electric circuit is quantified by electric current, which is measured in a unit called the ampere (A). Electric current can be categorized into two main types:<br>Direct Current (DC): Symbolized by (DC), direct current flows in one direction continuously in a circuit.<br>Alternating Current (AC): Symbolized by (AC), alternating current changes direction periodically in a circuit, typically following a sinusoidal waveform.<br>).</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-068">
+        <div class="slide-meta"><span class="badge">68</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_068.png" alt="Slide 68: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br> Direct Current <br>&amp; <br>Alternating Current:<br>Direct Current (DC): Direct current, denoted by the symbol &quot;DC,&quot; is a type of electric current where the flow of electrons moves in a single direction continuously. <br>Alternating Current (AC): Alternating current, symbolized by the symbol &quot;AC,&quot; is a type of electric current where the flow of electrons alternates in direction between negative and positive, and vice versa. This alternating current typically follows a sinusoidal waveform.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-069">
+        <div class="slide-meta"><span class="badge">69</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_069.png" alt="Slide 69: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Units:<br>Symbol<br>Measured in<br>Units<br>Voltage<br>V<br>Volts<br>V<br>Current<br>I<br>Amps<br>A<br>Resistance<br>R<br>Ohms<br><br>Power<br>P<br>Watts<br>W<br>Frequency<br>f<br>Hertz<br>Hz<br>Wavelength<br><br>Metres<br>m</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-070">
+        <div class="slide-meta"><span class="badge">70</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_070.png" alt="Slide 70: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Electrical Symbols:</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-071">
+        <div class="slide-meta"><span class="badge">71</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_071.png" alt="Slide 71: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Ohm’s Law:<br>Ohm's law states that the intensity of the current passing through a conductor is directly proportional to the potential difference between its ends, and the constant of proportionality is the resistance of the conductor. This law relates resistance, electric current, and voltage according to the following relationship:<br>The relationship between voltage, current, and resistance in a circuit fitted with Ohm's law<br>V = R I, where V is the potential difference, I is the current, and R is the resistance<br>V = I x R<br> where:<br>– V = voltage in volts<br>– I = current in amperes<br>– R = resistance in ohms</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-072">
+        <div class="slide-meta"><span class="badge">72</span>
+          <div>
+            <h2>Ohm's law exercises</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_072.png" alt="Slide 72: Ohm's law exercises" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Ohm's law exercises<br>From the previous circuit, determine the <br>resistance<br> if you know that<br>Voltage = 12v<br>Current intensity = 1.5A<br>The solution according to Ohm's law is:<br>From the previous circuit determine the <br>voltage<br> if you know that<br>Resistance = 15Ω<br>The current intensity = 10A<br>The solution according to Ohm's law is:<br>15Ω<br>×<br>10A=150V</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-073">
+        <div class="slide-meta"><span class="badge">73</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_073.png" alt="Slide 73: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Resistance:<br>Resistance is a characteristic of a conductor that resists the flow of electric current, resulting in a rise in its temperature. It is symbolized by the Latin letter R or the Greek letter omega (Ω). Resistance is an important property in electrical circuits, as it affects the flow of current and the amount of power dissipated in the circuit</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-074">
+        <div class="slide-meta"><span class="badge">74</span>
+          <div>
+            <h2>Resistance calculation</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_074.png" alt="Slide 74: Resistance calculation" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Resistance calculation<br>Calculate the resistance in the previous figure:<br>Ω<br>18k = <br>18000<br>Calculate the resistance in the previous figure:<br>Ω<br>10k = 10000<br>The purpose of using resistor R3 in the circuit shown is:<br>Emitter Load</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-075">
+        <div class="slide-meta"><span class="badge">75</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_075.png" alt="Slide 75: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Capacitors:<br>A capacitor is a component of electrical and electronic circuits that stores energy in the form of an electric field. It consists of two conductive plates, each of which carries an electrical charge of equal magnitude and opposite direction. The two plates are separated by an insulating material such as air, plastic, ceramic, or a chemical solution. The type of capacitor is determined according to the type of insulating material used in it, and is measured by a unit called the farad. Capacitors tend to block direct current (DC) and allow only alternating current (AC) to pass through. The capacitance of a capacitor is measured by colour code. The ability to store electrical energy is called capacitance, noting that the capacitance value of two equal capacitors connected in series is equal to half the capacitance value of one of them.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-076">
+        <div class="slide-meta"><span class="badge">76</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_076.png" alt="Slide 76: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>In the circuit shown above<br>The purpose of using the capacitor (c1) is input coupling<br>The purpose of using the capacitor (2c) is the output coupling</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-077">
+        <div class="slide-meta"><span class="badge">77</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_077.png" alt="Slide 77: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>The capacitive value of capacitors is measured in picofarads<br>What is the approximate capacitive impedance value of a capacitor with a capacity of 20 pF when a constant voltage is applied to it?<br>be infinite value</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-078">
+        <div class="slide-meta"><span class="badge">78</span>
+          <div>
+            <h2>Capacitors and resistors</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_078.png" alt="Slide 78: Capacitors and resistors" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Capacitors and resistors<br>for example<br>If we create a circuit consisting of a capacitor and a resistor in parallel, then when the capacitance value of the capacitor increases, it affects the frequency of the circuit by decreasing.<br>In a capacitor and resistor circuit in parallel, to what extent is the frequency of the circuit affected when the capacitance value of the capacitor increases?<br>Decrease<br>Note that when the capacitance value of the capacitor in parallel is increased, the frequency of the circuit decreases.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-079">
+        <div class="slide-meta"><span class="badge">79</span>
+          <div>
+            <h2>Capacitors and resistors</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_079.png" alt="Slide 79: Capacitors and resistors" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Capacitors and resistors<br>Ceramic capacitors:<br>Ceramic Capacitor A constant value capacitor in which a ceramic serves as an insulator consisting of two or more layers of ceramic and a metal layer forming an electrode. The composition of the ceramic material determines the electrical behaviour and therefore the applications in which this capacitor can be used. Ceramic capacitors are divided into two categories according to the application to be used:<br>Ceramic capacitors offer high stability and low loss and are used in resonant circuit applications.<br>It can be connected to the circuit without regard to the polarity of its terminal.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-080">
+        <div class="slide-meta"><span class="badge">80</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_080.png" alt="Slide 80: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Integrated Circuit:<br>An integrated circuit is an entire circuit contained in a small piece of silicon, containing a large number of electronic elements such as transistors, diodes, resistors, and capacitors, which are now known as... IC and can be connected without regard to the polarity of its terminals.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-081">
+        <div class="slide-meta"><span class="badge">81</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_081.png" alt="Slide 81: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Transistor:<br>The transistor is made of semiconductors such as gallium, germanium, and quartz. The transistor consists of (Emitter), emitter (B), denoted by (Base), base (Collector), and collector (E), denoted by (E) and has a great ability to amplify signals (C).<br>Transistors are also used as a switch or amplifier for voltage, current, or both<br>Note that when the capacitance value of the capacitor in parallel is increased, the frequency of the circuit decreases.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-082">
+        <div class="slide-meta"><span class="badge">82</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_082.png" alt="Slide 82: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>Diode:<br>A diode is defined as a two-terminal electronic component that only operates in one direction (as long as it is operated within a specified voltage level). An ideal diode has zero resistance in one direction, and infinite resistance in the opposite direction. Although in the real world a diode cannot achieve zero or infinite resistance instead it will have a small resistance in one direction (to allow electrical current to flow), and a very high resistance in the opposite direction (to prevent flow).<br>The electrodes of a diode are known as the anode (positive electrode) and cathode (negative electrode).)<br>In a diode, electrons flow from the negative electrode to the positive electrode. (Anode)<br>Note: A varactor diode is used to control the frequency of the oscillator by controlling the change in the potential difference.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-083">
+        <div class="slide-meta"><span class="badge">83</span>
+          <div>
+            <h2>Electricity and Radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_083.png" alt="Slide 83: Electricity and Radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and Radio<br>Zener diode:<br>The Zener diode acts as a voltage regulator when connected to reverse bias, as it is designed to operate at a certain voltage in order to stabilize the output voltage. Working principle of Zener diode.<br>It gives a constant potential difference under changing current</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-084">
+        <div class="slide-meta"><span class="badge">84</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_084.png" alt="Slide 84: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>testing devices<br>Voltmeter:<br>It is a device used to measure electric potential, usually consisting of a galvanometer with a moving coil connected in series with a large resistance, and since the resistance of the device is constant, the electric current passing through the device is directly proportional to the voltage at the two points to which it is connected.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-085">
+        <div class="slide-meta"><span class="badge">85</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_085.png" alt="Slide 85: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>T<br>esting devices<br>Ammeter:<br>An ammeter, ammeter, or ampere meter is a measuring device used to measure current in a circuit. Electrical currents are measured in amperes, hence the name. An ammeter is usually connected in series with the circuit in which the current is measured<br>How can the range of the AMPREMETER be increased?<br>By adding resistance in parallel with the device</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-086">
+        <div class="slide-meta"><span class="badge">86</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_086.png" alt="Slide 86: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>testing devices<br>Ohmmeter:<br>An ohmmeter is an electrical device for measuring electrical resistance. The unit of electrical resistance is the ohm.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-087">
+        <div class="slide-meta"><span class="badge">87</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_087.png" alt="Slide 87: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>testing devices<br>Wattmeter:<br>It is a device for measuring electrical power. In electrical circuits with direct current, the reading of the device is proportional to the product of multiplying the value of the current by the voltage. In electrical circuits with alternating current, the power factor is taken into consideration because the current and voltage may not be in phase.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-088">
+        <div class="slide-meta"><span class="badge">88</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_088.png" alt="Slide 88: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>testing devices<br>Analyzer:<br>An antenna analyzer or British antenna analyzer is a device used to measure the input impedance of antenna systems in radio electronics applications. In wireless communication systems, including amateur radio, an antenna analyzer is a common tool used to fine-tune antenna and feedline performance, as well as troubleshoot problems.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-089">
+        <div class="slide-meta"><span class="badge">89</span>
+          <div>
+            <h2>Electricity and radio</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_089.png" alt="Slide 89: Electricity and radio" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Electricity and radio<br>testing devices<br>Dipmeter:<br>A grid dip oscillator, also called a grid dip meter, gate dip meter, grid dip meter, or just a dipstick, is a type of electronic instrument that measures the resonant frequency of circuits near non-contact radio frequency.<br>Meaning (giving a statement about the frequency of the resonant circuit).***</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-090">
+        <div class="slide-meta"><span class="badge">90</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_090.png" alt="Slide 90: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>An antenna is an energy converter that is designed to transmit or receive electromagnetic waves, in other words, antennas convert electromagnetic waves into electronic currents and vice versa. Under water or even under soil and rocks to get some short distance frequencies.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-091">
+        <div class="slide-meta"><span class="badge">91</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_091.png" alt="Slide 91: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Antenna Impedance:<br>Each antenna that radiates power from the transmitting device assumes an antenna impedance equal to the output impedance of the transmitting device. This antenna resistance is called Radiation Resistance. For more simplicity, we mention the following:<br>Most if not all amateur transmitters are designed to have an output resistance of 50 ohms, and therefore the antenna used must have a broadcast resistance of 50 ohms, and the coaxial cable between them must have a resistance of 50 ohms.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-092">
+        <div class="slide-meta"><span class="badge">92</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_092.png" alt="Slide 92: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Polarization<br>:<br>Polarization is defined as the direction of the electric field of an electromagnetic wave, but what do we benefit from knowing the wave's polarization?<br>The best reception of the transmitted wave occurs when the polarization of the receiving antenna is similar to the polarization of the transmitting antenna. For example, in the field of television reception, the receiving antenna is fixed horizontally or vertically, according to the polarization of the signal to be received - and for a short time - most of the international systems used horizontal polarization for television broadcasts due to the advantages it has. until finally allowed the use of vertical polarization, and there are three main types of polarization are:<br>Linear polarization<br>Circular polarization<br>Elliptical polarization</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-093">
+        <div class="slide-meta"><span class="badge">93</span>
+          <div>
+            <h2>Beamwidth Of An Antenna</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_093.png" alt="Slide 93: Beamwidth Of An Antenna" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Beamwidth Of An Antenna <br>What is the beamwidth of an antenna ?<br>The angular diameter of the area adjacent to the antenna through which the signal is best received.<br>is the width of the beam antenna elements (measured in metres)</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-094">
+        <div class="slide-meta"><span class="badge">94</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_094.png" alt="Slide 94: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Radiation angle:<br>Radio waves propagate from the antenna in all directions, and due to the effect of the earth under the antenna, the waves take a direction at a certain angle towards space. This angle is called the propagation angle of the antenna. There are several factors that affect that angle, including the height of the antenna, the type of antenna, the quality and characteristics of the ground for electrical conductivity. In general, the higher the antenna, the lower its propagation angle, and the lower angle is a good propagation feature.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-095">
+        <div class="slide-meta"><span class="badge">95</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_095.png" alt="Slide 95: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Types of antennas<br>Dipole Antenna:<br>A dipole is one of the most important forms of RF antenna, and the dipole can be used alone or can form part of a more complex antenna array.<br>The name dipole indicates that a dipole antenna consists of two electrodes or two conductive elements, where current flows in these two conductive elements and the associated current and voltage cause an electromagnetic wave or radio signal to radiate outwards from the antenna.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-096">
+        <div class="slide-meta"><span class="badge">96</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_096.png" alt="Slide 96: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Types of antennas<br>Vertical antenna:<br>The vertical antenna is one of the very popular antennas, especially in the UHF bands, and the most well-known type is the quarter-wavelength antenna.<br>The quarter-wave antenna physically represents half the length of the half-wave antenna, and we use the Earth to represent the other missing half. It can transmit and receive in all directions.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-097">
+        <div class="slide-meta"><span class="badge">97</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_097.png" alt="Slide 97: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Types of antennas<br>Yagi Antenna:<br>The directional antenna was invented by the Japanese scientist Shintaro Uda, and was developed by the Japanese scientist Yagi. This antenna is distinguished by being a directed antenna that gives high gain in the direction to which it is directed.<br>This antenna can operate over a wide frequency range as it can be used at high, very high and ultra-high frequencies.<br>What does the antenna front to end ratio mean in reference to a Yagi antenna?<br>C- The maximum radiated power in the radiation lobe compared to the set radiated power in the opposite direction.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-098">
+        <div class="slide-meta"><span class="badge">98</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_098.png" alt="Slide 98: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Yagi Antenna:<br>The parts of  Yagi antenna:<br>1- boom<br>2- Directors<br>3-Driven Element<br>4- Reflector</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-099">
+        <div class="slide-meta"><span class="badge">99</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_099.png" alt="Slide 99: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Types of antennas<br>Trap Antenna:<br>An antenna equipped with coil and capacitor tuning circuits connected in series with the antenna elements so that the antenna can operate in multiple bands.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-100">
+        <div class="slide-meta"><span class="badge">100</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_100.png" alt="Slide 100: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Delta Antenna Triangle Antenna:<br>It is a high-performance, omni-directional, broadband equilateral antenna suitable for base-to-base or base-to-mobile communications over short to medium distances.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-101">
+        <div class="slide-meta"><span class="badge">101</span>
+          <div>
+            <h2>Antennas</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_101.png" alt="Slide 101: Antennas" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antennas<br>Quad antenna:<br>  It is a type of square, equilateral antenna directed like a Yagi antenna.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-102">
+        <div class="slide-meta"><span class="badge">102</span>
+          <div>
+            <h2>Coaxial Cable</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_102.png" alt="Slide 102: Coaxial Cable" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Coaxial Cable<br>It is a type of copper cable used and consists of a copper wire surrounded by a group of twisted wires and separated by an insulating layer. Coaxial cable is made specifically for transmitting signals and is often used to connect a radio or tape recorder to another device. It is also used by telephone and telecom companies. Signals are nothing but high frequency waves. The protective metal network is connected to the ground so that external factors do not affect the coaxial wire.<br>Note that a good quality cable with a resistance of 50 ohms must be used.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-103">
+        <div class="slide-meta"><span class="badge">103</span>
+          <div>
+            <h2>Antenna tuning</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_103.png" alt="Slide 103: Antenna tuning" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antenna tuning<br>When connecting the device with the coaxial cable and the antenna, it is necessary to ensure that all devices and connections work perfectly because the presence of any defect affects the device and the quality of transmission and reception. Therefore, by using the SWR measuring tool, which is a calibration tool used to measure the ratio of the radio return wave, it is important to know how to find the value of SWR for your radio, as it allows you to tune the antenna for optimal reception. To perform a test, simply connect the antenna, coaxial and radio cables to the ports indicated on the meter. When the meter is set to calibrate and the radio transmitter is activated, you will see a number indicating the strength of the signal being broadcast.<br>Very important note:<br>*** If the antenna is balanced at a frequency higher than the required, then the antenna is short and needs to be increased in length. If it is balanced at a frequency lower than the required, then it is long and its length must be shortened.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-104">
+        <div class="slide-meta"><span class="badge">104</span>
+          <div>
+            <h2>Dummy Load</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_104.png" alt="Slide 104: Dummy Load" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Dummy Load<br>A device used to simulate an electrical load, usually for testing purposes. In radio, a dummy antenna is connected to the output of a radio transmitter and simulates an antenna electrically, to allow the transmitter to be tuned and tested without radiating radio waves.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-105">
+        <div class="slide-meta"><span class="badge">105</span>
+          <div>
+            <h2>Antenna Tuner</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_105.png" alt="Slide 105: Antenna Tuner" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Antenna Tuner<br>Adapts the transceiver to an incompatible antenna system</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-106">
+        <div class="slide-meta"><span class="badge">106</span>
+          <div>
+            <h2>Transceiver</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_106.png" alt="Slide 106: Transceiver" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Transceiver<br>In radio communication a transceiver is an electronic device that is a combination of a radio transmitter and a receiver, hence the name, that can send and receive radio waves using an antenna, these two related functions are often combined into one device to reduce manufacturing costs.<br>Hobbyist equipment is made by three of the largest Japanese companies, and you may not find any European or American competitor. They are, for example:<br>1-ICOM<br>2-Yaesu<br>3-KENWOOD<br>Amateur devices differ according to the frequencies on which they operate. Separate or combined frequencies are available HF. VHF. UHF</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-107">
+        <div class="slide-meta"><span class="badge">107</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_107.png" alt="Slide 107: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>The radio consists of two important units:<br>Transmitter unit<br>Receiver unit</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-108">
+        <div class="slide-meta"><span class="badge">108</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_108.png" alt="Slide 108: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit:<br>The output power of the devices usually ranges from 100 to 200 watts. Note that increasing the output power twice is equivalent to 3 dB, and increasing the voltage difference 4 times is equivalent to 12 <br>dB.<br>Oscillator:<br>An electronic oscillator is an electrical circuit that generates electrical signals that are often sine or square waves. An electronic oscillator converts static current into alternating current, and is also used in a wide range of electronic devices.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-109">
+        <div class="slide-meta"><span class="badge">109</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_109.png" alt="Slide 109: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>Modulator:<br>The modulator (modifier) includes the process of assembling two electric waves, one of which is the carrier wave which is of high frequency, and the carrier wave which has a low frequency. An example of this is radio broadcasting: A radio station transmits the announcer's voice as a low-frequency wave superimposed on a high-frequency electromagnetic wave.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-110">
+        <div class="slide-meta"><span class="badge">110</span>
+          <div>
+            <h2>Balanced modulator</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_110.png" alt="Slide 110: Balanced modulator" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Balanced modulator<br>Name of a single-sideband telephone (voice) transmission circuit that processes the signals coming out of the carrier oscillator and the amplifier and sends signals to the filter.<br>Built-in Balanced modulator<br>What causes splatter interference is: excessive distortion of the transmitted signal.<br>Or over modulation.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-111">
+        <div class="slide-meta"><span class="badge">111</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_111.png" alt="Slide 111: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>buffer amplifier:<br>A dielectric amplifier is one that provides the impedance shift from one circuit to another, with the goal of preventing the signal source from being affected by any currents that may be generated by the load. The signal of the download streams is &quot;cached&quot;. There are two main types of buffer: voltage buffer and current buffer.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-112">
+        <div class="slide-meta"><span class="badge">112</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_112.png" alt="Slide 112: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>Mic amplifier:<br>The term microphone preamplifier can refer to the electronic circuits within the microphone, or to a separate device or circuit to which the microphone is connected. In either case, the purpose of the microphone preamplifier is the same. A microphone preamplifier is an audio engineering device that prepares a microphone signal for processing by other equipment.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-113">
+        <div class="slide-meta"><span class="badge">113</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_113.png" alt="Slide 113: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>RF amp:<br>An RF power amplifier is a type of electronic amplifier that converts a low-power radio frequency signal into a higher-energy signal. RF power amplifiers usually drive a transmitter antenna.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-114">
+        <div class="slide-meta"><span class="badge">114</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_114.png" alt="Slide 114: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>RF filter:<br>RF filters are electronic components used to allow or block specific signals or frequencies in order to eliminate noise or unwanted signals from passing through.<br>What type of audio filter can be used to attenuate an interfering carrier signal while receiving a single sideband SSB transmission? Notch Filter</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-115">
+        <div class="slide-meta"><span class="badge">115</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_115.png" alt="Slide 115: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>Low Pass Filter:<br>It is a filter that passes low-frequency signals and reduces signals with frequencies higher than the stop frequency. The actual amount of reduction for each frequency varies depending on the filter. It is sometimes called a high-cut filter or triple-cut filter when used in audio applications.<br>It is one of the components of the RF radio wave output circuit in the HF transmitter<br> Low Pass Filter <br>in order to reduce harmonic radiation. HARMONIC RADIATION</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-116">
+        <div class="slide-meta"><span class="badge">116</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_116.png" alt="Slide 116: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Transmitter unit<br>Antenna:<br>An antenna is an energy converter designed to transmit or receive electromagnetic waves, in other words, antennas convert electromagnetic waves into electronic currents and vice versa, and it has been explained in detail in the section on antennas.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-117">
+        <div class="slide-meta"><span class="badge">117</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_117.png" alt="Slide 117: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>Antenna:<br>An antenna is an energy converter designed to transmit or receive electromagnetic waves, in other words, antennas convert electromagnetic waves into electronic currents and vice versa, and it has been explained in detail in the section on antennas.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-118">
+        <div class="slide-meta"><span class="badge">118</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_118.png" alt="Slide 118: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>Tuned circuit:<br>It is an electrical circuit consisting of an inductor and a capacitor working together as a resonator, in which an electric current resonates at a specific resonant frequency. The inductor and capacitor circuit is used to emit electromagnetic signals at a specific frequency, or to capture an electromagnetic wave that has a specific frequency from among a group of waves.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-119">
+        <div class="slide-meta"><span class="badge">119</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_119.png" alt="Slide 119: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>RF preamp:<br>Wideband RF preamplifiers are used during electromagnetic compatibility measurements to reduce the effects of interference and noise. Preamplifiers are used to amplify the weak electrical signals picked up by the antennas.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-120">
+        <div class="slide-meta"><span class="badge">120</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_120.png" alt="Slide 120: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>Local oscillator:<br>A local oscillator is an electronic oscillator that is used with a mixer to change the frequency of a signal. This frequency conversion process, also called heterodyning, produces the sum and difference frequencies of the local oscillator frequency and the frequency of the input signal. Processing a signal with a fixed frequency gives the radio receiver better performance.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-121">
+        <div class="slide-meta"><span class="badge">121</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_121.png" alt="Slide 121: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>Mixer:<br>It is an active device with three ports that can modulate or demodulate its signal. The purpose is to vary the frequency of the electromagnetic signal while preserving every other property (such as phase and amplitude) of the primary signal.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-122">
+        <div class="slide-meta"><span class="badge">122</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_122.png" alt="Slide 122: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>IF amp:<br>An amplification stage used to raise the signal levels at radio receivers, at mid-to-higher frequencies of the RF signal from the antenna and lower frequency of sound being recovered by the receiver.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-123">
+        <div class="slide-meta"><span class="badge">123</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_123.png" alt="Slide 123: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>Detector:<br>A detector is a device or circuit that extracts information from a modulated radio frequency current or voltage. The term dates back to the first three decades of radio. Unlike modern radio stations, which transmit sound on an uninterrupted carrier wave, early radio stations transmitted information by radiotelegraphy.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-124">
+        <div class="slide-meta"><span class="badge">124</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_124.png" alt="Slide 124: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>AF amp:<br>An amplifier is an electronic device that raises the voltage or current or increases the amplitude of the signal by receiving the input signal and amplifying it, thus producing a larger signal at the output. The amplifier is used in wireless communications and broadcasting, and is widely used in weak receivers.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-125">
+        <div class="slide-meta"><span class="badge">125</span>
+          <div>
+            <h2>Radio components</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_125.png" alt="Slide 125: Radio components" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">Radio components<br>Receiving unit<br>Speaker:<br>A speaker is a device that converts electrical waves into sound waves.</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-126">
+        <div class="slide-meta"><span class="badge">126</span>
+          <div>
+            <h2>This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_126.png" alt="Slide 126: This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society<br>Muhammad Saeed Al Shahrani<br>  Hz1MW<br>AUDIT BY:<br>HZ1SK</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-127">
+        <div class="slide-meta"><span class="badge">127</span>
+          <div>
+            <h2>The Reviewer</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_127.png" alt="Slide 127: The Reviewer" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">The Reviewer<br>Primary Reference<br>Amateur Radio Book - Training Committee of the Saudi Society for Amateur Radio<br>Regulations and regulations of the Communications, Technology and Space Commission<br>Other references:<br>Internet<br>Wikipedia<br>Beginning Radio Communications<br>The Beginner's Handbook of Amateur Radio</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-128">
+        <div class="slide-meta"><span class="badge">128</span>
+          <div>
+            <h2>This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_126.png" alt="Slide 128: This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">This work was compiled and coordinated by a member of the Training Committee of the Saudi Amateur Radio Society<br>Muhammad Saeed Al Shahrani<br>  Hz1MW<br>AUDIT BY:<br>HZ1SK</div>
+        </details>
+      </section>
+
+      <section class="slide" id="slide-129">
+        <div class="slide-meta"><span class="badge">129</span>
+          <div>
+            <h2>The Reviewer</h2>
+          </div>
+        </div>
+        <figure><img src="images/slide_127.png" alt="Slide 129: The Reviewer" loading="lazy"></figure>
+        <details class="transcript">
+          <summary>Slide Text</summary>
+          <div class="slide-text">The Reviewer<br>Primary Reference<br>Amateur Radio Book - Training Committee of the Saudi Society for Amateur Radio<br>Regulations and regulations of the Communications, Technology and Space Commission<br>Other references:<br>Internet<br>Wikipedia<br>Beginning Radio Communications<br>The Beginner's Handbook of Amateur Radio</div>
+        </details>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+<p>
+    البوابة التفاعلية لهواة اللاسلكي — جميع الحقوق محفوظة
+<span dir="ltr">© 2026</span>
+</p>
+
+  <p>
+    تم تطوير هذه البوابة لدعم تعلم هواية اللاسلكي والاستعداد لاختبار الرخصة في المملكة العربية السعودية.
+  </p>
+
+  <p>
+    بالتعاون مع مجتمع هواة اللاسلكي والجمعية السعودية لهواة اللاسلكي (SARS)
+  </p>
+
+</footer>
+  <script>const search = document.getElementById('search'); const slides = Array.from(document.querySelectorAll('.slide')); search.addEventListener('input', () => { const q = search.value.trim().toLowerCase(); slides.forEach(slide => { const text = slide.innerText.toLowerCase(); slide.classList.toggle('hidden', q && !text.includes(q)); }); });</script>
+</body>
+
+</html>
