@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>دورة مرشحي اختبار رخصة هواة اللاسلكي 2026</title>
   <style>
@@ -27,7 +27,7 @@
 
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+      font-family: Tahoma, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.8;
@@ -150,7 +150,7 @@
     }
 
     nav .chapter summary {
-      cursor: pointer;
+      margin: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -167,14 +167,14 @@
     }
 
     nav .chapter summary::before {
-      content: "›";
+      content: "▶";
       font-size: .78rem;
       color: #0b5ed7;
       margin-left: 6px
     }
 
     nav .chapter[open] summary::before {
-      content: "⌄";
+      content: "▼";
       color: var(--gold)
     }
 
@@ -192,6 +192,13 @@
 
     nav .chapter-links {
       padding: 0 8px 8px
+    }
+
+    nav .chapter-links a {
+      font-size: .82rem;
+      padding: 7px 10px 7px 8px;
+      margin: 2px 0;
+      border-radius: 9px
     }
 
     main {
@@ -276,27 +283,27 @@
       background: #fff
     }
 
-    .summary {
+    .transcript {
       margin-top: 12px;
       background: #fff8e1;
       border: 1px solid #ffe08a;
       border-radius: 14px;
-      padding: 14px;
-      color: #3d3000
+      padding: 0;
+      overflow: hidden
     }
 
-    .summary h3 {
-      margin: 0 0 6px;
+    .instructor-note h3 {
+      margin: 0;
+      padding: 12px 14px;
       color: #3d3000;
-      font-size: 1rem
+      font-weight: 800
     }
 
-    .summary p {
-      margin: 0
-    }
-
-    .hidden {
-      display: none !important
+    .slide-text {
+      white-space: pre-wrap;
+      padding: 0 14px 14px;
+      color: #3d3000;
+      font-size: .98rem
     }
 
     footer {
@@ -305,6 +312,10 @@
       background: var(--navy);
       text-align: center;
       margin-top: 30px
+    }
+
+    .hidden {
+      display: none !important
     }
 
     @media(max-width:980px) {
@@ -346,12 +357,31 @@
         font-size: 1.25rem
       }
 
-      .toolbar input {
-        width: 100%
+      nav h3 {
+        display: inline-block;
+        margin: 0
       }
 
-      .toolbar a.button {
-        flex: 1 1 auto
+      nav summary {
+        margin: 0;
+        padding: 4px;
+        font-weight: bold;
+        color: var(--navy)
+      }
+
+      .nav-content {
+        margin-top: 10px
+      }
+    }
+
+    @media(min-width:981px) {
+      nav .chapter summary {
+        pointer-events: auto;
+        list-style: none
+      }
+
+      nav .chapter summary::-webkit-details-marker {
+        display: none
       }
     }
 
@@ -383,11 +413,12 @@
 
 <body>
   <header>
-    <h1>دورة مرشحي اختبار رخصة هواة اللاسلكي</h1>
+    <h1>دورة مرشحي اختبار رخصة هواة اللاسلكي 2026</h1>
   </header>
   <div class="toolbar"><input id="search" placeholder="ابحث في محتوى الدورة..." /><a class="button"
       href="../index.html">الرئيسية</a><a class="button" href="../exam/index.html">الاختبار</a><a class="button"
-      href="#" onclick="window.print();return false;">طباعة / حفظ PDF</a></div>
+      href="../lecture/index.html">نسخة الدورة السابقة</a><a class="button" href="#"
+      onclick="window.print();return false;">طباعة / حفظ PDF</a></div>
   <div class="layout">
     <nav aria-label="محتويات الدورة">
       <h3>محتويات الدورة</h3>
@@ -557,2153 +588,2198 @@
       </div>
     </nav>
     <main>
-      <section class="intro searchable" id="intro">
-        <h2>محتويات الدورة</h2>
+      <section class="intro">
+        <h2>مسار الدورة 2026</h2>
+        <p>تجمع هذه الصفحة شرائح دورة مرشحي اختبار رخصة هواة اللاسلكي (تحديث 2026) في تجربة رقمية واحدة. تم الحفاظ على
+          نصوص الشرائح كما وردت، مع عرض كل شريحة كمرئية مستقلة.</p>
 
-        <p>
-          تغطي هذه الدورة جميع الموضوعات المطلوبة لاجتياز اختبار رخصة هواة اللاسلكي
-          في المملكة العربية السعودية. تبدأ الدورة بالتعريف بالهواية وأهدافها،
-          ثم تنتقل إلى الأنظمة والتراخيص وإشارات النداء، قبل التعمق في
-          انتشار الموجات الراديوية والنطاقات الترددية وإجراءات التشغيل.
-          كما تشمل أساسيات الكهرباء والإلكترونيات والهوائيات وأجهزة الراديو
-          المستخدمة في محطات هواة اللاسلكي.
-        </p>
-        <p>
-          الفصول: مقدمة عن هواية اللاسلكي • التراخيص والشروط القانونية •
-          إشارات النداء والاتحاد الدولي • فيزياء الموجات والانتشار •
-          النطاقات الترددية والتشغيل • أنماط الاتصال والإجراءات •
-          الكهرباء والإلكترونيات • الهوائيات ونظم التغذية • أجهزة الراديو.
-        </p>
-        <div class="pillrow"><span class="pill">عدد الشرائح: 162 </span><span class="pill">عدد الفصول: 9</span></div>
       </section>
-
-      <section class="slide searchable" id="slide-001">
-        <div class="slide-meta"><span class="badge">001</span>
+      <section class="slide" id="slide-001">
+        <div class="slide-meta"><span class="badge">01</span>
           <div>
             <h2>غلاف الدورة</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-001.png" alt="الشريحة 001: غلاف الدورة" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_001.png" alt="الشريحة 1: دورة مرشحي اختبار" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
-          </p>
+          <div class="slide-text">ترحب بكم هذه الدورة الشاملة لإعدادكم لاختبار رخصة هواة اللاسلكي. تهدف هذه الشريحة إلى تقديم نظرة عامة على المحتوى الذي سيتم تغطيته لضمان جاهزيتكم الكاملة للامتحان. احرص على متابعة الفصول بتسلسل لتحقيق أقصى استفادة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-002">
-        <div class="slide-meta"><span class="badge">002</span>
+
+      <section class="slide" id="slide-002">
+        <div class="slide-meta"><span class="badge">02</span>
           <div>
             <h2>كيفية استخدام الدورة</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-002.png" alt="الشريحة 002: كيفية استخدام الدورة" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_002.png" alt="الشريحة 2: خطوات التعلم85% مكتمل" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
-          </p>
+          <div class="slide-text">توضح هذه الشريحة مسار التعلم الموصى به لضمان استيعاب المادة العلمية واجتياز الاختبار بنجاح. تذكر أن الممارسة العملية وحل التمارين هي مفتاحك الحقيقي لإتقان المفاهيم.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-003">
-        <div class="slide-meta"><span class="badge">003</span>
+
+      <section class="slide" id="slide-003">
+        <div class="slide-meta"><span class="badge">03</span>
           <div>
             <h2>جدول المحتويات</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-003.png" alt="الشريحة 003: جدول المحتويات" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_003.png" alt="الشريحة 3: مقدمة عن هواية الالسلكي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
-          </p>
+          <div class="slide-text">جدول المحتويات</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-004">
-        <div class="slide-meta"><span class="badge">004</span>
+
+      <section class="slide" id="slide-004">
+        <div class="slide-meta"><span class="badge">04</span>
           <div>
             <h2>دليل الرموز والألوان</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-004.png" alt="الشريحة 004: دليل الرموز والألوان" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_004.png" alt="الشريحة 4: ألوان الفصول" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تمهيدية عن الدورة وطريقة استخدامها. استخدمها لتنظيم خطة الدراسة قبل بدء الفصول.
-          </p>
+          <div class="slide-text">تستعرض هذه الشريحة الدليل البصري للدورة لتسهيل التنقل بين الفصول. فهم هذه الرموز سيساعدك على تذكر الروابط بين المواضيع المختلفة وتصنيف المعلومات في ذهنك بشكل أفضل.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-005">
-        <div class="slide-meta"><span class="badge">005</span>
+
+      <section class="slide" id="slide-005">
+        <div class="slide-meta"><span class="badge">05</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 005</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-005.png" alt="الشريحة 005: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 005"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_005.png" alt="الشريحة 5: الفصل1" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">يبدأ هنا الفصل الأول الذي يغطي أساسيات هواية اللاسلكي وانتشارها العالمي. يجب أن تفهم جيداً مدى اتساع هذه الهواية عالمياً والهدف الأساسي منها بعيداً عن أي استخدام تجاري.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-006">
-        <div class="slide-meta"><span class="badge">006</span>
+
+      <section class="slide" id="slide-006">
+        <div class="slide-meta"><span class="badge">06</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 006</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-006.png" alt="الشريحة 006: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 006"
+        <figure><img src="images/slide_006.png" alt="الشريحة 6: مصطلح:هاوي الالسلكيًالفصل1مقدمة عن هواية الالسلكي"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">تقدم هذه الشريحة التعريف الرسمي لهاوي اللاسلكي. من المهم في الاختبار التمييز بين الهاوي المرخص والمستخدم التجاري للاتصالات. احرص على تذكر أن الهدف الأساسي من الهواية هو التعلم والتجريب وليس تحقيق الربح.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-007">
-        <div class="slide-meta"><span class="badge">007</span>
+
+      <section class="slide" id="slide-007">
+        <div class="slide-meta"><span class="badge">07</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 007</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-007.png" alt="الشريحة 007: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 007"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_007.png" alt="الشريحة 7: الانتشار العالمي لهواية الالسلك ي" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">توضح هذه الإحصائيات الحجم الهائل لمجتمع هواة اللاسلكي حول العالم. ليس عليك حفظ الأرقام الدقيقة للاختبار، لكن من المهم أن تدرك أنك تنضم إلى شبكة عالمية ضخمة ومنظمة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-008">
-        <div class="slide-meta"><span class="badge">008</span>
+
+      <section class="slide" id="slide-008">
+        <div class="slide-meta"><span class="badge">08</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 008</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-008.png" alt="الشريحة 008: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 008"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_008.png" alt="الشريحة 8: هواة الالسلكي هواية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">هذه الشريحة مهمة جداً لأنها تقارن بين هواية اللاسلكي والخدمات التجارية. تذكر دائماً للاختبار أن هواية اللاسلكي تمنع منعاً باتاً استغلال الترددات لأي أغراض تجارية أو ربحية مادية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-009">
-        <div class="slide-meta"><span class="badge">009</span>
+
+      <section class="slide" id="slide-009">
+        <div class="slide-meta"><span class="badge">09</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 009</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-009.png" alt="الشريحة 009: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 009"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_009.png" alt="الشريحة 9: مكونات المحطة األساسية6 عناصر رئيس ية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">تلخص هذه الشريحة المكونات الستة الأساسية لمحطة هواة اللاسلكي النموذجية. يجب عليك فهم دور كل عنصر، خاصة جهاز الإرسال والاستقبال ومزود الطاقة والهوائي، حيث تعتبر أساسيات لتشغيل أي محطة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-010">
-        <div class="slide-meta"><span class="badge">010</span>
+
+      <section class="slide" id="slide-010">
+        <div class="slide-meta"><span class="badge">10</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 010</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-010.png" alt="الشريحة 010: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 010"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_010.png" alt="الشريحة 10: أنشطة هواة الالسلكي 8 نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">تستعرض الشريحة تنوع الأنشطة التي يمكن لهاوي اللاسلكي ممارستها. تذكر أن الهواية لا تقتصر على الاتصال الصوتي، بل تشمل الاتصالات الرقمية وشفرة مورس والاتصال عبر الأقمار الصناعية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-011">
-        <div class="slide-meta"><span class="badge">011</span>
+
+      <section class="slide" id="slide-011">
+        <div class="slide-meta"><span class="badge">11</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 011</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-011.png" alt="الشريحة 011: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 011"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_011.png" alt="الشريحة 11: فوائد هواية الالسلكي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">تركز هذه الشريحة على الجوانب الإيجابية والفوائد المتعددة للهواية. أهم نقطة يجب تذكرها للاختبار هي دور هواة اللاسلكي الفعال في تقديم الدعم والاتصالات البديلة أثناء حالات الطوارئ والأزمات.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-012">
-        <div class="slide-meta"><span class="badge">012</span>
+
+      <section class="slide" id="slide-012">
+        <div class="slide-meta"><span class="badge">12</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 012</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-012.png" alt="الشريحة 012: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 012"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_012.png" alt="الشريحة 12: أخالقيات هواية الالسلكي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">الأخلاقيات هي أساس هواية اللاسلكي الناجحة. يجب عليك فهم مبادئ التعاون والنزاهة والمسؤولية، فكثيراً ما ترد أسئلة في الاختبار حول التصرف السليم والأخلاقي للهاوي في المواقف المختلفة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-013">
-        <div class="slide-meta"><span class="badge">013</span>
+
+      <section class="slide" id="slide-013">
+        <div class="slide-meta"><span class="badge">13</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 013</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-013.png" alt="الشريحة 013: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 013"
+        <figure><img src="images/slide_013.png" alt="الشريحة 13: التعريفات األساسية والرسمية لهواية الالسلكي"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">تحتوي هذه الشريحة على التعريفات القانونية الرسمية المعتمدة. اقرأها بعناية وركز على الكلمات المفتاحية في تعريف الهاوي والرخصة والمحطة، لأن هذه المصطلحات تأتي غالباً بصيغتها الرسمية في الاختبار.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-014">
-        <div class="slide-meta"><span class="badge">014</span>
+
+      <section class="slide" id="slide-014">
+        <div class="slide-meta"><span class="badge">14</span>
           <div>
             <h2>الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 014</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-014.png" alt="الشريحة 014: الفصل 1: مقدمة عن هواية اللاسلكي - الشريحة 014"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_014.png" alt="الشريحة 14: الهواة4M+" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة أساسيات هواية اللاسلكي ودور الهاوي والمحطة. ركز على التعريفات والفوائد وأخلاقيات التشغيل.
-          </p>
+          <div class="slide-text">هذه شريحة تلخيصية لأهم مفاهيم الفصل الأول. راجع النقاط الأربعة الرئيسية جيداً لتتأكد من استيعابك لهدف الهواية وطبيعتها غير الربحية قبل الانتقال إلى الفصول التالية المتقدمة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-015">
-        <div class="slide-meta"><span class="badge">015</span>
+
+      <section class="slide" id="slide-015">
+        <div class="slide-meta"><span class="badge">15</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 015</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-015.png" alt="الشريحة 015: الفصل 2: التراخيص والشروط القانونية - الشريحة 015"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_015.png" alt="الشريحة 15: الفصل2" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">يبدأ هنا الفصل الثاني الذي يعتبر من أهم الفصول للاختبار لأنه يغطي الأنظمة والقوانين. ستتعلم فيه فئات التراخيص في المملكة والشروط اللازمة للحصول عليها والحدود المسموحة لكل فئة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-016">
-        <div class="slide-meta"><span class="badge">016</span>
+
+      <section class="slide" id="slide-016">
+        <div class="slide-meta"><span class="badge">16</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 016</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-016.png" alt="الشريحة 016: الفصل 2: التراخيص والشروط القانونية - الشريحة 016"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_016.png"
+            alt="الشريحة 16: هيئة الاتصالات والفضاء والتقنية(CST)الفصل2: التراخيص والشروط..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">توضح هذه الشريحة دور هيئة الاتصالات والفضاء والتقنية (CST) كجهة منظمة وحيدة في المملكة. تذكر للاختبار أن هذه الهيئة هي المسؤولة حصراً عن إصدار الرخص وتنظيم الطيف الترددي لهواة اللاسلكي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-017">
-        <div class="slide-meta"><span class="badge">017</span>
+
+      <section class="slide" id="slide-017">
+        <div class="slide-meta"><span class="badge">17</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 017</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-017.png" alt="الشريحة 017: الفصل 2: التراخيص والشروط القانونية - الشريحة 017"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_017.png" alt="الشريحة 17: الفئة األولى كامل الصالحيات" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">هذه الشريحة تعرض الفروق الجوهرية بين فئتي التراخيص. احفظ جيداً أن الفئة الأولى تمنح صلاحيات كاملة بقدرة 200 واط، بينما الفئة الثانية تقتصر على ترددات VHF بقدرة 50 واط.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-018">
-        <div class="slide-meta"><span class="badge">018</span>
+
+      <section class="slide" id="slide-018">
+        <div class="slide-meta"><span class="badge">18</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 018</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-018.png" alt="الشريحة 018: الفصل 2: التراخيص والشروط القانونية - الشريحة 018"
+        <figure><img src="images/slide_018.png" alt="الشريحة 18: متطلبات الحصول على الرخصة4 شروط إلزامية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">تلخص هذه الشريحة الشروط القانونية الإلزامية لطلب الرخصة. تأكد من تذكر متطلب العمر (18 سنة) واجتياز الاختبار الرسمي كشرطين أساسيين غالباً ما يتم السؤال عنهما في امتحان الأنظمة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-019">
-        <div class="slide-meta"><span class="badge">019</span>
+
+      <section class="slide" id="slide-019">
+        <div class="slide-meta"><span class="badge">19</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 019</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-019.png" alt="الشريحة 019: الفصل 2: التراخيص والشروط القانونية - الشريحة 019"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_019.png"
+            alt="الشريحة 19: مصطلح: رخصة هواة الالسلكي الفصل2 : التراخيص والشروط القانون ..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">تركز هذه الشريحة على التعريف القانوني لرخصة هواة اللاسلكي. تذكر أن الرخصة شخصية وتؤهلك لتأسيس وتشغيل المحطة وفقاً للأنظمة، مع الانتباه لمدة صلاحية الرخصة وهي خمس سنوات.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-020">
-        <div class="slide-meta"><span class="badge">020</span>
+
+      <section class="slide" id="slide-020">
+        <div class="slide-meta"><span class="badge">20</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 020</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-020.png" alt="الشريحة 020: الفصل 2: التراخيص والشروط القانونية - الشريحة 020"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_020.png" alt="الشريحة 20: متطلبات رخصة المحطة" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">توضح الشريحة الشروط الخاصة بترخيص المحطة نفسها. من المهم أن تفهم للاختبار أن ترخيص المحطة يحدد موقعها بدقة والمواصفات الفنية المعتمدة التي يجب الالتزام بها لضمان عدم التداخل.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-021">
-        <div class="slide-meta"><span class="badge">021</span>
+
+      <section class="slide" id="slide-021">
+        <div class="slide-meta"><span class="badge">21</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 021</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-021.png" alt="الشريحة 021: الفصل 2: التراخيص والشروط القانونية - الشريحة 021"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_021.png" alt="الشريحة 21: حدود القدرة المسموح بها" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">تعد هذه الشريحة من أهم شرائح الاختبار. يجب أن تحفظ عن ظهر قلب الحد الأقصى لقدرة الإرسال المسموحة في المملكة: 200 واط لنطاق HF و50 واط لنطاق VHF لتجنب المخالفات.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-022">
-        <div class="slide-meta"><span class="badge">022</span>
+
+      <section class="slide" id="slide-022">
+        <div class="slide-meta"><span class="badge">22</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 022</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-022.png" alt="الشريحة 022: الفصل 2: التراخيص والشروط القانونية - الشريحة 022"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_022.png"
+            alt="الشريحة 22: أوضاع التعديل في المملكة العربية السعودية نظام الاتصالات وا..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">تشرح هذه الشريحة قاعدة استخدام النطاقات الجانبية (SSB). احفظ هذه القاعدة الذهبية للاختبار: استخدم LSB للترددات التي تقل عن 10 ميجاهرتز، واستخدم USB للترددات التي تزيد عن 10 ميجاهرتز.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-023">
-        <div class="slide-meta"><span class="badge">023</span>
+
+      <section class="slide" id="slide-023">
+        <div class="slide-meta"><span class="badge">23</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 023</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-023.png" alt="الشريحة 023: الفصل 2: التراخيص والشروط القانونية - الشريحة 023"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_023.png" alt="الشريحة 23: التداخالت والامتثال 6 نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">تركز هذه الشريحة على مسؤولية الهاوي في منع التداخل الضار. تذكر للاختبار أن إيقاف الإرسال فوراً عند التسبب في تداخل ضار للخدمات الأخرى هو التزام قانوني لا تهاون فيه.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-024">
-        <div class="slide-meta"><span class="badge">024</span>
+
+      <section class="slide" id="slide-024">
+        <div class="slide-meta"><span class="badge">24</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 024</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-024.png" alt="الشريحة 024: الفصل 2: التراخيص والشروط القانونية - الشريحة 024"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_024.png" alt="الشريحة 24: قائمة التحقق75% مكتمل" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">تقدم هذه الشريحة نصائح عملية للحفاظ على محطتك متوافقة مع الأنظمة. السجلات الدقيقة والتوثيق وحفظ رخص المحطة تعتبر من أفضل الممارسات التي تضمن تشغيلاً آمناً وقانونياً.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-025">
-        <div class="slide-meta"><span class="badge">025</span>
+
+      <section class="slide" id="slide-025">
+        <div class="slide-meta"><span class="badge">25</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 025</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-025.png" alt="الشريحة 025: الفصل 2: التراخيص والشروط القانونية - الشريحة 025"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_025.png" alt="الشريحة 25: تحضير المستندات" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">توضح هذه الشريحة خطوات سير العمل للحصول على الرخصة رسمياً. الهدف هو إعطاؤك نظرة عامة على الإجراءات المتبعة من اجتياز الاختبار وحتى استلام الترخيص والبدء بالتشغيل.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-026">
-        <div class="slide-meta"><span class="badge">026</span>
+
+      <section class="slide" id="slide-026">
+        <div class="slide-meta"><span class="badge">26</span>
           <div>
             <h2>الفصل 2: التراخيص والشروط القانونية - الشريحة 026</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-026.png" alt="الشريحة 026: الفصل 2: التراخيص والشروط القانونية - الشريحة 026"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_026.png" alt="الشريحة 26: الفئة األولى200W" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الجانب النظامي وشروط الترخيص. احفظ الجهة المنظمة وفئات الرخص وحدود القدرة.</p>
+          <div class="slide-text">هذه الشريحة تلخص أهم نقاط الفصل الثاني المتعلقة بالأنظمة والتراخيص. ركز على مراجعة الفروق بين الفئة الأولى والثانية وحدود القدرة، فهي تعتبر مادة دسمة لأسئلة الاختبار القانونية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-027">
-        <div class="slide-meta"><span class="badge">027</span>
+
+      <section class="slide" id="slide-027">
+        <div class="slide-meta"><span class="badge">27</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 027</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-027.png" alt="الشريحة 027: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 027"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_027.png" alt="الشريحة 27: الفصل3" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">يبدأ هنا الفصل الثالث الذي يشرح بنية إشارات النداء (Call Signs). ستتعلم كيف تقرأ هويات المحطات دولياً ومحلياً، وتفهم التقسيم الجغرافي لأقاليم الاتحاد الدولي للاتصالات.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-028">
-        <div class="slide-meta"><span class="badge">028</span>
+
+      <section class="slide" id="slide-028">
+        <div class="slide-meta"><span class="badge">28</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 028</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-028.png" alt="الشريحة 028: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 028"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_028.png"
+            alt="الشريحة 28: مصطلح: إشارة النداء الفصل3 : إشارات النداء والاتحاد الدولي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">تقدم هذه الشريحة تعريف إشارة النداء وأهميتها. تذكر للاختبار أن إشارة النداء هي هويتك الرسمية الفريدة عالمياً، وتتكون من بادئة تدل على الدولة ورقم ولاحقة تميز كل هاوٍ عن الآخر.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-029">
-        <div class="slide-meta"><span class="badge">029</span>
+
+      <section class="slide" id="slide-029">
+        <div class="slide-meta"><span class="badge">29</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 029</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-029.png" alt="الشريحة 029: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 029"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_029.png" alt="الشريحة 29: بادئات سعودية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">هذه شريحة بالغة الأهمية. يجب عليك حفظ بادئات النداء المخصصة للمملكة العربية السعودية وهي HZ و 7Z و 8Z، حيث تتكرر الأسئلة حول تمييز المحطات السعودية من خلال بادئاتها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-030">
-        <div class="slide-meta"><span class="badge">030</span>
+
+      <section class="slide" id="slide-030">
+        <div class="slide-meta"><span class="badge">30</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 030</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-030.png" alt="الشريحة 030: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 030"
+        <figure><img src="images/slide_030.png" alt="الشريحة 30: جدول النطاقات الترددية-المملكة العربية السعودية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">يعرض هذا الجدول النطاقات الترددية المسموحة في المملكة. لا يلزم حفظ كل رقم، لكن من المهم معرفة النطاقات الممنوعة مثل 30 متراً و70 سنتيمتراً (UHF)، وتذكر استخدام LSB و USB حسب التردد.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-031">
-        <div class="slide-meta"><span class="badge">031</span>
+
+      <section class="slide" id="slide-031">
+        <div class="slide-meta"><span class="badge">31</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 031</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-031.png" alt="الشريحة 031: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 031"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_031.png" alt="الشريحة 31: جدول بادئات النداء-دول أوروبا" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">يستعرض هذا الجدول أمثلة على بادئات النداء لبعض الدول الأوروبية. الهدف هنا هو التعرف على التنوع الدولي وفهم كيف تميز البادئة دولة المحطة المتصلة أثناء ممارستك للهواية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-032">
-        <div class="slide-meta"><span class="badge">032</span>
+
+      <section class="slide" id="slide-032">
+        <div class="slide-meta"><span class="badge">32</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 032</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-032.png" alt="الشريحة 032: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 032"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_032.png" alt="الشريحة 32: جدول بادئات النداء في أمريكا الشمالية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">يستمر هذا الجدول في عرض البادئات الدولية، مركزاً على أمريكا الشمالية. من الجيد أن تتعرف على البادئات الشهيرة مثل K و W للولايات المتحدة لتسهيل اتصالاتك الدولية لاحقاً.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-033">
-        <div class="slide-meta"><span class="badge">033</span>
+
+      <section class="slide" id="slide-033">
+        <div class="slide-meta"><span class="badge">33</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 033</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-033.png" alt="الشريحة 033: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 033"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_033.png"
+            alt="الشريحة 33: ملحقات النداء المتنقلة الفصل3إشارات النداء والاتحاد الدولي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">تشرح الشريحة الملحقات التي تضاف لإشارة النداء لبيان حالة المحطة. يجب حفظ دلالة الملحقات الأساسية للاختبار: /M للسيارة، و /MM للسفينة، و /P للمحطة المحمولة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-034">
-        <div class="slide-meta"><span class="badge">034</span>
+
+      <section class="slide" id="slide-034">
+        <div class="slide-meta"><span class="badge">34</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 034</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-034.png" alt="الشريحة 034: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 034"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_034.png" alt="الشريحة 34: مواقف استخدام الملحقات4 مواقف رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">توضح هذه الشريحة متى يجب استخدام الملحقات عملياً. تذكر أن إلحاق هذه الرموز بإشارة ندائك يسهل على المحطات الأخرى معرفة طبيعة موقعك، وهو جزء من إجراءات التشغيل السليمة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-035">
-        <div class="slide-meta"><span class="badge">035</span>
+
+      <section class="slide" id="slide-035">
+        <div class="slide-meta"><span class="badge">35</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 035</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-035.png" alt="الشريحة 035: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 035"
+        <figure><img src="images/slide_035.png" alt="الشريحة 35: منظمة: IARU  الفصل3 إشارات النداء والاتحاد الدولي"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">تقدم هذه الشريحة منظمة IARU العالمية. من المهم للاختبار أن تعرف أن هذه المنظمة هي التي تمثل هواة اللاسلكي أمام الاتحاد الدولي للاتصالات (ITU) وتحمي تردداتنا دولياً.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-036">
-        <div class="slide-meta"><span class="badge">036</span>
+
+      <section class="slide" id="slide-036">
+        <div class="slide-meta"><span class="badge">36</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 036</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-036.png" alt="الشريحة 036: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 036"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_036.png" alt="الشريحة 36: معلومات األقاليم" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">تستعرض هذه الشريحة تقسيم العالم إلى ثلاثة أقاليم رئيسية وفقاً لـ IARU. يجب أن تحفظ للاختبار أن المملكة العربية السعودية والمنطقة العربية تقع ضمن الإقليم الأول (Region 1).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-037">
-        <div class="slide-meta"><span class="badge">037</span>
+
+      <section class="slide" id="slide-037">
+        <div class="slide-meta"><span class="badge">37</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 037</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-037.png" alt="الشريحة 037: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 037"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_037.png" alt="الشريحة 37: أهمية األقاليم4 نقطة رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">تشرح الشريحة الفائدة من تقسيم العالم إلى أقاليم. من المهم إدراك أن كل إقليم قد يمتلك توزيعاً أو تخطيطاً مختلفاً للترددات (Bandplan) بناءً على تشريعات المنطقة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-038">
-        <div class="slide-meta"><span class="badge">038</span>
+
+      <section class="slide" id="slide-038">
+        <div class="slide-meta"><span class="badge">38</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 038</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-038.png" alt="الشريحة 038: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 038"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_038.png" alt="الشريحة 38: بادئاتDXحسب المنطقة 12 منطقة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">توضح هذه الشريحة بادئات بعض الدول المجاورة. التعرف على بادئات النداء لدول الخليج والدول العربية المجاورة سيساعدك كثيراً في تحديد مواقع المحطات التي تلتقط إشاراتها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-039">
-        <div class="slide-meta"><span class="badge">039</span>
+
+      <section class="slide" id="slide-039">
+        <div class="slide-meta"><span class="badge">39</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 039</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-039.png" alt="الشريحة 039: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 039"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_039.png"
+            alt="الشريحة 39: مصطلح:  QTHوGrid Locators الفصل3إشارات النداء والاتحاد الدول..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">هذه الشريحة تشرح طرق تحديد الموقع الجغرافي للمحطة. احفظ للاختبار أن QTH هو اختصار موقع المحطة، وأن Grid Locator هو نظام عالمي متفق عليه لتحديد الموقع الدقيق للمحطة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-040">
-        <div class="slide-meta"><span class="badge">040</span>
+
+      <section class="slide" id="slide-040">
+        <div class="slide-meta"><span class="badge">40</span>
           <div>
             <h2>الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 040</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-040.png" alt="الشريحة 040: الفصل 3: إشارات النداء والاتحاد الدولي - الشريحة 040"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_040.png" alt="الشريحة 40: النداءHZ" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>توضح هذه الشريحة موضوعا متعلقا بإشارات النداء أو التنظيم الدولي. انتبه للبادئات والملحقات وأقاليم IARU.</p>
+          <div class="slide-text">تلخص هذه الشريحة المفاهيم الأساسية للفصل الثالث. تأكد من مراجعة البادئات السعودية والملحقات المتنقلة وأقاليم IARU، حيث يكثر ورود أسئلة تتعلق بهذه المعلومات في امتحان الرخصة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-041">
-        <div class="slide-meta"><span class="badge">041</span>
+
+      <section class="slide" id="slide-041">
+        <div class="slide-meta"><span class="badge">41</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 041</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-041.png" alt="الشريحة 041: الفصل 4: فيزياء الموجات والانتشار - الشريحة 041"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_041.png" alt="الشريحة 41: الفصل4" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">ننتقل الآن إلى الفصل الرابع وهو من أمتع الفصول وأكثرها دسامة. سنتعرف هنا على كيفية انتقال الموجات الراديوية في الفضاء وتأثير طبقات الغلاف الجوي والبقع الشمسية على مسارها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-042">
-        <div class="slide-meta"><span class="badge">042</span>
+
+      <section class="slide" id="slide-042">
+        <div class="slide-meta"><span class="badge">42</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 042</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-042.png" alt="الشريحة 042: الفصل 4: فيزياء الموجات والانتشار - الشريحة 042"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_042.png"
+            alt="الشريحة 42: مصطلح:الموجة الكهرومغناطيسية الفصل4فيزياء الموجات والانتش ار" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تقدم الشريحة التعريف العلمي للموجة الكهرومغناطيسية. تذكر للاختبار أنها تتكون من مجالين كهربائي ومغناطيسي متعامدين، وتنتقل في الفراغ بسرعة الضوء دون الحاجة لوسط مادي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-043">
-        <div class="slide-meta"><span class="badge">043</span>
+
+      <section class="slide" id="slide-043">
+        <div class="slide-meta"><span class="badge">43</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 043</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-043.png" alt="الشريحة 043: الفصل 4: فيزياء الموجات والانتشار - الشريحة 043"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_043.png" alt="الشريحة 43: خصائص سرعة الموجة6 نقاط رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تشرح هذه الشريحة سرعة انتقال الموجات. من أهم ما يجب حفظه للاختبار هو أن سرعة الموجة الكهرومغناطيسية في الفراغ ثابتة وتساوي سرعة الضوء (300 ألف كيلومتر في الثانية).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-044">
-        <div class="slide-meta"><span class="badge">044</span>
+
+      <section class="slide" id="slide-044">
+        <div class="slide-meta"><span class="badge">44</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 044</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-044.png" alt="الشريحة 044: الفصل 4: فيزياء الموجات والانتشار - الشريحة 044"
+        <figure><img src="images/slide_044.png" alt="الشريحة 44: مخطط توضيحي النكسار وانعكاس الموجات θ = 45°"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">يوضح هذا المخطط ظاهرتي الانكسار والانعكاس. افهم كيف تتغير سرعة الموجة واتجاهها عند انتقالها بين أوساط مختلفة، فهذا هو المبدأ الذي تعتمد عليه اتصالات الموجات القصيرة عبر الأيونوسفير.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-045">
-        <div class="slide-meta"><span class="badge">045</span>
+
+      <section class="slide" id="slide-045">
+        <div class="slide-meta"><span class="badge">45</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 045</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-045.png" alt="الشريحة 045: الفصل 4: فيزياء الموجات والانتشار - الشريحة 045"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_045.png" alt="الشريحة 45: أنواع التداخل والخفوت5 نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تستعرض الشريحة العوامل المؤثرة على جودة الإشارة كالتداخل والخفوت. تذكر أن الخفوت قد يحدث بسبب تداخل مسارات متعددة للموجة، وهو موضوع شائع في أسئلة استكشاف الأخطاء وحلها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-046">
-        <div class="slide-meta"><span class="badge">046</span>
+
+      <section class="slide" id="slide-046">
+        <div class="slide-meta"><span class="badge">46</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 046</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-046.png" alt="الشريحة 046: الفصل 4: فيزياء الموجات والانتشار - الشريحة 046"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_046.png" alt="الشريحة 46: مخطط طبقات الغالف الجوي80-100 km" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">يقدم هذا المخطط نظرة عامة على طبقات الغلاف الجوي. ركز على موقع طبقة الأيونوسفير بالنسبة للطبقات الأخرى، حيث تلعب الدور الأهم في عكس الموجات الراديوية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-047">
-        <div class="slide-meta"><span class="badge">047</span>
+
+      <section class="slide" id="slide-047">
+        <div class="slide-meta"><span class="badge">47</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 047</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-047.png" alt="الشريحة 047: الفصل 4: فيزياء الموجات والانتشار - الشريحة 047"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_047.png" alt="الشريحة 47: مصطلح:األيونوسفير(Ionosphere)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تُعرّف هذه الشريحة الأيونوسفير وهو المصطلح الأهم في هذا الفصل. تذكر للاختبار أن هذا الغلاف يتأين بفعل الإشعاع الشمسي، وهو ما يجعله يعمل كمرآة عاكسة لموجات الراديو عالية التردد.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-048">
-        <div class="slide-meta"><span class="badge">048</span>
+
+      <section class="slide" id="slide-048">
+        <div class="slide-meta"><span class="badge">48</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 048</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-048.png" alt="الشريحة 048: الفصل 4: فيزياء الموجات والانتشار - الشريحة 048"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_048.png" alt="الشريحة 48: خصائص الطبقةD  4 نقاط رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تشرح الشريحة طبقة D وهي الطبقة الأقرب للأرض. من المعلومات الأساسية للاختبار أن هذه الطبقة تظهر نهاراً وتختفي ليلاً، وتقوم بامتصاص إشارات الترددات المنخفضة بدلاً من عكسها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-049">
-        <div class="slide-meta"><span class="badge">049</span>
+
+      <section class="slide" id="slide-049">
+        <div class="slide-meta"><span class="badge">49</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 049</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-049.png" alt="الشريحة 049: الفصل 4: فيزياء الموجات والانتشار - الشريحة 049"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_049.png" alt="الشريحة 49: خصائص طبقةE  4نقاط رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">توضح الشريحة خصائص طبقة E المتوسطة الارتفاع. تذكر أن هذه الطبقة تعكس الموجات أحياناً وتُعرف بظاهرة الانعكاس المتناثر (Sporadic-E) التي تتيح اتصالات بعيدة غير متوقعة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-050">
-        <div class="slide-meta"><span class="badge">050</span>
+
+      <section class="slide" id="slide-050">
+        <div class="slide-meta"><span class="badge">50</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 050</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-050.png" alt="الشريحة 050: الفصل 4: فيزياء الموجات والانتشار - الشريحة 050"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_050.png" alt="الشريحة 50: خصائص الطبقةF1  4 نقطة رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تركز الشريحة على طبقة F1 التي تظهر في النهار. من المهم معرفة أن طبقة F بشكل عام تنقسم نهاراً إلى F1 و F2 وتندمج ليلاً لتشكل طبقة واحدة، مما يؤثر على خصائص الانتشار.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-051">
-        <div class="slide-meta"><span class="badge">051</span>
+
+      <section class="slide" id="slide-051">
+        <div class="slide-meta"><span class="badge">51</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 051</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-051.png" alt="الشريحة 051: الفصل 4: فيزياء الموجات والانتشار - الشريحة 051"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_051.png" alt="الشريحة 51: خصائص طبقةF2 الطبقة األكثر أهمية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">هذه هي الطبقة الأهم على الإطلاق لاتصالات المسافات الطويلة (DX). تذكر للاختبار أن طبقة F2 هي الأعلى ارتفاعاً والأكثر تأيناً، وتبقى موجودة ليلاً ونهاراً لتعكس إشارات HF.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-052">
-        <div class="slide-meta"><span class="badge">052</span>
+
+      <section class="slide" id="slide-052">
+        <div class="slide-meta"><span class="badge">52</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 052</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-052.png" alt="الشريحة 052: الفصل 4: فيزياء الموجات والانتشار - الشريحة 052"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_052.png"
+            alt="الشريحة 52: جدول مقارنة طبقات األيونوسفير-خصائصها وتأثيرهاD E F1 F2" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">يلخص هذا الجدول جميع خصائص طبقات الأيونوسفير. ركز على مقارنة الارتفاعات والتأثيرات، ولا تنسَ أن طبقة D تمتص الموجات بينما طبقة F2 تعكسها لمسافات بعيدة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-053">
-        <div class="slide-meta"><span class="badge">053</span>
+
+      <section class="slide" id="slide-053">
+        <div class="slide-meta"><span class="badge">53</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 053</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-053.png" alt="الشريحة 053: الفصل 4: فيزياء الموجات والانتشار - الشريحة 053"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_053.png"
+            alt="الشريحة 53: مصطلح:البقع الشمسية(Sunspots) الفصل4فيزياء الموجات والانتش ا..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تشرح الشريحة تأثير البقع الشمسية على الاتصالات. يجب أن تعرف للاختبار أن زيادة البقع الشمسية تعني تأيناً أقوى في الأيونوسفير، مما يحسن من جودة اتصالات المسافات الطويلة جداً.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-054">
-        <div class="slide-meta"><span class="badge">054</span>
+
+      <section class="slide" id="slide-054">
+        <div class="slide-meta"><span class="badge">54</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 054</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-054.png" alt="الشريحة 054: الفصل 4: فيزياء الموجات والانتشار - الشريحة 054"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_054.png" alt="الشريحة 54: مصطلحMUF" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">يركز هذا المفهوم على اختيار أعلى تردد يمكن استخدامه للاتصال عبر الأيونوسفير في ظروف معينة. يعد MUF من المصطلحات الأساسية في أسئلة الانتشار الراديوي، لذلك يجب فهم علاقته بحالة الأيونوسفير.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-055">
-        <div class="slide-meta"><span class="badge">055</span>
+
+      <section class="slide" id="slide-055">
+        <div class="slide-meta"><span class="badge">55</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 055</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-055.png" alt="الشريحة 055: الفصل 4: فيزياء الموجات والانتشار - الشريحة 055"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_055.png" alt="الشريحة 55: مسافة القفزة(Skip Distance)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">يوضح هذا المخطط فكرة القفزة الراديوية. انتبه إلى المسافة المحصورة بين هوائي الإرسال وموقع عودة الموجة السماوية الأولى إلى الأرض، فهذا هو التفسير العلمي لمسافة القفزة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-056">
-        <div class="slide-meta"><span class="badge">056</span>
+
+      <section class="slide" id="slide-056">
+        <div class="slide-meta"><span class="badge">56</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 056</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-056.png" alt="الشريحة 056: الفصل 4: فيزياء الموجات والانتشار - الشريحة 056"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_056.png" alt="الشريحة 56: مصطلح:مسافة القفزة(Skip Distance)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">هذه الشريحة تقدم التعريف الدقيق لمسافة القفزة. تذكر في الاختبار أنها تمثل المسافة بين جهاز الإرسال والنقطة التي تعود فيها الموجة السماوية المنعكسة إلى سطح الأرض.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-057">
-        <div class="slide-meta"><span class="badge">057</span>
+
+      <section class="slide" id="slide-057">
+        <div class="slide-meta"><span class="badge">57</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 057</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-057.png" alt="الشريحة 057: الفصل 4: فيزياء الموجات والانتشار - الشريحة 057"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_057.png" alt="الشريحة 57: مصطلح منطقة التفويت" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تشرح الشريحة مفهوم منطقة التفويت (Skip Zone). احفظ تعريفها للاختبار على أنها المنطقة الصامتة التي تقع بين نهاية تغطية الموجة الأرضية وبداية وصول الموجة السماوية المنعكسة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-058">
-        <div class="slide-meta"><span class="badge">058</span>
+
+      <section class="slide" id="slide-058">
+        <div class="slide-meta"><span class="badge">58</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 058</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-058.png" alt="الشريحة 058: الفصل 4: فيزياء الموجات والانتشار - الشريحة 058"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_058.png" alt="الشريحة 58: خصائص الموجة األرضية 4نقاط رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تلخص هذه الشريحة سلوك الموجة الأرضية التي تنتقل بمحاذاة سطح الأرض. تذكر أنها مناسبة للاتصالات المحلية وتتأثر بشكل كبير بتضاريس الأرض وخصائص التربة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-059">
-        <div class="slide-meta"><span class="badge">059</span>
+
+      <section class="slide" id="slide-059">
+        <div class="slide-meta"><span class="badge">59</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 059</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-059.png" alt="الشريحة 059: الفصل 4: فيزياء الموجات والانتشار - الشريحة 059"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_059.png" alt="الشريحة 59: خصائص الموجة السماوية 4 نقاط رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تركز هذه الشريحة على الموجة السماوية التي تنطلق نحو الفضاء وتنعكس. من الضروري للاختبار أن تعرف أنها تعتمد كلياً على الأيونوسفير وهي الأساس لاتصالات المسافات البعيدة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-060">
-        <div class="slide-meta"><span class="badge">060</span>
+
+      <section class="slide" id="slide-060">
+        <div class="slide-meta"><span class="badge">60</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 060</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-060.png" alt="الشريحة 060: الفصل 4: فيزياء الموجات والانتشار - الشريحة 060"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_060.png" alt="الشريحة 60: ظواهر انتشار الموجات 4نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">توضح الشريحة الظواهر الفيزيائية التي تصاحب انتقال الموجة. ركز على الفروق بين التشتت والانكسار والانعكاس لفهم كيفية تفاعل الموجات الراديوية مع الغلاف الجوي والتضاريس.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-061">
-        <div class="slide-meta"><span class="badge">061</span>
+
+      <section class="slide" id="slide-061">
+        <div class="slide-meta"><span class="badge">61</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 061</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-061.png" alt="الشريحة 061: الفصل 4: فيزياء الموجات والانتشار - الشريحة 061"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_061.png" alt="الشريحة 61: ظواهر الموجات الراديوية 4نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تستكمل هذه الشريحة شرح ظواهر الموجات. تذكر أن هذه المبادئ الفيزيائية تفسر قدرتنا على الاتصال خلف العوائق الكبيرة عبر ظاهرة الحيود أو الانكسار المتعدد.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-062">
-        <div class="slide-meta"><span class="badge">062</span>
+
+      <section class="slide" id="slide-062">
+        <div class="slide-meta"><span class="badge">62</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 062</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-062.png" alt="الشريحة 062: الفصل 4: فيزياء الموجات والانتشار - الشريحة 062"
+        <figure><img src="images/slide_062.png" alt="الشريحة 62: مصطلح الخفوت(Fading)الفصل4فيزياء الموجات والانتش ار"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تقدم هذه الشريحة تعريف الخفوت الذي يسبب ضعفاً وتغيراً في قوة الإشارة المستقبلة. تذكر أن الخفوت المتعدد المسارات هو من أكثر المشاكل الشائعة التي تواجه هواة اللاسلكي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-063">
-        <div class="slide-meta"><span class="badge">063</span>
+
+      <section class="slide" id="slide-063">
+        <div class="slide-meta"><span class="badge">63</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 063</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-063.png" alt="الشريحة 063: الفصل 4: فيزياء الموجات والانتشار - الشريحة 063"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_063.png" alt="الشريحة 63: أنواع الخفوت 6أسباب رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تشرح الشريحة أسباب ظاهرة الخفوت. من المهم للاختبار أن تميز بين الخفوت الناتج عن تغير طبقات الغلاف الجوي والخفوت الناتج عن انعكاسات الطقس والمباني.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-064">
-        <div class="slide-meta"><span class="badge">064</span>
+
+      <section class="slide" id="slide-064">
+        <div class="slide-meta"><span class="badge">64</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 064</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-064.png" alt="الشريحة 064: الفصل 4: فيزياء الموجات والانتشار - الشريحة 064"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_064.png" alt="الشريحة 64: العوامل المؤثرة" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">تلخص الشريحة جميع العوامل الخارجية المؤثرة على جودة الاتصال. تذكر أن النشاط الشمسي وحالة الطقس والتضاريس كلها متغيرات يجب على الهاوي دراستها لاختيار التردد المناسب.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-065">
-        <div class="slide-meta"><span class="badge">065</span>
+
+      <section class="slide" id="slide-065">
+        <div class="slide-meta"><span class="badge">65</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 065</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-065.png" alt="الشريحة 065: الفصل 4: فيزياء الموجات والانتشار - الشريحة 065"
+        <figure><img src="images/slide_065.png" alt="الشريحة 65: جدول المقارنة-خصائص الموجات األرضية والسماوية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">يضع هذا الجدول مقارنة مفصلة بين نوعي الموجات. ركز على تذكر أن الموجات السماوية تتيح مسافات أطول وتعتمد على طبقات الجو، بينما الموجات الأرضية أقصر مدى وتعتمد على التضاريس.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-066">
-        <div class="slide-meta"><span class="badge">066</span>
+
+      <section class="slide" id="slide-066">
+        <div class="slide-meta"><span class="badge">66</span>
           <div>
             <h2>الفصل 4: فيزياء الموجات والانتشار - الشريحة 066</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-066.png" alt="الشريحة 066: الفصل 4: فيزياء الموجات والانتشار - الشريحة 066"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_066.png" alt="الشريحة 66: طبقات4" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما من مفاهيم الموجات والانتشار. اربط بين التردد وطبقات الأيونوسفير ومدى الاتصال.</p>
+          <div class="slide-text">هذه الشريحة تلخص الفصل الرابع المليء بالمعلومات الفيزيائية. راجع المفاهيم الأساسية كالأيونوسفير وتردد MUF ومنطقة التفويت جيداً لتضمن الإجابة الصحيحة على أسئلة الانتشار في الاختبار.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-067">
-        <div class="slide-meta"><span class="badge">067</span>
+
+      <section class="slide" id="slide-067">
+        <div class="slide-meta"><span class="badge">67</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 067</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-067.png" alt="الشريحة 067: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 067"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_067.png" alt="الشريحة 67: الفصل5" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">ندخل الآن في الفصل الخامس الذي يربط بين النظرية والتطبيق. سنتعرف هنا على توزيع النطاقات الترددية المخصصة لهواة اللاسلكي وأفضل الأوقات والخصائص لاستخدام كل منها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-068">
-        <div class="slide-meta"><span class="badge">068</span>
+
+      <section class="slide" id="slide-068">
+        <div class="slide-meta"><span class="badge">68</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 068</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-068.png" alt="الشريحة 068: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 068"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_068.png" alt="الشريحة 68: القدرات المسموح بها 2فئة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تُعيد هذه الشريحة التذكير بمعلومة بالغة الأهمية ذكرت في فصول سابقة. لا تنسَ أبداً الحد الأقصى للطاقة المسموح بها حسب التردد وحسب فئة الترخيص لتجنب المخالفات.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-069">
-        <div class="slide-meta"><span class="badge">069</span>
+
+      <section class="slide" id="slide-069">
+        <div class="slide-meta"><span class="badge">69</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 069</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-069.png" alt="الشريحة 069: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 069"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_069.png"
+            alt="الشريحة 69: جدول النطاقات الترددية- HF (160m-10m)  القدرة القصوى200W" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">يستعرض هذا الجدول تفاصيل نطاقات التردد العالي (HF). من المهم للاختبار معرفة العلاقة بين الطول الموجي (بالمتر) والتردد (بالميجاهرتز)، وتحديد النطاقات المخصصة للاتصالات الليلية مقابل النهارية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-070">
-        <div class="slide-meta"><span class="badge">070</span>
+
+      <section class="slide" id="slide-070">
+        <div class="slide-meta"><span class="badge">70</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 070</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-070.png" alt="الشريحة 070: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 070"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_070.png" alt="الشريحة 70: معلومات النطاق LSB" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تركز هذه الشريحة على استخدامات التعديل للنطاقات المنخفضة التردد. تذكر القاعدة الأساسية: النطاقات التي يقل ترددها عن 10 ميجاهرتز تستخدم دائماً نمط التعديل LSB.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-071">
-        <div class="slide-meta"><span class="badge">071</span>
+
+      <section class="slide" id="slide-071">
+        <div class="slide-meta"><span class="badge">71</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 071</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-071.png" alt="الشريحة 071: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 071"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_071.png" alt="الشريحة 71: خصائص النطاق 4نقطة رئيس ية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">توضح الشريحة الخصائص المشتركة لمعظم نطاقات HF. افهم كيف يتأثر كل نطاق بدورة البقع الشمسية والوقت من اليوم، فهذا سيساعدك على اختيار النطاق الصحيح لاتصالاتك المستقبلية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-072">
-        <div class="slide-meta"><span class="badge">072</span>
+
+      <section class="slide" id="slide-072">
+        <div class="slide-meta"><span class="badge">72</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 072</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-072.png" alt="الشريحة 072: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 072"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_072.png" alt="الشريحة 72: خصائص نطاق40متر5نقطة رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تشرح الشريحة مميزات نطاق 40 متراً الشهير. تذكر أنه يعتبر من أكثر النطاقات اعتمادية للاتصالات الإقليمية والبعيدة ليلاً، ويدعم الاتصالات المحلية نهاراً باستخدام الموجة الأرضية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-073">
-        <div class="slide-meta"><span class="badge">073</span>
+
+      <section class="slide" id="slide-073">
+        <div class="slide-meta"><span class="badge">73</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 073</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-073.png" alt="الشريحة 073: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 073"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_073.png" alt="الشريحة 73: خصائص نطاق20متر 5نقاط رئيسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">نطاق 20 متراً هو ملك النطاقات لمسافات DX. احفظ هذه المعلومة للاختبار: هذا النطاق هو الأكثر استخداماً وشعبية للاتصالات العالمية النهارية بسبب خصائص انعكاسه الممتازة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-074">
-        <div class="slide-meta"><span class="badge">074</span>
+
+      <section class="slide" id="slide-074">
+        <div class="slide-meta"><span class="badge">74</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 074</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-074.png" alt="الشريحة 074: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 074"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_074.png" alt="الشريحة 74: نطاقاتHFالمتوسطة" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تتحدث الشريحة عن نطاقات HF التي تقع في المنتصف. ركز على أن بعض هذه النطاقات مثل 17 و 15 متراً تتميز بأداء ممتاز خلال سنوات الذروة للنشاط الشمسي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-075">
-        <div class="slide-meta"><span class="badge">075</span>
+
+      <section class="slide" id="slide-075">
+        <div class="slide-meta"><span class="badge">75</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 075</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-075.png" alt="الشريحة 075: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 075"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_075.png" alt="الشريحة 75: خصائص نطاق10متر USB Mode" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">توضح الشريحة خصائص نطاق 10 أمتار الفريد. من المهم أن تتذكر أنه نطاق نهاري يتأثر بشدة بالدورة الشمسية، ويستخدم فيه نمط USB للاتصالات الصوتية لأنه أعلى من 10 ميجاهرتز.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-076">
-        <div class="slide-meta"><span class="badge">076</span>
+
+      <section class="slide" id="slide-076">
+        <div class="slide-meta"><span class="badge">76</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 076</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-076.png" alt="الشريحة 076: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 076"
+        <figure><img src="images/slide_076.png" alt="الشريحة 76: جدول نطاقاتVHF -المملكة العربية السعودية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">يعرض هذا الجدول النطاقات ذات التردد العالي جداً (VHF) المسموحة محلياً. تذكر للاختبار أن نطاق 2 متر هو الأكثر استخداماً للاتصالات المحلية والمكررات، بقدرة قصوى 50 واط.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-077">
-        <div class="slide-meta"><span class="badge">077</span>
+
+      <section class="slide" id="slide-077">
+        <div class="slide-meta"><span class="badge">77</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 077</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-077.png" alt="الشريحة 077: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 077"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_077.png" alt="الشريحة 77: خصائص النطاق السحري5نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">نطاق 6 أمتار يُعرف باسم النطاق السحري لخصائصه المتغيرة. من المفيد تذكر أنه يجمع بين خصائص النطاقات العالية والمحلية ويشهد اتصالات بعيدة مفاجئة بفضل الانعكاس المتناثر (Sporadic-E).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-078">
-        <div class="slide-meta"><span class="badge">078</span>
+
+      <section class="slide" id="slide-078">
+        <div class="slide-meta"><span class="badge">78</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 078</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-078.png" alt="الشريحة 078: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 078"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_078.png" alt="الشريحة 78: خصائص النطاقVHF Band" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تستعرض الشريحة تفاصيل الاتصالات ضمن نطاق VHF. ركز على أن هذه الترددات تنتقل بشكل مستقيم (خط النظر Line of Sight) وهي مثالية للاتصال المباشر والربط بالمكررات المحلية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-079">
-        <div class="slide-meta"><span class="badge">079</span>
+
+      <section class="slide" id="slide-079">
+        <div class="slide-meta"><span class="badge">79</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 079</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-079.png" alt="الشريحة 079: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 079"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_079.png" alt="الشريحة 79: HF (3-30 MHz) النطاق العالي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تلخص هذه الشريحة مجمل نطاقات التردد العالي (HF). تذكر العلاقة العكسية بين التردد والطول الموجي، وأن هذه النطاقات هي الخيار الأمثل للهاوي الذي يبحث عن الاتصالات القارية والعالمية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-080">
-        <div class="slide-meta"><span class="badge">080</span>
+
+      <section class="slide" id="slide-080">
+        <div class="slide-meta"><span class="badge">80</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 080</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-080.png" alt="الشريحة 080: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 080"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_080.png" alt="الشريحة 80: توصيات النطاقات حسب الوقت" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">يقدم هذا الدليل نصائح عملية لاختيار النطاق بناءً على الوقت من اليوم. احفظ القاعدة العامة: الترددات المنخفضة أفضل ليلاً، والترددات العالية أفضل نهاراً للاتصالات البعيدة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-081">
-        <div class="slide-meta"><span class="badge">081</span>
+
+      <section class="slide" id="slide-081">
+        <div class="slide-meta"><span class="badge">81</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 081</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-081.png" alt="الشريحة 081: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 081"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_081.png" alt="الشريحة 81: تطبيق أفضل الممارسات للتشغيل الفعال" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تركز الشريحة على أخلاقيات وتكتيكات التشغيل. من أفضل الممارسات التي يجب أن تتذكرها: استمع أولاً قبل الإرسال لتجنب التداخل، واختر النطاق الترددي الذي يتناسب مع وقت اتصالك والمسافة المطلوبة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-082">
-        <div class="slide-meta"><span class="badge">082</span>
+
+      <section class="slide" id="slide-082">
+        <div class="slide-meta"><span class="badge">82</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 082</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-082.png" alt="الشريحة 082: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 082"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_082.png" alt="الشريحة 82: جدول النطاقات الترددية-ملخص شامل" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">يعتبر هذا الجدول مرجعاً شاملاً لجميع النطاقات المسموحة. ركز في مراجعتك على حفظ القدرة القصوى المسموحة لكل نطاق وأنماط التعديل المناسبة، لأنها من الثوابت في أسئلة الامتحان.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-083">
-        <div class="slide-meta"><span class="badge">083</span>
+
+      <section class="slide" id="slide-083">
+        <div class="slide-meta"><span class="badge">83</span>
           <div>
             <h2>الفصل 5: النطاقات الترددية والتشغيل - الشريحة 083</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-083.png" alt="الشريحة 083: الفصل 5: النطاقات الترددية والتشغيل - الشريحة 083"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_083.png" alt="الشريحة 83: نطاقHF  200W" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة معلومات تشغيلية عن النطاقات والترددات. ركز على النطاقات المصرح بها وحدود القدرة.</p>
+          <div class="slide-text">تلخص الشريحة المفاهيم المركزية للفصل الخامس. تذكر دائماً أن الترددات تنقسم لاستخدامات ليلية ونهارية، وأن الالتزام بحدود الطاقة (200 واط للـ HF و50 واط للـ VHF) إلزامي لا تهاون فيه.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-084">
-        <div class="slide-meta"><span class="badge">084</span>
+
+      <section class="slide" id="slide-084">
+        <div class="slide-meta"><span class="badge">84</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 084</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-084.png" alt="الشريحة 084: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 084"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_084.png" alt="الشريحة 84: الفصل6" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">ننتقل في الفصل السادس إلى دراسة لغة التخاطب بين الهواة. ستتعلم هنا أنماط الاتصال المختلفة، الأبجدية المنطوقة الدولية، وكيفية تقييم قوة الإشارة ووضوحها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-085">
-        <div class="slide-meta"><span class="badge">085</span>
+
+      <section class="slide" id="slide-085">
+        <div class="slide-meta"><span class="badge">85</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 085</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-085.png" alt="الشريحة 085: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 085"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_085.png" alt="الشريحة 85: 5أنماط" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تستعرض الشريحة الأنماط الخمسة الشائعة للاتصال. ليس عليك حفظ تعقيداتها التقنية الآن، لكن يجب أن تعرف أسماءها كـ AM و FM و SSB والفرق الأساسي في الغرض من استخدام كل منها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-086">
-        <div class="slide-meta"><span class="badge">086</span>
+
+      <section class="slide" id="slide-086">
+        <div class="slide-meta"><span class="badge">86</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 086</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-086.png" alt="الشريحة 086: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 086"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_086.png" alt="الشريحة 86: مصطلحAM (Amplitude Modulation)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تشرح الشريحة نمط التعديل السعوي (AM). تذكر للاختبار أن هذا النمط يغير في سعة الموجة الحاملة ليحمل الصوت، ورغم جودة صوته إلا أنه يستهلك طاقة ونطاقاً ترددياً واسعاً نسبياً.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-087">
-        <div class="slide-meta"><span class="badge">087</span>
+
+      <section class="slide" id="slide-087">
+        <div class="slide-meta"><span class="badge">87</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 087</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-087.png" alt="الشريحة 087: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 087"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_087.png"
+            alt="الشريحة 87: مصطلحFM (Frequency Modulation)الفصل6أنماط الاتصال واإلجراءات" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">توضح الشريحة نمط التعديل الترددي (FM). احفظ للاختبار أن هذا النمط يغير في تردد الموجة الحاملة، وهو النمط السائد في اتصالات VHF المحلية والمكررات لأنه يوفر صوتاً نقياً خالياً من التشويش.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-088">
-        <div class="slide-meta"><span class="badge">088</span>
+
+      <section class="slide" id="slide-088">
+        <div class="slide-meta"><span class="badge">88</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 088</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-088.png" alt="الشريحة 088: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 088"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_088.png" alt="الشريحة 88: مصطلحSSB - Single Sideband" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">نمط SSB هو الأهم على الإطلاق لاتصالات المسافات البعيدة (DX). تذكر للاختبار أنه يوفر طاقة الإرسال وعرض النطاق الترددي بشكل كبير من خلال إرسال حزمة جانبية واحدة فقط دون الموجة الحاملة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-089">
-        <div class="slide-meta"><span class="badge">089</span>
+
+      <section class="slide" id="slide-089">
+        <div class="slide-meta"><span class="badge">89</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 089</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-089.png" alt="الشريحة 089: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 089"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_089.png"
+            alt="الشريحة 89: مصطلحCW - Continuous Wave الفصل6أنماط الاتصال واإلجراءات" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تركز هذه الشريحة على نمط الموجة المستمرة (CW) المستخدم لإرسال شفرة مورس. من المهم أن تعرف أنه النمط الأكثر كفاءة وموثوقية في حالات الإشارات الضعيفة جداً وتتطلبه الاتصالات المتقدمة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-090">
-        <div class="slide-meta"><span class="badge">090</span>
+
+      <section class="slide" id="slide-090">
+        <div class="slide-meta"><span class="badge">90</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 090</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-090.png" alt="الشريحة 090: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 090"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_090.png" alt="الشريحة 90: RTTY  Teletype" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تستعرض الشريحة أحد أقدم أنماط الاتصال الرقمي وهو المبرقة الكاتبة (RTTY). تذكر أن هذا النمط يستخدم نغمتين مختلفتين لتمثيل البيانات، وما زال يستخدم بكثرة في مسابقات الهواة الدولية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-091">
-        <div class="slide-meta"><span class="badge">091</span>
+
+      <section class="slide" id="slide-091">
+        <div class="slide-meta"><span class="badge">91</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 091</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-091.png" alt="الشريحة 091: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 091"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_091.png" alt="الشريحة 91: جدول نظامRST -تقييم اإلشارة" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">نظام RST أساسي في كل اتصال. احفظ دلالة الحروف للاختبار: R للمقروئية (من 1 إلى 5)، و S لقوة الإشارة (من 1 إلى 9)، و T لنقاء النغمة (من 1 إلى 9 ومخصص لنمط CW).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-092">
-        <div class="slide-meta"><span class="badge">092</span>
+
+      <section class="slide" id="slide-092">
+        <div class="slide-meta"><span class="badge">92</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 092</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-092.png" alt="الشريحة 092: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 092"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_092.png" alt="الشريحة 92: جدول األبجدية المنطوقة الدولية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">هذه الشريحة من الأساسيات المطلوبة للامتحان والتشغيل الفعلي. يجب حفظ الأبجدية المنطوقة (Phonetic Alphabet) لتتهجى إشارة ندائك والكلمات الصعبة بوضوح لتجنب الأخطاء اللفظية أثناء الاتصال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-093">
-        <div class="slide-meta"><span class="badge">093</span>
+
+      <section class="slide" id="slide-093">
+        <div class="slide-meta"><span class="badge">93</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 093</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-093.png" alt="الشريحة 093: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 093"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_093.png" alt="الشريحة 93: جدول رموزQ Codeاألساسية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تعتبر شفرات Q لغة الهواة المختصرة العالمية. ركز على حفظ الرموز الأكثر شيوعاً للاختبار مثل QRM للتداخل، و QSY لتغيير التردد، و QSO للدلالة على الاتصال الناجح.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-094">
-        <div class="slide-meta"><span class="badge">094</span>
+
+      <section class="slide" id="slide-094">
+        <div class="slide-meta"><span class="badge">94</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 094</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-094.png" alt="الشريحة 094: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 094"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_094.png" alt="الشريحة 94: نصائح التعل م" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تقدم هذه الشريحة نصائح لتسريع حفظ شفرات Q والأبجدية. الممارسة المستمرة والاستماع المتكرر للمحطات سيجعل استخدام هذه الرموز أمراً عفوياً لا يحتاج إلى مجهود كبير للتذكر.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-095">
-        <div class="slide-meta"><span class="badge">095</span>
+
+      <section class="slide" id="slide-095">
+        <div class="slide-meta"><span class="badge">95</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 095</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-095.png" alt="الشريحة 095: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 095"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_095.png" alt="الشريحة 95: إجراءات النداء 4نقاط رئيس ية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">توضح الشريحة الخطوات السليمة لبدء الاتصال. الخطوة الأهم والتي تأتي دائماً في الاختبار هي: يجب أن تستمع للتردد جيداً وتتأكد من خلوه وتطرح السؤال 'هل التردد مستخدم؟' قبل إرسال أي نداء.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-096">
-        <div class="slide-meta"><span class="badge">096</span>
+
+      <section class="slide" id="slide-096">
+        <div class="slide-meta"><span class="badge">96</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 096</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-096.png" alt="الشريحة 096: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 096"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_096.png" alt="الشريحة 96: إجراءات التعريف بالمحطة 4خطوات رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تشرح الشريحة متطلبات التعريف بالهوية. تذكر القاعدة القانونية للاختبار: يجب ذكر إشارة ندائك بوضوح في بداية ونهاية كل اتصال، وعلى فترات لا تتجاوز 10 دقائق أثناء الاتصالات الطويلة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-097">
-        <div class="slide-meta"><span class="badge">097</span>
+
+      <section class="slide" id="slide-097">
+        <div class="slide-meta"><span class="badge">97</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 097</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-097.png" alt="الشريحة 097: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 097"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_097.png" alt="الشريحة 97: متطلبات دفتر السجالت 4نقاط رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تركز هذه الشريحة على أهمية تسجيل الاتصالات. توثيق التاريخ والوقت (بالتوقيت العالمي المنسق UTC) وتردد الاتصال ونمطه يعتبر من أفضل الممارسات التي تحفظ حقوق الهاوي وتثبت نشاطه.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-098">
-        <div class="slide-meta"><span class="badge">098</span>
+
+      <section class="slide" id="slide-098">
+        <div class="slide-meta"><span class="badge">98</span>
           <div>
             <h2>الفصل 6: أنماط الاتصال والإجراءات - الشريحة 098</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-098.png" alt="الشريحة 098: الفصل 6: أنماط الاتصال والإجراءات - الشريحة 098"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_098.png" alt="الشريحة 98: AM/FM  2" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تعرض هذه الشريحة إجراءا أو نمطا من أنماط الاتصال. افهم وظيفة كل رمز واستخدامه في التشغيل.</p>
+          <div class="slide-text">تعتبر هذه الشريحة مراجعة ختامية للفصل السادس. احرص على التأكد من حفظك للأبجدية الدولية، نظام RST، والرموز الأساسية من Q Codes، حيث ستستخدمها يومياً كهاوي راديو.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-099">
-        <div class="slide-meta"><span class="badge">099</span>
+
+      <section class="slide" id="slide-099">
+        <div class="slide-meta"><span class="badge">99</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 099</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-099.png" alt="الشريحة 099: الفصل 7: الكهرباء والإلكترونيات - الشريحة 099"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_099.png" alt="الشريحة 99: الفصل7" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">ندخل في الفصل السابع لتأسيس معرفتك بالكهرباء والإلكترونيات. سنغطي مفاهيم الجهد والتيار والمقاومة وقانون أوم، وهي مبادئ أساسية لفهم كيفية عمل وتشخيص أعطال معدات اللاسلكي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-100">
+
+      <section class="slide" id="slide-100">
         <div class="slide-meta"><span class="badge">100</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 100</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-100.png" alt="الشريحة 100: الفصل 7: الكهرباء والإلكترونيات - الشريحة 100"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_100.png"
+            alt="الشريحة 100: مصطلح:التيار الكهربائي(األمبير)الفصل7الكهرباء واإللكترونيا ت" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تقدم الشريحة تعريف التيار الكهربائي. تذكر للاختبار أن التيار هو تدفق الإلكترونات عبر الموصل، ووحدة قياسه هي الأمبير، ويمكن تشبيهه بكمية المياه المتدفقة في الأنابيب.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-101">
+
+      <section class="slide" id="slide-101">
         <div class="slide-meta"><span class="badge">101</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 101</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-101.png" alt="الشريحة 101: الفصل 7: الكهرباء والإلكترونيات - الشريحة 101"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_101.png" alt="الشريحة 101: التيار المستمر(DC)  Direct Current" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">توضح هذه الشريحة خصائص التيار المستمر (DC). من المهم أن تعرف أنه التيار الذي يتدفق في اتجاه واحد فقط وتوفره البطاريات ومزودات الطاقة، وهو الأساس لتشغيل أجهزة الإرسال والاستقبال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-102">
+
+      <section class="slide" id="slide-102">
         <div class="slide-meta"><span class="badge">102</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 102</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-102.png" alt="الشريحة 102: الفصل 7: الكهرباء والإلكترونيات - الشريحة 102"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_102.png"
+            alt="الشريحة 102: مصطلح:المقاومة(Resistance) الفصل7:الكهرباء واإللكترونيات" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تشرح الشريحة مفهوم المقاومة الكهربائية. احفظ للاختبار أن المقاومة هي الممانعة لتدفق التيار، وتقاس بوحدة الأوم، ودورها الأساسي هو الحد من مقدار التيار في الدائرة الكهربائية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-103">
+
+      <section class="slide" id="slide-103">
         <div class="slide-meta"><span class="badge">103</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 103</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-103.png" alt="الشريحة 103: الفصل 7: الكهرباء والإلكترونيات - الشريحة 103"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_103.png" alt="الشريحة 103: رموز ألوان المقاومات(Color Codes)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تستعرض هذه الشريحة نظام الأكواد اللونية للمقاومات. لست مطالباً بحفظ كل لون للاختبار، لكن يجب أن تفهم المبدأ: أول خطين يمثلان القيمة، الثالث يمثل المضاعف، والرابع يمثل نسبة التفاوت.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-104">
+
+      <section class="slide" id="slide-104">
         <div class="slide-meta"><span class="badge">104</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 104</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-104.png" alt="الشريحة 104: الفصل 7: الكهرباء والإلكترونيات - الشريحة 104"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_104.png" alt="الشريحة 104: قيم المقاومة وحساباتها 3نقاط رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تقدم الشريحة تطبيقاً عملياً لقراءة قيم المقاومات. فهم هذه الطريقة مفيد جداً في الصيانة وتحديد المكونات التالفة أو بناء دوائر بسيطة كجزء من تطوير مهاراتك التقنية كهاوٍ.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-105">
+
+      <section class="slide" id="slide-105">
         <div class="slide-meta"><span class="badge">105</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 105</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-105.png" alt="الشريحة 105: الفصل 7: الكهرباء والإلكترونيات - الشريحة 105"
+        <figure><img src="images/slide_105.png" alt="الشريحة 105: خصائص التوصيل على التوال ي 5نقاط رئيسية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تشرح الشريحة التوصيل على التوالي. تذكر القاعدة الذهبية للاختبار: في دوائر التوالي، التيار يظل ثابتاً في كل المكونات، بينما يتوزع الجهد (الفولتية) على المقاومات الموصولة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-106">
+
+      <section class="slide" id="slide-106">
         <div class="slide-meta"><span class="badge">106</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 106</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-106.png" alt="الشريحة 106: الفصل 7: الكهرباء والإلكترونيات - الشريحة 106"
+        <figure><img src="images/slide_106.png" alt="الشريحة 106: خصائص التوصيل على التواز ي 4نقاط رئيسية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تركز الشريحة على التوصيل على التوازي. احفظ العكس هنا: في دوائر التوازي، الجهد (الفولتية) يظل ثابتاً عبر كل فرع، بينما يتوزع التيار الكهربائي حسب مقاومة كل فرع.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-107">
+
+      <section class="slide" id="slide-107">
         <div class="slide-meta"><span class="badge">107</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 107</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-107.png" alt="الشريحة 107: الفصل 7: الكهرباء والإلكترونيات - الشريحة 107"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_107.png" alt="الشريحة 107: توصيل على التوالي(Series)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">يعرض هذا المخطط مقارنة بصرية بين التوصيلين. تأمل مسار التيار: مسار واحد في التوالي (إذا انقطع تتوقف الدائرة)، ومسارات متعددة في التوازي (إذا انقطع فرع يستمر الباقي بالعمل).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-108">
+
+      <section class="slide" id="slide-108">
         <div class="slide-meta"><span class="badge">108</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 108</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-108.png" alt="الشريحة 108: الفصل 7: الكهرباء والإلكترونيات - الشريحة 108"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_108.png" alt="الشريحة 108: سؤال وتطبيق عملي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تختبر هذه الشريحة فهمك لقانون أوم والتوصيل. القدرة على حساب المقاومة المكافئة البسيطة هي مهارة أساسية قد تواجهها في شكل مسألة رياضية مبسطة في امتحان الرخصة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-109">
+
+      <section class="slide" id="slide-109">
         <div class="slide-meta"><span class="badge">109</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 109</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-109.png" alt="الشريحة 109: الفصل 7: الكهرباء والإلكترونيات - الشريحة 109"
+        <figure><img src="images/slide_109.png" alt="الشريحة 109: مصطلح:المكثف(Capacitor) الفصل7الكهرباء واإللكترونيات"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تقدم الشريحة تعريف المكثف الكهربائي. تذكر للاختبار أن وظيفة المكثف هي تخزين الطاقة الكهربائية في مجال كهربائي، ويقاس بوحدة الفاراد، ويستخدم بكثرة في دوائر التنعيم والترشيح.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-110">
+
+      <section class="slide" id="slide-110">
         <div class="slide-meta"><span class="badge">110</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 110</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-110.png" alt="الشريحة 110: الفصل 7: الكهرباء والإلكترونيات - الشريحة 110"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_110.png" alt="الشريحة 110: الغرض من استخدام المكثفات(C1وC2)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">توضح هذه الشريحة التطبيق العملي للمكثفات. من المهم أن تعرف دورها في تنعيم التيار المستمر (التخلص من التموجات) في مزودات الطاقة لضمان عمل جهاز الراديو بصوت نقي وبدون طنين.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-111">
+
+      <section class="slide" id="slide-111">
         <div class="slide-meta"><span class="badge">111</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 111</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-111.png" alt="الشريحة 111: الفصل 7: الكهرباء والإلكترونيات - الشريحة 111"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_111.png" alt="الشريحة 111: سؤال وتطبيق عملي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">يطرح هذا التطبيق العملي سؤالاً عن دمج المكثفات. تذكر أن حساب سعة المكثفات يعكس المقاومات: فالتوازي يجمع السعات ليزيدها، والتوالي يقلل السعة الإجمالية. هذه قاعدة مهمة للاختبار.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-112">
+
+      <section class="slide" id="slide-112">
         <div class="slide-meta"><span class="badge">112</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 112</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-112.png" alt="الشريحة 112: الفصل 7: الكهرباء والإلكترونيات - الشريحة 112"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_112.png" alt="الشريحة 112: مكونات الترانزست ور 4مكونات أساسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تشرح الشريحة المكون الإلكتروني الأهم: الترانزستور. تذكر أطرافه الثلاثة الأساسية (القاعدة، الباعث، المجمع) وأن وظيفته الأساسية في دوائر الراديو هي تكبير الإشارات الضعيفة أو العمل كمفتاح إلكتروني.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-113">
+
+      <section class="slide" id="slide-113">
         <div class="slide-meta"><span class="badge">113</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 113</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-113.png" alt="الشريحة 113: الفصل 7: الكهرباء والإلكترونيات - الشريحة 113"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_113.png" alt="الشريحة 113: المكونات اإللكترونية األساسية(Diode)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تستعرض الشريحة عمل الدايود (الصمام الثنائي). احفظ للاختبار أن الدايود يسمح بمرور التيار في اتجاه واحد فقط، وهو المكون الأساسي في دوائر تقويم التيار لتحويل التيار المتردد إلى مستمر.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-114">
+
+      <section class="slide" id="slide-114">
         <div class="slide-meta"><span class="badge">114</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 114</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-114.png" alt="الشريحة 114: الفصل 7: الكهرباء والإلكترونيات - الشريحة 114"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_114.png" alt="الشريحة 114: الدايود الزينر(Zener Diode)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تركز هذه الشريحة على نوع خاص من الدايودات وهو دايود الزينر. من المهم أن تتذكر دوره المحوري في دوائر تنظيم الجهد، حيث يحافظ على ثبات الفولتية لحماية الأجهزة الحساسة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-115">
+
+      <section class="slide" id="slide-115">
         <div class="slide-meta"><span class="badge">115</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 115</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-115.png" alt="الشريحة 115: الفصل 7: الكهرباء والإلكترونيات - الشريحة 115"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_115.png"
+            alt="الشريحة 115: مصطلح:الدوائر المتكاملة(Integrated Circuit)الفصل7:الكهرباء و..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تقدم الشريحة مفهوم الدوائر المتكاملة (IC). تذكر أنها عبارة عن شريحة إلكترونية صغيرة تضم آلاف المكونات كالترانزستورات والمقاومات، مما ساهم في تصغير حجم أجهزة الراديو الحديثة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-116">
+
+      <section class="slide" id="slide-116">
         <div class="slide-meta"><span class="badge">116</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 116</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-116.png" alt="الشريحة 116: الفصل 7: الكهرباء والإلكترونيات - الشريحة 116"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_116.png" alt="الشريحة 116: الفولتميتر(Voltmeter)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تنتقل الشريحة إلى أجهزة القياس وأولها الفولتميتر. تذكر للاختبار أنه يستخدم لقياس فرق الجهد الكهربائي، ويجب دائماً توصيله على التوازي مع المكون المراد قياس جهده.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-117">
+
+      <section class="slide" id="slide-117">
         <div class="slide-meta"><span class="badge">117</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 117</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-117.png" alt="الشريحة 117: الفصل 7: الكهرباء والإلكترونيات - الشريحة 117"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_117.png" alt="الشريحة 117: أجهزة القياس الرئيسية 2نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تستعرض هذه الشريحة جهازي الأميتر والأوميتر. احفظ أن الأميتر يقيس التيار ويوصل على التوالي، بينما يقيس الأوميتر المقاومة ويجب استخدامه فقط عندما تكون الدائرة مفصولة عن الكهرباء.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-118">
+
+      <section class="slide" id="slide-118">
         <div class="slide-meta"><span class="badge">118</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 118</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-118.png" alt="الشريحة 118: الفصل 7: الكهرباء والإلكترونيات - الشريحة 118"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_118.png" alt="الشريحة 118: Analyzer" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تشرح الشريحة جهاز تحليل الهوائي (Antenna Analyzer). وهو أداة متقدمة يستخدمها الهواة لضبط الهوائيات وقياس نسبة الموجات الموقوفة (SWR) لضمان أفضل أداء للإرسال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-119">
+
+      <section class="slide" id="slide-119">
         <div class="slide-meta"><span class="badge">119</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 119</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-119.png" alt="الشريحة 119: الفصل 7: الكهرباء والإلكترونيات - الشريحة 119"
+        <figure><img src="images/slide_119.png" alt="الشريحة 119: جدول المكونات اإللكترونية األساسية-دوائر الراديو"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">هذا الجدول يمثل ملخصاً ممتازاً لرموز المكونات الإلكترونية. التعرف على رموز المقاومة والمكثف والملف والترانزستور سيساعدك كثيراً في قراءة المخططات البسيطة وفهم أسئلة الاختبار الرسومية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-120">
+
+      <section class="slide" id="slide-120">
         <div class="slide-meta"><span class="badge">120</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 120</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-120.png" alt="الشريحة 120: الفصل 7: الكهرباء والإلكترونيات - الشريحة 120"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_120.png" alt="الشريحة 120: السالمة العامة" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تركز هذه الشريحة على جانب لا يمكن التهاون فيه: السلامة الكهربائية. تذكر دائماً فصل الطاقة قبل العمل على الأجهزة، والانتباه لتفريغ المكثفات الكبيرة التي قد تحتفظ بشحنة مميتة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-121">
+
+      <section class="slide" id="slide-121">
         <div class="slide-meta"><span class="badge">121</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 121</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-121.png" alt="الشريحة 121: الفصل 7: الكهرباء والإلكترونيات - الشريحة 121"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_121.png" alt="الشريحة 121: الفولتميت ر" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">توضح الشريحة كيفية قراءة شاشة الفولتميتر التناظري. تذكر أهمية الانتباه لمفتاح اختيار النطاق (Range Switch) قبل أخذ القراءة لتجنب إتلاف الجهاز وتحديد القيمة بدقة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-122">
+
+      <section class="slide" id="slide-122">
         <div class="slide-meta"><span class="badge">122</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 122</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-122.png" alt="الشريحة 122: الفصل 7: الكهرباء والإلكترونيات - الشريحة 122"
+        <figure><img src="images/slide_122.png" alt="الشريحة 122: مخطط تدفق اإلشارة في جهاز اإلرسالRF → IF → AF"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">هذا المخطط حيوي لفهم مسار الإشارة. يجب أن تتذكر للاختبار التسلسل المنطقي: تبدأ الإشارة كصوت (AF)، ثم تُمزج لتردد وسيط (IF)، وتُكبر لتصبح إشارة راديوية (RF) جاهزة للإرسال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-123">
+
+      <section class="slide" id="slide-123">
         <div class="slide-meta"><span class="badge">123</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 123</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-123.png" alt="الشريحة 123: الفصل 7: الكهرباء والإلكترونيات - الشريحة 123"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_123.png" alt="الشريحة 123: مكونات وحدة الاستقبال 6مكونات رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">تلخص الشريحة أجزاء جهاز الاستقبال. تذكر أن الهوائي يلتقط الإشارة، والمكبر الأولي يقويها، والمذبذب والمزج يحولانها لتردد وسيط، حتى تصل لمكبر الصوت كإشارة مسموعة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-124">
+
+      <section class="slide" id="slide-124">
         <div class="slide-meta"><span class="badge">124</span>
           <div>
             <h2>الفصل 7: الكهرباء والإلكترونيات - الشريحة 124</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-124.png" alt="الشريحة 124: الفصل 7: الكهرباء والإلكترونيات - الشريحة 124"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_124.png" alt="الشريحة 124: التيارDC/AC" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مفهوما كهربائيا أو مكونا إلكترونيا. ركز على الوظيفة ووحدة القياس والعلاقة بالراديو.</p>
+          <div class="slide-text">مراجعة ختامية للفصل السابع. تأكد من استيعابك للفرق بين التيارين المستمر والمتردد وقانون أوم والتوصيل على التوالي والتوازي، فهذه المعلومات تعتبر العمود الفقري لأسئلة الإلكترونيات.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-125">
+
+      <section class="slide" id="slide-125">
         <div class="slide-meta"><span class="badge">125</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 125</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-125.png" alt="الشريحة 125: الفصل 8: الهوائيات ونظم التغذية - الشريحة 125"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_125.png" alt="الشريحة 125: الفصل8" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">نصل الآن للفصل الثامن الذي يربط محطتك بالعالم الخارجي: الهوائيات. سنتعرف على أنواعها وطرق تغذيتها وأهمية التوافق (SWR) لضمان أقصى كفاءة للإرسال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-126">
+
+      <section class="slide" id="slide-126">
         <div class="slide-meta"><span class="badge">126</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 126</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-126.png" alt="الشريحة 126: الفصل 8: الهوائيات ونظم التغذية - الشريحة 126"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_126.png" alt="الشريحة 126: مصطلح:الهوائي(Antenna)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تقدم الشريحة التعريف العلمي للهوائي. احفظ للاختبار أن الهوائي يعمل كمحول للطاقة: فهو يحول التيار الكهربائي المتذبذب إلى موجات كهرومغناطيسية (إرسال) والعكس (استقبال).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-127">
+
+      <section class="slide" id="slide-127">
         <div class="slide-meta"><span class="badge">127</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 127</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-127.png" alt="الشريحة 127: الفصل 8: الهوائيات ونظم التغذية - الشريحة 127"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_127.png" alt="الشريحة 127: مصطلح:الاستقطاب(Polarization)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تشرح الشريحة مفهوم الاستقطاب. تذكر القاعدة الهامة للاختبار: استقطاب الموجة الكهرومغناطيسية يتحدد دائماً باتجاه المجال الكهربائي، والذي يتحدد بدوره باتجاه العنصر المشع للهوائي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-128">
+
+      <section class="slide" id="slide-128">
         <div class="slide-meta"><span class="badge">128</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 128</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-128.png" alt="الشريحة 128: الفصل 8: الهوائيات ونظم التغذية - الشريحة 128"
+        <figure><img src="images/slide_128.png" alt="الشريحة 128: استقطاب الهوائيات والموجة الكهرومغناطيسية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">توضح الشريحة أنواع الاستقطاب. من الضروري أن تتذكر أنه للحصول على أفضل اتصال محلي (موجة أرضية أو خط نظر)، يجب أن يكون استقطاب هوائيي الإرسال والاستقبال متماثلاً (كلاهما عمودي أو أفقي).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-129">
+
+      <section class="slide" id="slide-129">
         <div class="slide-meta"><span class="badge">129</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 129</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-129.png" alt="الشريحة 129: الفصل 8: الهوائيات ونظم التغذية - الشريحة 129"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_129.png" alt="الشريحة 129: عرض شعاع الهوائي(Beamwidth)" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">يتطرق هذا المفهوم لزاوية تركيز الطاقة للهوائيات الموجهة. احفظ للاختبار أن عرض الشعاع يقاس بالدرجات بين النقطتين اللتين تنخفض عندهما قوة الإشارة بمقدار النصف (3 ديسيبل).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-130">
+
+      <section class="slide" id="slide-130">
         <div class="slide-meta"><span class="badge">130</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 130</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-130.png" alt="الشريحة 130: الفصل 8: الهوائيات ونظم التغذية - الشريحة 130"
+        <figure><img src="images/slide_130.png" alt="الشريحة 130: زاوية الانتشار للهوائي(Radiation Angle)"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تشرح الشريحة زاوية الإشعاع. من المهم للاختبار معرفة أن زاوية الإشعاع المنخفضة هي الأفضل لاتصالات DX لمسافات طويلة عبر الأيونوسفير لأنها تسمح بقفزة أطول.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-131">
+
+      <section class="slide" id="slide-131">
         <div class="slide-meta"><span class="badge">131</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 131</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-131.png" alt="الشريحة 131: الفصل 8: الهوائيات ونظم التغذية - الشريحة 131"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_131.png" alt="الشريحة 131: هوائي أساسي" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">يُعرّف هذا الجزء هوائي نصف الموجة ثنائي القطب (Dipole). تذكر للاختبار أنه هوائي مرجعي بسيط، وأن طوله الإجمالي يجب أن يكون تقريباً نصف الطول الموجي لتردد التشغيل.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-132">
+
+      <section class="slide" id="slide-132">
         <div class="slide-meta"><span class="badge">132</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 132</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-132.png" alt="الشريحة 132: الفصل 8: الهوائيات ونظم التغذية - الشريحة 132"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_132.png" alt="الشريحة 132: خصائص الهوائي الرأسي4نقاط رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تستعرض الشريحة مميزات الهوائي العمودي. احفظ ميزتين رئيسيتين للاختبار: أنه يبث الإشارة في جميع الاتجاهات (Omnidirectional)، ويتميز بزاوية إشعاع منخفضة ممتازة للاتصالات البعيدة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-133">
+
+      <section class="slide" id="slide-133">
         <div class="slide-meta"><span class="badge">133</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 133</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-133.png" alt="الشريحة 133: الفصل 8: الهوائيات ونظم التغذية - الشريحة 133"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_133.png" alt="الشريحة 133: مكونات هوائي ياغي 4عناصر أساسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">هذه الشريحة مهمة جداً عن هوائي Yagi. تذكر مكوناته الثلاثة للاختبار: العنصر الفعال (الذي يغذى بالطاقة)، العاكس (أطول ويقع بالخلف)، والموجه (أقصر ويقع بالأمام).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-134">
+
+      <section class="slide" id="slide-134">
         <div class="slide-meta"><span class="badge">134</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 134</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-134.png" alt="الشريحة 134: الفصل 8: الهوائيات ونظم التغذية - الشريحة 134"
+        <figure><img src="images/slide_134.png" alt="الشريحة 134: أنواع الهوائيات المتخصصة 4أنواع رئيسية"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">توضح الشريحة بعض الهوائيات المتخصصة. ركز على أن هوائي ياغي هو هوائي موجّه يزيد من قوة الإشارة باتجاه معين (كسب)، مما يحسن الإرسال ويقلل التداخل من الجوانب.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-135">
+
+      <section class="slide" id="slide-135">
         <div class="slide-meta"><span class="badge">135</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 135</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-135.png" alt="الشريحة 135: الفصل 8: الهوائيات ونظم التغذية - الشريحة 135"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_135.png" alt="الشريحة 135: أنواع متنوعة" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تستعرض هذه الشريحة هوائيات أخرى كالهوائي الحلقي أو السلكي المتنقل. يُسأل الهواة غالباً عن اختيار الهوائي المناسب للمساحات الضيقة، ويكون الهوائي الحلقي (Loop) خياراً مثالياً.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-136">
+
+      <section class="slide" id="slide-136">
         <div class="slide-meta"><span class="badge">136</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 136</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-136.png" alt="الشريحة 136: الفصل 8: الهوائيات ونظم التغذية - الشريحة 136"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_136.png"
+            alt="الشريحة 136: مصطلح: SWR (Standing Wave Ratio) الفصل8:الهوائيات ونظم التغذ..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">من أهم الشرائح في المنهج! نسبة الموجة الموقوفة (SWR) تقيس مدى التوافق بين جهاز الإرسال والهوائي. تذكر للاختبار أن نسبة 1:1 تعني توافقاً مثالياً وأنه لا توجد طاقة مرتدة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-137">
+
+      <section class="slide" id="slide-137">
         <div class="slide-meta"><span class="badge">137</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 137</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-137.png" alt="الشريحة 137: الفصل 8: الهوائيات ونظم التغذية - الشريحة 137"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_137.png" alt="الشريحة 137: خطوات ضبطSWR" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تشرح الشريحة الإجراء العملي لضبط SWR. من المهم أن تعرف أن القراءة العالية لنسبة SWR تعني ارتداد جزء كبير من طاقة الإرسال نحو الجهاز، مما قد يؤدي إلى إتلاف مكبر الإرسال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-138">
+
+      <section class="slide" id="slide-138">
         <div class="slide-meta"><span class="badge">138</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 138</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-138.png" alt="الشريحة 138: الفصل 8: الهوائيات ونظم التغذية - الشريحة 138"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_138.png"
+            alt="الشريحة 138: مصطلح:التيونر(Antenna Tuner) الفصل8:الهوائيات ونظم التغذية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تُعرف هذه الشريحة موائم الهوائي (Antenna Tuner). تذكر للاختبار أن وظيفته الأساسية هي مطابقة ممانعة جهاز الإرسال (50 أوم) مع ممانعة الهوائي ليسمح بانتقال أقصى قدر من الطاقة بسلاسة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-139">
+
+      <section class="slide" id="slide-139">
         <div class="slide-meta"><span class="badge">139</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 139</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-139.png" alt="الشريحة 139: الفصل 8: الهوائيات ونظم التغذية - الشريحة 139"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_139.png" alt="الشريحة 139: أجهزة الفحصTesting Devices" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">تشرح الشريحة الهوائي الوهمي (Dummy Load). احفظ للاختبار أنه مقاومة غير مشعة (غالباً 50 أوم) تستخدم لتجربة وفحص جهاز الإرسال بأمان دون بث الإشارة على الهواء والتسبب في تداخل.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-140">
+
+      <section class="slide" id="slide-140">
         <div class="slide-meta"><span class="badge">140</span>
           <div>
             <h2>الفصل 8: الهوائيات ونظم التغذية - الشريحة 140</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-140.png" alt="الشريحة 140: الفصل 8: الهوائيات ونظم التغذية - الشريحة 140"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_140.png" alt="الشريحة 140: التغطية360°" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تركز هذه الشريحة على الهوائيات أو خطوط التغذية. انتبه للمعاوقة وSWR والاستقطاب والفواقد.</p>
+          <div class="slide-text">شريحة ملخصة للفصل الثامن. تأكد من إلمامك بمفاهيم SWR والهوائي التوجيهي والهوائي العمودي (ذو التغطية 360 درجة) قبل الانتقال إلى فصل معدات الراديو.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-141">
+
+      <section class="slide" id="slide-141">
         <div class="slide-meta"><span class="badge">141</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 141</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-141.png" alt="الشريحة 141: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 141"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_141.png" alt="الشريحة 141: الفصل9" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">ندخل في الفصل التاسع والأخير الذي يجمع كل المفاهيم في صندوق واحد: جهاز الراديو (Transceiver). سنتعرف على وحدات الإرسال والاستقبال الأساسية ومسار الإشارة داخلها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-142">
+
+      <section class="slide" id="slide-142">
         <div class="slide-meta"><span class="badge">142</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 142</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-142.png" alt="الشريحة 142: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 142"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_142.png" alt="الشريحة 142: مصطلح: جهاز اإلرسال والاستقبال" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تعرف الشريحة جهاز الإرسال والاستقبال المدمج (Transceiver). تذكر للاختبار أنه يجمع دائرتي الإرسال والاستقبال في صندوق واحد ويشاركان بعض المكونات كالمذبذب، مما يوفر الحجم والتكلفة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-143">
+
+      <section class="slide" id="slide-143">
         <div class="slide-meta"><span class="badge">143</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 143</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-143.png" alt="الشريحة 143: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 143"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_143.png" alt="الشريحة 143: وظيفة المذبذب دائرة كهربائية أساسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">المذبذب (Oscillator) هو قلب جهاز الراديو. احفظ للاختبار أن وظيفته الأساسية هي توليد إشارة راديوية ثابتة التردد (موجة حاملة غير معدلة)، وتستخدم في كل من الإرسال والاستقبال.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-144">
+
+      <section class="slide" id="slide-144">
         <div class="slide-meta"><span class="badge">144</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 144</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-144.png" alt="الشريحة 144: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 144"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_144.png" alt="الشريحة 144: وحدة اإلرسالTransmitter Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تستعرض الشريحة مكونات وحدة الإرسال. من المهم فهم دور المازج (Mixer) الذي يقوم بدمج إشارة الصوت مع الموجة الحاملة لنقلها إلى التردد الراديوي المطلوب.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-145">
+
+      <section class="slide" id="slide-145">
         <div class="slide-meta"><span class="badge">145</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 145</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-145.png" alt="الشريحة 145: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 145"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_145.png" alt="الشريحة 145: وحدة اإلرسالTransmitter Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تستكمل الشريحة رحلة الإشارة في المرسل لتصل إلى مكبر طاقة التردد الراديوي (RF Power Amplifier). تذكر للاختبار أن هذه الوحدة هي المسؤولة عن زيادة قوة الإشارة قبل دفعها نحو الهوائي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-146">
+
+      <section class="slide" id="slide-146">
         <div class="slide-meta"><span class="badge">146</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 146</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-146.png" alt="الشريحة 146: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 146"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_146.png"
+            alt="الشريحة 146: الغرض األساسي: إعداد إشارة الميكروفون لتتم معالجتها بواسطة أ..." loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تشرح الشريحة دور مكبر الصوت الأولي (Audio Preamplifier). تذكر أن إشارة الميكروفون تكون ضعيفة جداً، وهذا المكبر يقوم بتقويتها لدرجة كافية ليتمكن المازج أو المعدّل من التعامل معها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-147">
+
+      <section class="slide" id="slide-147">
         <div class="slide-meta"><span class="badge">147</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 147</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-147.png" alt="الشريحة 147: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 147"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_147.png" alt="الشريحة 147: وحدة اإلرسالTransmitter Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">توضح الشريحة دور التعديل في وحدة الإرسال. تذكر للاختبار أن عملية التعديل (Modulation) هي دمج المعلومات (مثل الصوت أو البيانات) على الموجة الحاملة ليتم بثها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-148">
+
+      <section class="slide" id="slide-148">
         <div class="slide-meta"><span class="badge">148</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 148</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-148.png" alt="الشريحة 148: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 148"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_148.png" alt="الشريحة 148: وحدة اإلرسالTransmitter Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">هذه الشريحة تركز على المازج (Mixer) مرة أخرى كعنصر مشترك. تذكر أن المازج يمكنه نقل الترددات إلى أعلى (في حالة الإرسال) أو إلى أسفل (في حالة الاستقبال لتحويل الإشارة لتردد وسيط).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-149">
+
+      <section class="slide" id="slide-149">
         <div class="slide-meta"><span class="badge">149</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 149</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-149.png" alt="الشريحة 149: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 149"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_149.png" alt="الشريحة 149: وظائف المرشحات" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تشرح الشريحة أهمية المرشحات (Filters). احفظ للاختبار أن المرشح يمرر الترددات المرغوبة ويمنع الترددات غير المرغوبة (مثل التوافقيات Harmonics) لضمان إشارة نقية ومنع التداخل.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-150">
+
+      <section class="slide" id="slide-150">
         <div class="slide-meta"><span class="badge">150</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 150</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-150.png" alt="الشريحة 150: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 150"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_150.png" alt="الشريحة 150: وحدة اإلرسال( 7  )الهوائي(Antenna)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">هذه المرحلة النهائية في الإرسال حيث تصل الإشارة للهوائي. تذكر أن كفاءة بث الإشارة تعتمد كلياً على التوافق الجيد (SWR منخفض) بين مكبر التردد الراديوي الأخير والهوائي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-151">
+
+      <section class="slide" id="slide-151">
         <div class="slide-meta"><span class="badge">151</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 151</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-151.png" alt="الشريحة 151: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 151"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_151.png" alt="الشريحة 151: ًوحدة اإلستقبال" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">ننتقل الآن لدراسة وحدة الاستقبال (Receiver). المهمة المعاكسة تحدث هنا: التقاط الإشارات الضعيفة جداً من الهوائي، تكبيرها، ترشيحها، ثم استخلاص الصوت منها.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-152">
+
+      <section class="slide" id="slide-152">
         <div class="slide-meta"><span class="badge">152</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 152</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-152.png" alt="الشريحة 152: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 152"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_152.png" alt="الشريحة 152: وحدة الاستقبال" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تشرح الشريحة مكبر التردد الراديوي الأولي (RF Amplifier) في المستقبل. تذكر للاختبار أن وظيفته هي تكبير الإشارة الضعيفة القادمة من الهوائي دون تكبير الضوضاء المحيطة بها قدر الإمكان.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-153">
+
+      <section class="slide" id="slide-153">
         <div class="slide-meta"><span class="badge">153</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 153</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-153.png" alt="الشريحة 153: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 153"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_153.png" alt="الشريحة 153: وحدة الاستقبالReceiving Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">توضح الشريحة دور المذبذب المحلي والمازج في الاستقبال. تحويل الإشارة المستقبلة المتغيرة إلى تردد وسيط ثابت (IF) يسهل بشكل كبير عملية التكبير والترشيح بدقة عالية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-154">
+
+      <section class="slide" id="slide-154">
         <div class="slide-meta"><span class="badge">154</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 154</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-154.png" alt="الشريحة 154: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 154"
+        <figure><img src="images/slide_154.png" alt="الشريحة 154: مكون رئيسي وحدة الاستقبالReceiving Unit"
             loading="lazy"></figure>
-        <div class="summary">
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تشرح الشريحة وظيفة مكبر التردد الوسيط (IF Amplifier). تذكر أن معظم تكبير إشارة الاستقبال وانتقائيتها (Selectivity) لمنع المحطات المجاورة يتم في هذه المرحلة الأساسية.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-155">
+
+      <section class="slide" id="slide-155">
         <div class="slide-meta"><span class="badge">155</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 155</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-155.png" alt="الشريحة 155: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 155"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_155.png" alt="الشريحة 155: وحدة الاستقبالReceiving Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">توضح الشريحة الكاشف (Detector) أو مزيل التعديل. احفظ للاختبار أن وظيفته هي عملية الاستخلاص العكسية، حيث يفصل إشارة الصوت (المعلومات) عن الموجة الحاملة ليتم إرسالها للسماعة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-156">
+
+      <section class="slide" id="slide-156">
         <div class="slide-meta"><span class="badge">156</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 156</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-156.png" alt="الشريحة 156: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 156"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_156.png" alt="الشريحة 156: وحدة الاستقبالReceiving Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تستعرض الشريحة دور مكبر الصوت الترددي (AF Amplifier) الأخير. مهمته ببساطة هي تكبير الإشارة الصوتية الضعيفة المستخلصة من الكاشف لدرجة تكفي لتشغيل مكبر الصوت.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-157">
+
+      <section class="slide" id="slide-157">
         <div class="slide-meta"><span class="badge">157</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 157</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-157.png" alt="الشريحة 157: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 157"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_157.png" alt="الشريحة 157: وحدة الاستقبالReceiving Unit" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">توضح الشريحة التحكم التلقائي بالكسب (AGC). تذكر للاختبار أن هذه الدائرة تحافظ على مستوى صوت ثابت تقريباً في السماعة، حتى عند تقلب قوة الإشارة المستقبلة (الخفوت).</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-158">
+
+      <section class="slide" id="slide-158">
         <div class="slide-meta"><span class="badge">158</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 158</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-158.png" alt="الشريحة 158: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 158"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_158.png" alt="الشريحة 158: وحدة الاستقبال(Receiving Unit)" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">هذه الشريحة تلخص مكونات وحدة الاستقبال. إذا فهمت الترتيب المنطقي لمسار الإشارة من الهوائي إلى السماعة ووظيفة كل مرحلة، فستجيب بثقة على معظم أسئلة الأجهزة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-159">
+
+      <section class="slide" id="slide-159">
         <div class="slide-meta"><span class="badge">159</span>
           <div>
             <h2>الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 159</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-159.png" alt="الشريحة 159: الفصل 9: أجهزة الراديو ومكوناتها - الشريحة 159"
-            loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_159.png" alt="الشريحة 159: أنواع التداخالت والحلول 4نقطة رئيسية" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تشرح هذه الشريحة مرحلة من مراحل جهاز الراديو. تتبع مسار الإشارة من التوليد إلى الصوت.</p>
+          <div class="slide-text">تناقش الشريحة مشاكل التداخل (QRM). من أهم الحلول للاختبار: استخدام مرشح تمرير منخفض (Low Pass Filter) على جهازك لمنع التوافقيات من التداخل مع أجهزة التلفاز المجاورة.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-160">
+
+      <section class="slide" id="slide-160">
         <div class="slide-meta"><span class="badge">160</span>
           <div>
             <h2>فحص المعرفة</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-160.png" alt="الشريحة 160: فحص المعرفة" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_160.png" alt="الشريحة 160: فحص المعرفة-أسئلة اختيار من متعدد" loading="lazy">
+        </figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تساعد هذه الشريحة على المراجعة النهائية والتحضير للاختبار. استخدمها لتحديد نقاط الضعف قبل الاختبار.</p>
+          <div class="slide-text">تضع هذه الشريحة معرفتك قيد الاختبار. راجع الأسئلة المتعددة الخيارات وتأكد من قدرتك على حلها بثقة، فهي نماذج حقيقية لما قد تواجهه في امتحان رخصة هواة اللاسلكي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-161">
+
+      <section class="slide" id="slide-161">
         <div class="slide-meta"><span class="badge">161</span>
           <div>
             <h2>التحضير النهائي للاختبار</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-161.png" alt="الشريحة 161: التحضير النهائي للاختبار" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_161.png" alt="الشريحة 161: خطواتك التالية" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تساعد هذه الشريحة على المراجعة النهائية والتحضير للاختبار. استخدمها لتحديد نقاط الضعف قبل الاختبار.</p>
+          <div class="slide-text">يقدم هذا القسم توجيهات عملية لما بعد اجتياز الدورة. تذكر أن المراجعة الشاملة للملخصات وإجراء اختبارات تجريبية مكثفة هي أفضل طريقة لضمان النجاح السهل في الاختبار الفعلي.</div>
         </div>
       </section>
-      <section class="slide searchable" id="slide-162">
+
+      <section class="slide" id="slide-162">
         <div class="slide-meta"><span class="badge">162</span>
           <div>
             <h2>فريق العمل والمراجع</h2>
           </div>
         </div>
-        <figure><img src="slides/slide-162.png" alt="الشريحة 162: فريق العمل والمراجع" loading="lazy"></figure>
-        <div class="summary">
+        <figure><img src="images/slide_162.png" alt="الشريحة 162: فريق العمل والمراجع" loading="lazy"></figure>
+        <div class="instructor-note">
           <h3>شرح مختصر</h3>
-          <p>تساعد هذه الشريحة على المراجعة النهائية والتحضير للاختبار. استخدمها لتحديد نقاط الضعف قبل الاختبار.</p>
+          <div class="slide-text">شريحة ختامية توضح مصادر ومراجع الدورة. يمكنك الرجوع دائماً للمراجع الرسمية واللوائح التنفيذية الصادرة من هيئة الاتصالات للتأكد من أحدث التشريعات المنظمة لهواية اللاسلكي في المملكة.</div>
         </div>
       </section>
     </main>
   </div>
-  <footer>دورة مرشحي اختبار رخصة هواة اللاسلكي — نسخة HTML تفاعلية للمراجعة والتدريب</footer>
-  <script>
-    const search = document.getElementById('search');
-    const slides = Array.from(document.querySelectorAll('.searchable'));
-    search.addEventListener('input', () => {
-      const q = search.value.trim().toLowerCase();
-      slides.forEach(slide => {
-        const text = slide.innerText.toLowerCase();
-        slide.classList.toggle('hidden', q && !text.includes(q));
-      });
-    });
-  </script>
+  <footer>دورة مرشحي اختبار رخصة هواة اللاسلكي 2026 — نسخة HTML تفاعلية للمراجعة والتدريب</footer>
+  <script>const search = document.getElementById('search'); const slides = Array.from(document.querySelectorAll('.slide')); search.addEventListener('input', () => { const q = search.value.trim().toLowerCase(); slides.forEach(slide => { const text = slide.innerText.toLowerCase(); slide.classList.toggle('hidden', q && !text.includes(q)); }); });</script>
 </body>
 
 </html>
