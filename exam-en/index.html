@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Practice Exam for Amateur Radio</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: rgba(255, 255, 255, 0.08);
+      --panel2: rgba(255, 255, 255, 0.12);
+      --text: #f7fbff;
+      --muted: #aab7c7;
+      --brand: #2dd4bf;
+      --brand2: #38bdf8;
+      --danger: #fb7185;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --border: rgba(255, 255, 255, 0.16);
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(45, 212, 191, .25), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(56, 189, 248, .22), transparent 34%),
+        var(--bg);
+      min-height: 100vh;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      min-height: 100vh;
+    }
+
+    aside {
+      border-right: 1px solid var(--border);
+      background: rgba(2, 6, 23, .72);
+      backdrop-filter: blur(18px);
+      padding: 22px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    main {
+      padding: 28px;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin: 0 0 8px;
+      line-height: 1.35;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 18px;
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+
+    .nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      background: rgba(255, 255, 255, .08);
+      font-weight: 700;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .stat {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 13px;
+    }
+
+    .stat .num {
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .stat .label {
+      color: var(--muted);
+      font-size: .8rem;
+      margin-top: 3px;
+    }
+
+    .progress-wrap {
+      background: rgba(255, 255, 255, .08);
+      height: 10px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 12px 0 18px;
+      border: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--brand), var(--brand2));
+      transition: width .25s ease;
+    }
+
+    .navgrid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .qnav {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .06);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 9px 0;
+      cursor: pointer;
+      font-weight: 700;
+      transition: .18s ease;
+    }
+
+    .qnav:hover,
+    .qnav.active {
+      transform: translateY(-1px);
+      background: rgba(45, 212, 191, .22);
+      border-color: rgba(45, 212, 191, .65);
+    }
+
+    .qnav.answered {
+      box-shadow: inset 0 -3px 0 var(--brand2);
+    }
+
+    .qnav.correct {
+      box-shadow: inset 0 -3px 0 var(--ok);
+    }
+
+    .qnav.wrong {
+      box-shadow: inset 0 -3px 0 var(--danger);
+    }
+
+    .card,
+    .panel {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .07));
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .panel {
+      margin: 18px 0 20px;
+    }
+
+    .notice {
+      margin: 0 0 16px;
+      padding: 16px 20px;
+      border-radius: 14px;
+      border: 1px solid rgba(245, 158, 11, .4);
+      background: rgba(245, 158, 11, .10);
+    }
+
+    .notice strong {
+      display: block;
+      color: #fbbf24;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .notice p,
+    .caption {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.9;
+    }
+
+    .caption {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .08);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .question {
+      font-size: 1.65rem;
+      line-height: 1.75;
+      margin: 10px 0 18px;
+      font-weight: 800;
+    }
+
+    .media-box {
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .05);
+    }
+
+    .media-box img {
+      display: block;
+      width: 100%;
+      max-height: 430px;
+      object-fit: contain;
+      background: white;
+      padding: 10px;
+    }
+
+    .youtube {
+      aspect-ratio: 16/9;
+      width: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .options {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .option {
+      width: 100%;
+      text-align: left;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .075);
+      color: var(--text);
+      padding: 16px 18px;
+      border-radius: 18px;
+      cursor: pointer;
+      font-size: 1.03rem;
+      line-height: 1.6;
+      transition: .16s ease;
+    }
+
+    .option:hover {
+      background: rgba(255, 255, 255, .13);
+      transform: translateY(-1px);
+    }
+
+    .option.selected {
+      border-color: rgba(56, 189, 248, .9);
+      background: rgba(56, 189, 248, .16);
+    }
+
+    .option.correct {
+      border-color: rgba(34, 197, 94, .9);
+      background: rgba(34, 197, 94, .16);
+    }
+
+    .option.wrong {
+      border-color: rgba(251, 113, 133, .9);
+      background: rgba(251, 113, 133, .16);
+    }
+
+    .short-input {
+      width: 100%;
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .08);
+      color: var(--text);
+      font-size: 1.2rem;
+      direction: ltr;
+      text-align: left;
+      outline: none;
+    }
+
+    .feedback {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      display: none;
+      border: 1px solid var(--border);
+      line-height: 1.6;
+    }
+
+    .feedback.show {
+      display: block;
+    }
+
+    .feedback.ok {
+      background: rgba(34, 197, 94, .14);
+      border-color: rgba(34, 197, 94, .45);
+    }
+
+    .feedback.bad {
+      background: rgba(251, 113, 133, .14);
+      border-color: rgba(251, 113, 133, .45);
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    button.action {
+      border: 0;
+      border-radius: 16px;
+      padding: 13px 18px;
+      cursor: pointer;
+      font-weight: 800;
+      color: #04111f;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 12px 28px rgba(45, 212, 191, .2);
+    }
+
+    button.secondary {
+      background: rgba(255, 255, 255, .1);
+      color: var(--text);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+
+    .result-card {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .result-card.show {
+      display: block;
+    }
+
+    .review-list {
+      margin-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .review-item {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .06);
+      border-radius: 16px;
+      padding: 12px 14px;
+      line-height: 1.65;
+    }
+
+    .review-item strong {
+      color: var(--brand);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    @media (max-width: 900px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        position: relative;
+        height: auto;
+      }
+
+      main {
+        padding: 18px;
+      }
+
+      .question {
+        font-size: 1.25rem;
+      }
+
+      .navgrid {
+        grid-template-columns: repeat(7, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <aside>
+      <h1 class="title">English Practice Exam for Amateur Radio</h1>
+      <p class="subtitle">Practice questions for amateur radio license candidates.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="num" id="answeredCount">0</div>
+          <div class="label">Answered</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="scoreNow">0</div>
+          <div class="label">Correct Answers</div>
+        </div>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="actions" style="margin:0 0 16px">
+        <button class="action secondary" onclick="toggleAnswers()">Show/Hide Answers</button>
+        <button class="action secondary" onclick="resetQuiz()">Reset</button>
+      </div>
+
+      <div class="navgrid" id="navGrid"></div>
+    </aside>
+
+    <main>
+      <nav class="nav" aria-label="Navigation">
+        <a href="../index.html">Home</a>
+        <a href="../lecture-en/index.html">English Lecture</a>
+      </nav>
+
+      <section class="panel" aria-label="Exam disclaimer">
+        <div class="notice">
+          <strong>Important Notice</strong>
+          <p>
+            The questions shown in this exam are for training and self-review only. They do not represent the official
+            amateur radio license exam questions. The actual exam may differ in content, wording, or difficulty.
+          </p>
+        </div>
+
+        <p class="caption">
+          Choose the appropriate answer, then click <strong>Check</strong> to see the result, or move freely between
+          questions to test your understanding of the different topics.
+        </p>
+      </section>
+
+      <section class="card" id="quizCard">
+        <div class="topline">
+          <div class="badge" id="qBadge">Question</div>
+          <div class="badge" id="pointsBadge">Points</div>
+        </div>
+        <div class="question" id="questionText"></div>
+        <div id="mediaArea"></div>
+        <div id="answerArea"></div>
+        <div class="feedback" id="feedback"></div>
+
+        <div class="actions">
+          <button class="action secondary" onclick="prevQuestion()">Previous</button>
+          <div>
+            <button class="action secondary" onclick="checkCurrent()">Check</button>
+            <button class="action" onclick="nextQuestion()">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card result-card" id="resultCard">
+        <h2 style="margin-top:0">Final Result</h2>
+        <p class="small" id="resultSummary"></p>
+        <div class="review-list" id="reviewList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    let QUESTIONS = [];
+    let current = 0;
+    let showAnswers = false;
+    const state = {};
+
+    async function loadQuestions() {
+      try {
+        const response = await fetch("./questions_en.json");
+        if (!response.ok) throw new Error(`Failed to load questions: ${response.status}`);
+        QUESTIONS = await response.json();
+        render();
+      } catch (error) {
+        document.getElementById("questionText").textContent = "Unable to load the English question bank.";
+        document.getElementById("feedback").className = "feedback show bad";
+        document.getElementById("feedback").textContent = error.message;
+      }
+    }
+
+    function youtubeEmbed(url) {
+      const id = (url.match(/[?&]v=([^&]+)/) || [])[1] || url.split('/').pop();
+      return `https://www.youtube.com/embed/${id}`;
+    }
+
+    function normalizeText(v) {
+      return String(v || "").trim().toLowerCase();
+    }
+
+    function getQuestionStatus(q) {
+      const s = state[q.id];
+      if (!s || s.answer === undefined || s.answer === "") return "unanswered";
+      if (q.type === "short_answer") {
+        const accepted = q.acceptedAnswers || q.options || [];
+        return accepted.map(normalizeText).includes(normalizeText(s.answer)) ? "correct" : "wrong";
+      }
+      return s.answer === q.correctOptionId ? "correct" : "wrong";
+    }
+
+    function renderNav() {
+      const nav = document.getElementById("navGrid");
+      nav.innerHTML = "";
+      QUESTIONS.forEach((q, i) => {
+        const btn = document.createElement("button");
+        btn.className = "qnav";
+        if (i === current) btn.classList.add("active");
+        const status = getQuestionStatus(q);
+        if (status !== "unanswered") {
+          btn.classList.add(showAnswers ? status : "answered");
+        }
+        btn.textContent = q.id;
+        btn.onclick = () => { current = i; render(); };
+        nav.appendChild(btn);
+      });
+    }
+
+    function renderMedia(q) {
+      const area = document.getElementById("mediaArea");
+      area.innerHTML = "";
+      (q.media || []).forEach(m => {
+        const box = document.createElement("div");
+        box.className = "media-box";
+        if (m.type === "image") {
+          const img = document.createElement("img");
+          img.src = m.src;
+          img.alt = "Question image";
+          box.appendChild(img);
+        } else if (m.type === "youtube") {
+          const iframe = document.createElement("iframe");
+          iframe.className = "youtube";
+          iframe.src = youtubeEmbed(m.url);
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          box.appendChild(iframe);
+        }
+        area.appendChild(box);
+      });
+    }
+
+    function renderAnswers(q) {
+      const area = document.getElementById("answerArea");
+      area.innerHTML = "";
+
+      if (q.type === "short_answer") {
+        const input = document.createElement("input");
+        input.className = "short-input";
+        input.placeholder = "Type your answer here...";
+        input.value = state[q.id]?.answer || "";
+        input.oninput = e => {
+          state[q.id] = { answer: e.target.value, checked: false };
+          updateStats();
+          renderNav();
+        };
+        area.appendChild(input);
+        return;
+      }
+
+      const options = document.createElement("div");
+      options.className = "options";
+
+      q.options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "option";
+        btn.innerHTML = `<strong>${opt.id}.</strong> ${escapeHtml(opt.text)}`;
+
+        const selected = state[q.id]?.answer === opt.id;
+        if (selected) btn.classList.add("selected");
+
+        if (showAnswers || state[q.id]?.checked) {
+          if (opt.id === q.correctOptionId) btn.classList.add("correct");
+          if (selected && opt.id !== q.correctOptionId) btn.classList.add("wrong");
+        }
+
+        btn.onclick = () => {
+          state[q.id] = { answer: opt.id, checked: false };
+          render();
+        };
+        options.appendChild(btn);
+      });
+      area.appendChild(options);
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, s => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+      }[s]));
+    }
+
+    function correctAnswerText(q) {
+      if (q.type === "short_answer") {
+        return q.correctAnswerText || (q.acceptedAnswers || [])[0] || "";
+      }
+      const correct = q.options.find(o => o.id === q.correctOptionId);
+      return `${q.correctOptionId} - ${correct ? correct.text : ""}`;
+    }
+
+    function renderFeedback(q) {
+      const fb = document.getElementById("feedback");
+      fb.className = "feedback";
+      fb.innerHTML = "";
+
+      const s = state[q.id];
+      if (!s?.checked && !showAnswers) return;
+
+      const status = getQuestionStatus(q);
+      if (status === "correct") {
+        fb.classList.add("show", "ok");
+        fb.textContent = "Correct answer";
+      } else if (status === "wrong") {
+        fb.classList.add("show", "bad");
+        fb.textContent = `Incorrect answer. Correct answer: ${correctAnswerText(q)}`;
+      }
+    }
+
+    function render() {
+      if (!QUESTIONS.length) return;
+
+      const q = QUESTIONS[current];
+      document.getElementById("qBadge").textContent = `Question ${q.id} of ${QUESTIONS.length}`;
+      document.getElementById("pointsBadge").textContent = q.points === 1 ? "1 point" : `${q.points} points`;
+      document.getElementById("questionText").textContent = q.question;
+
+      renderMedia(q);
+      renderAnswers(q);
+      renderFeedback(q);
+      renderNav();
+      updateStats();
+    }
+
+    function checkCurrent() {
+      const q = QUESTIONS[current];
+      const s = state[q.id];
+      if (!s || s.answer === undefined || s.answer === "") {
+        const fb = document.getElementById("feedback");
+        fb.className = "feedback show bad";
+        fb.textContent = "Choose an answer first.";
+        return;
+      }
+      state[q.id].checked = true;
+      render();
+    }
+
+    function nextQuestion() {
+      if (current < QUESTIONS.length - 1) {
+        current++;
+        render();
+      } else {
+        showResults();
+      }
+    }
+
+    function prevQuestion() {
+      if (current > 0) {
+        current--;
+        render();
+      }
+    }
+
+    function updateStats() {
+      const answered = QUESTIONS.filter(q => state[q.id]?.answer !== undefined && state[q.id]?.answer !== "").length;
+      const correct = QUESTIONS.filter(q => getQuestionStatus(q) === "correct").length;
+      document.getElementById("answeredCount").textContent = answered;
+      document.getElementById("scoreNow").textContent = correct;
+      document.getElementById("progressBar").style.width = `${QUESTIONS.length ? answered / QUESTIONS.length * 100 : 0}%`;
+    }
+
+    function toggleAnswers() {
+      showAnswers = !showAnswers;
+      render();
+    }
+
+    function resetQuiz() {
+      Object.keys(state).forEach(k => delete state[k]);
+      current = 0;
+      showAnswers = false;
+      document.getElementById("resultCard").classList.remove("show");
+      render();
+    }
+
+    function showResults() {
+      const resultCard = document.getElementById("resultCard");
+      const correct = QUESTIONS.filter(q => getQuestionStatus(q) === "correct").length;
+      const answered = QUESTIONS.filter(q => state[q.id]?.answer !== undefined && state[q.id]?.answer !== "").length;
+      const percent = QUESTIONS.length ? Math.round(correct / QUESTIONS.length * 100) : 0;
+      document.getElementById("resultSummary").textContent =
+        `You answered ${answered} of ${QUESTIONS.length} questions. Correct answers: ${correct}. Score: ${percent}%.`;
+
+      const review = document.getElementById("reviewList");
+      review.innerHTML = "";
+      QUESTIONS.forEach(q => {
+        const item = document.createElement("div");
+        item.className = "review-item";
+        const status = getQuestionStatus(q);
+        const label = status === "correct" ? "Correct" : status === "wrong" ? "Wrong" : "Not answered";
+        item.innerHTML = `<strong>Question ${q.id}</strong> - ${label}<br><span class="small">Correct answer: ${escapeHtml(correctAnswerText(q))}</span>`;
+        review.appendChild(item);
+      });
+      resultCard.classList.add("show");
+      resultCard.scrollIntoView({ behavior: "smooth" });
+    }
+
+    loadQuestions();
+  </script>
+</body>
+
+</html>
