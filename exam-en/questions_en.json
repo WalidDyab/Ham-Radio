@@ -116,7 +116,7 @@
     "category": null,
     "points": 1,
     "type": "single_choice",
-    "question": "In which country does an amateur radio operator have the callsign SAR1HZ?",
+    "question": "In which country does an amateur radio operator have the callsign HZ1SAR?",
     "options": [
       {
         "id": "A",
@@ -841,7 +841,7 @@
     "category": null,
     "points": 1,
     "type": "single_choice",
-    "question": "Your callsign is SAR1HZ. Should you answer the CQ call you heard in this form: CQ SA CQ SA DE A41RS?",
+    "question": "Your callsign is HZ1SAR. Should you answer the CQ call you heard in this form: CQ SA CQ SA DE A41RS?",
     "options": [
       {
         "id": "A",
